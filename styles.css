@@ -473,8 +473,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-inner {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 32px;
-  height: 72px;
+  padding: 0 28px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -488,7 +488,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
 }
 .nav-logo img {
-  height: 42px;
+  height: 38px;
   width: auto;
   display: block;
 }
@@ -505,15 +505,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 0 18px;
-  height: 72px;
-  font-size: 0.75rem;
+  padding: 0 16px;
+  height: 68px;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-2);
   white-space: nowrap;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: color 0.2s, border-color 0.2s;
   position: relative;
 }
@@ -582,8 +582,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  margin-left: 20px;
+  margin-left: 16px;
 }
+
+/* Compact nav button — overrides global btn-gettouched size */
+.nav-cta-group .btn-gettouched {
+  padding: 8px 18px;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  gap: 7px;
+}
+.nav-cta-group .btn-arrow { font-size: 0.85rem; }
 
 .hamburger {
   display: none;
@@ -678,7 +688,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 148px 36px 80px;
+  padding: 140px 36px 80px;
   width: 100%;
 }
 
@@ -1879,7 +1889,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 72px; left: 0; right: 0; bottom: 0;
+  top: 64px; left: 0; right: 0; bottom: 0;
   background: #fff;
   padding: 16px 0;
   gap: 0;

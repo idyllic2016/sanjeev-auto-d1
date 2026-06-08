@@ -16,7 +16,7 @@
   height: 420px;
   position: relative;
   overflow: hidden;
-  margin-top: 72px; /* navbar height */
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
