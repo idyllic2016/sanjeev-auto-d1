@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.wecreate.com)",
+      "WebFetch(domain:www.blendb2b.com)",
+      "WebFetch(domain:pentaclay.com)",
+      "Bash(Select-Object Name)"
+    ]
+  }
+}

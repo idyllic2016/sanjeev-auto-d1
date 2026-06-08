@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sanjeev Auto | Get In Touch</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto" height="40"></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="index.html#capabilities" class="nav-link">Capabilities</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="about.html" class="nav-link">Company</a>
+      <a href="careers.html" class="nav-link">Careers</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle"><span class="theme-icon">◐</span></button>
+      <a href="contact.html" class="btn-nav">Get In Touch</a>
+      <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero contact-hero">
+  <div class="ph-bg navy-bg"></div>
+  <div class="page-hero-content">
+    <div class="section-eyebrow light">Contact</div>
+    <h1>Let's Engineer<br>Something Together</h1>
+    <p>Share your requirement. Our team responds within 24 hours.</p>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section style="padding:100px 0;background:var(--bg);">
+  <div class="section-container">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <div class="section-eyebrow">Send Inquiry</div>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:32px;">Tell Us About<br>Your Requirement</h2>
+
+        <div class="inquiry-type-tabs">
+          <button class="iq-tab active" data-type="product">Product Inquiry</button>
+          <button class="iq-tab" data-type="custom">Custom Part</button>
+          <button class="iq-tab" data-type="supplier">Become a Supplier</button>
+          <button class="iq-tab" data-type="general">General</button>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label>Company *</label>
+              <input type="text" placeholder="Company name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="work@company.com" required>
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="+91 / International">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Product / Requirement</label>
+            <select>
+              <option value="">Select product category</option>
+              <option>Gears — Spur / Helical / Bevel</option>
+              <option>Shafts — Splined / Stepped</option>
+              <option>Fork Shifts</option>
+              <option>Gear Assemblies</option>
+              <option>Precision Machined Parts</option>
+              <option>Custom Engineering</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Expected Annual Volume</label>
+              <select>
+                <option>Under 10,000 pcs</option>
+                <option>10,000 – 50,000 pcs</option>
+                <option>50,000 – 2,00,000 pcs</option>
+                <option>2,00,000+ pcs</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Target Industry</label>
+              <select>
+                <option>Automotive</option>
+                <option>Agriculture / Tractor</option>
+                <option>Construction Equipment</option>
+                <option>Industrial Machinery</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message / Technical Specification</label>
+            <textarea rows="5" placeholder="Describe your requirement. You can also share drawing number, material grade, tolerance class, or any specific standards to meet..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Attach Drawing / Document (Optional)</label>
+            <div class="file-upload-area" id="fileUploadArea">
+              <div class="fua-icon">📎</div>
+              <p>Drag & drop or <span>browse</span></p>
+              <small>PDF, DWG, STEP — max 20MB</small>
+              <input type="file" id="attachFile" style="display:none">
+            </div>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;padding:18px;">
+            Send Inquiry
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p style="text-align:center;font-size:0.78rem;color:var(--text-light);margin-top:12px;">Our team responds within 24 hours. Your data is kept strictly confidential.</p>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info-wrap">
+        <div class="contact-info-card main-office">
+          <div class="ci-label">Headquarters</div>
+          <h3>Faridabad, Haryana</h3>
+          <div class="ci-detail">
+            <span class="ci-icon">📍</span>
+            <p>Plot No. XX, Sector XX,<br>Faridabad – 121004,<br>Haryana, India</p>
+          </div>
+          <div class="ci-detail">
+            <span class="ci-icon">📞</span>
+            <a href="tel:+911294XXXXXX">+91-129-4XX-XXXX</a>
+          </div>
+          <div class="ci-detail">
+            <span class="ci-icon">✉</span>
+            <a href="mailto:info@sanjeevauto.com">info@sanjeevauto.com</a>
+          </div>
+        </div>
+
+        <div class="contact-dept-cards">
+          <div class="dept-card">
+            <div class="dc-icon">🔩</div>
+            <div class="dc-info">
+              <h4>Sales & Inquiries</h4>
+              <a href="mailto:sales@sanjeevauto.com">sales@sanjeevauto.com</a>
+            </div>
+          </div>
+          <div class="dept-card">
+            <div class="dc-icon">⚙</div>
+            <div class="dc-info">
+              <h4>Engineering Support</h4>
+              <a href="mailto:engineering@sanjeevauto.com">engineering@sanjeevauto.com</a>
+            </div>
+          </div>
+          <div class="dept-card">
+            <div class="dc-icon">👥</div>
+            <div class="dc-info">
+              <h4>Careers & HR</h4>
+              <a href="mailto:hr@sanjeevauto.com">hr@sanjeevauto.com</a>
+            </div>
+          </div>
+          <div class="dept-card">
+            <div class="dc-icon">🏭</div>
+            <div class="dc-info">
+              <h4>Supplier Registration</h4>
+              <a href="mailto:procurement@sanjeevauto.com">procurement@sanjeevauto.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="other-locations">
+          <h4 style="font-family:Manrope,sans-serif;font-weight:800;font-size:0.95rem;color:var(--text);margin-bottom:16px;">Other Locations</h4>
+          <div class="loc-list">
+            <div class="loc-item">
+              <span class="loc-dot"></span>
+              <div><strong>Plant 2</strong> — Manesar, Haryana</div>
+            </div>
+            <div class="loc-item">
+              <span class="loc-dot"></span>
+              <div><strong>Plant 3</strong> — Pune, Maharashtra</div>
+            </div>
+            <div class="loc-item">
+              <span class="loc-dot"></span>
+              <div><strong>R&D Hub</strong> — Gurugram, Haryana</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-placeholder">
+          <div class="map-ph-content">
+            <div class="map-ph-icon">🗺</div>
+            <p>Interactive map coming soon</p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-outline small">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom" style="padding: 32px 0;">
+    <div class="section-container" style="display:flex;justify-content:space-between;align-items:center;">
+      <a href="index.html"><img src="logo.png" alt="Sanjeev Auto" height="28" style="filter:brightness(0) invert(1);opacity:0.6;"></a>
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);">© 2026 Sanjeev Auto Industries Ltd.</p>
+      <a href="careers.html" class="btn-outline small" style="border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.5);">Careers</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // Inquiry type tabs
+  const iqTabs = document.querySelectorAll('.iq-tab');
+  iqTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      iqTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+
+  // File upload
+  const fua = document.getElementById('fileUploadArea');
+  const fi = document.getElementById('attachFile');
+  if (fua && fi) {
+    fua.addEventListener('click', () => fi.click());
+    fua.addEventListener('dragover', e => { e.preventDefault(); fua.style.borderColor='var(--teal)'; });
+    fua.addEventListener('dragleave', () => fua.style.borderColor='');
+    fi.addEventListener('change', () => {
+      if (fi.files.length) fua.querySelector('p').innerHTML = '✓ ' + fi.files[0].name;
+    });
+  }
+
+  // Form submit
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      form.innerHTML = '<div style="text-align:center;padding:80px 20px;"><div style="font-size:4rem;margin-bottom:20px;color:var(--teal)">✓</div><h3 style="font-family:Manrope,sans-serif;font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:12px;">Inquiry Received</h3><p style="color:var(--text-muted);font-size:1rem;line-height:1.7;">Thank you for reaching out. Our engineering team will review your requirement and respond within 24 hours.</p></div>';
+    });
+  }
+</script>
+</body>
+</html>
