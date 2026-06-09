@@ -1274,20 +1274,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .cap-scroll-wrap {
   position: relative;
   z-index: 2;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow: hidden;
   cursor: grab;
   padding-bottom: 12px;
 }
-.cap-scroll-wrap::-webkit-scrollbar { display: none; }
 .cap-scroll-wrap.grabbing { cursor: grabbing; }
 
 .cap-scroll {
   display: flex;
   gap: 16px;
-  padding: 0 max(36px, calc((100vw - 1260px) / 2));
+  padding: 20px max(36px, calc((100vw - 1260px) / 2)) 8px;
   width: max-content;
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .cap-card {
@@ -1297,9 +1296,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--r-lg);
   padding: 28px;
-  transition: var(--t);
+  transition: background 0.35s var(--ease), border-color 0.35s var(--ease),
+              box-shadow 0.35s var(--ease), transform 0.35s var(--ease), opacity 0.35s var(--ease);
   position: relative;
   overflow: hidden;
+  opacity: 0.55;
+  transform: scale(0.97);
 }
 .cap-card::before {
   content: '';
@@ -1312,6 +1314,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .cap-card:hover { background: rgba(255,255,255,0.09); border-color: rgba(14,139,139,0.25); }
 .cap-card:hover::before { opacity: 1; }
+.cap-card.active {
+  opacity: 1;
+  transform: scale(1);
+  border-color: rgba(14,139,139,0.45);
+  background: rgba(255,255,255,0.09);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+}
+.cap-card.active::before { opacity: 1; }
+.cap-card.active .cc-num { color: var(--teal-lt); opacity: 1; }
+.cap-card.active .cc-icon img { filter: brightness(1) saturate(1.1); }
 
 .cc-num {
   font-size: 0.7rem;

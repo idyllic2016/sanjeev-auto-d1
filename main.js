@@ -160,94 +160,93 @@ function initReveal() {
 
 document.addEventListener('DOMContentLoaded', initReveal);
 
-// ─── Capabilities Drag Scroll ─────────────────────
-const capWrap  = $('.cap-scroll-wrap');
+// ─── Capabilities Slider ─────────────────────────
+const capWrap   = $('.cap-scroll-wrap');
 const capScroll = $('#capScroll');
-const capPrev  = $('#capPrev');
-const capNext  = $('#capNext');
+const capPrev   = $('#capPrev');
+const capNext   = $('#capNext');
+const CARD_W    = 316; // card width (300) + gap (16)
 
-const CARD_W = 316; // card width + gap
+if (capWrap && capScroll) {
+  const cards      = [...capScroll.querySelectorAll('.cap-card')];
+  const total      = cards.length;
+  let   idx        = 0;
+  let   offset     = 0;
+  let   autoTimer;
+  const dotsEl     = document.getElementById('capDots');
 
-capNext?.addEventListener('click', () => capWrap.scrollBy({ left: CARD_W, behavior: 'smooth' }));
-capPrev?.addEventListener('click', () => capWrap.scrollBy({ left: -CARD_W, behavior: 'smooth' }));
+  // Build dots
+  if (dotsEl) {
+    cards.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 'cap-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      d.addEventListener('click', () => { go(i); restart(); });
+      dotsEl.appendChild(d);
+    });
+  }
 
-if (capWrap) {
-  let isDrag = false, startX = 0, scrollL = 0;
+  function syncDots(i) {
+    dotsEl?.querySelectorAll('.cap-dot').forEach((d, j) => d.classList.toggle('active', j === i));
+  }
 
+  function go(i) {
+    idx    = Math.max(0, Math.min(i, total - 1));
+    offset = idx * CARD_W;
+    capScroll.style.transform = `translateX(-${offset}px)`;
+    cards.forEach((c, j) => c.classList.toggle('active', j === idx));
+    syncDots(idx);
+  }
+
+  function advance()  { go((idx + 1) % total); }
+  function start()    { autoTimer = setInterval(advance, 4200); }
+  function restart()  { clearInterval(autoTimer); start(); }
+
+  capPrev?.addEventListener('click', () => { go(idx - 1); restart(); });
+  capNext?.addEventListener('click', () => { go(idx + 1); restart(); });
+  capWrap.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  capWrap.addEventListener('mouseleave', start);
+
+  // Mouse drag
+  let drag = false, dragX = 0, dragOff = 0;
   capWrap.addEventListener('mousedown', e => {
-    isDrag = true; startX = e.pageX - capWrap.offsetLeft; scrollL = capWrap.scrollLeft;
+    drag = true; dragX = e.pageX; dragOff = offset;
+    capScroll.style.transition = 'none';
     capWrap.classList.add('grabbing');
   });
-  document.addEventListener('mouseup', () => { isDrag = false; capWrap.classList.remove('grabbing'); });
+  document.addEventListener('mouseup', () => {
+    if (!drag) return;
+    drag = false;
+    capWrap.classList.remove('grabbing');
+    capScroll.style.transition = '';
+    go(Math.round(offset / CARD_W));
+    restart();
+  });
   document.addEventListener('mousemove', e => {
-    if (!isDrag) return;
+    if (!drag) return;
     e.preventDefault();
-    capWrap.scrollLeft = scrollL - (e.pageX - capWrap.offsetLeft - startX) * 1.4;
+    offset = Math.max(0, Math.min(dragOff + (dragX - e.pageX), (total - 1) * CARD_W));
+    capScroll.style.transform = `translateX(-${offset}px)`;
   });
 
-  // Touch support
-  let touchX = 0;
-  capWrap.addEventListener('touchstart', e => { touchX = e.touches[0].pageX; }, { passive: true });
+  // Touch swipe
+  let tx = 0, tOff = 0;
+  capWrap.addEventListener('touchstart', e => {
+    tx = e.touches[0].pageX; tOff = offset;
+    capScroll.style.transition = 'none';
+  }, { passive: true });
   capWrap.addEventListener('touchmove', e => {
-    const dx = touchX - e.touches[0].pageX;
-    capWrap.scrollLeft += dx;
-    touchX = e.touches[0].pageX;
+    offset = Math.max(0, Math.min(tOff + (tx - e.touches[0].pageX), (total - 1) * CARD_W));
+    capScroll.style.transform = `translateX(-${offset}px)`;
   }, { passive: true });
-}
-
-// ─── Capabilities Auto-Slider ─────────────────────
-const capDotsContainer = document.getElementById('capDots');
-if (capWrap && capDotsContainer) {
-  const cards = capScroll ? capScroll.querySelectorAll('.cap-card') : [];
-  let capAutoTimer;
-  let currentDot = 0;
-  const totalCards = cards.length;
-
-  // Create dots
-  cards.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = 'cap-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-    dot.addEventListener('click', () => {
-      currentDot = i;
-      goToCard(i);
-      restartTimer();
-    });
-    capDotsContainer.appendChild(dot);
+  capWrap.addEventListener('touchend', () => {
+    capScroll.style.transition = '';
+    go(Math.round(offset / CARD_W));
+    restart();
   });
 
-  function updateDots(idx) {
-    capDotsContainer.querySelectorAll('.cap-dot').forEach((d, i) => {
-      d.classList.toggle('active', i === idx);
-    });
-  }
-
-  function goToCard(idx) {
-    const offset = idx * CARD_W;
-    capWrap.scrollTo({ left: offset, behavior: 'smooth' });
-    currentDot = idx;
-    updateDots(idx);
-  }
-
-  function autoAdvance() {
-    currentDot = (currentDot + 1) % totalCards;
-    goToCard(currentDot);
-  }
-
-  function startTimer() { capAutoTimer = setInterval(autoAdvance, 4200); }
-  function restartTimer() { clearInterval(capAutoTimer); startTimer(); }
-
-  // Sync dots on manual scroll
-  capWrap.addEventListener('scroll', () => {
-    const idx = Math.round(capWrap.scrollLeft / CARD_W);
-    if (idx !== currentDot) { currentDot = idx; updateDots(idx); }
-  }, { passive: true });
-
-  // Pause on hover
-  capWrap.addEventListener('mouseenter', () => clearInterval(capAutoTimer));
-  capWrap.addEventListener('mouseleave', startTimer);
-
-  startTimer();
+  go(0);
+  start();
 }
 
 // ─── Smooth Card Tilt (desktop only) ─────────────
