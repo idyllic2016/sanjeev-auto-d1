@@ -32,7 +32,7 @@
   "name": "Sanjeev Auto Industries",
   "url": "https://www.sanjeevauto.com",
   "logo": "https://www.sanjeevauto.com/wp-content/uploads/logo.png",
-  "description": "Precision-engineered automotive & industrial components manufacturer since 1978. 5 IATF 16949 certified facilities in Aurangabad, Maharashtra.",
+  "description": "Precision-engineered automotive &amp; industrial components manufacturer since 1978. 5 IATF 16949 certified facilities in Aurangabad, Maharashtra.",
   "foundingDate": "1978",
   "address": {
     "@type": "PostalAddress",
@@ -54,8 +54,13 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="images/K96-3.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="shortcut icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" href="logo.png">
+<meta name="theme-color" content="#1B2D6B">
 </head>
 <body>
 
@@ -237,6 +242,13 @@
         </span>
         Get In Touch
       </button>
+    </div>
+  </div>
+  <!-- Scroll indicator -->
+  <div class="hero-scroll-cue">
+    <span>Scroll</span>
+    <div class="hero-scroll-arrow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
   </div>
   <div class="hero-metrics">
@@ -580,7 +592,7 @@
       </div>
     </div>
   </div>
-  <div class="cap-scroll-wrap">
+  <div class="cap-scroll-wrap" id="capWrap">
     <div class="cap-scroll" id="capScroll">
       <div class="cap-card">
         <div class="cc-num">01</div>
@@ -646,6 +658,9 @@
         <div class="cc-spec">JIPM Certified</div>
       </div>
     </div>
+  </div>
+  <div class="cap-dots" id="capDots">
+    <!-- dots injected by JS -->
   </div>
 </section>
 

@@ -210,11 +210,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 10px;
   background: #fff;
   color: var(--navy);
-  padding: 14px 28px;
+  padding: 12px 24px;
   border-radius: 8px;
   font-family: 'Manrope', sans-serif;
-  font-size: 0.925rem;
-  font-weight: 800;
+  font-size: 0.875rem;
+  font-weight: 700;
   transition: var(--t);
 }
 .hero-btn-primary:hover { background: var(--green); color: #fff; transform: translateY(-2px); box-shadow: 0 10px 32px rgba(109,179,63,0.45); }
@@ -227,10 +227,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255,255,255,0.20);
   color: #fff;
-  padding: 14px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-family: 'Manrope', sans-serif;
-  font-size: 0.925rem;
+  font-size: 0.875rem;
   font-weight: 700;
   transition: var(--t);
   cursor: pointer;
@@ -617,7 +617,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hero {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -690,6 +689,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin: 0 auto;
   padding: 140px 36px 80px;
   width: 100%;
+  min-height: 100vh;
 }
 
 /* Heading lines */
@@ -709,11 +709,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   animation: slideUp 0.75s var(--ease) var(--d) forwards;
 }
 .accent-stroke {
-  -webkit-text-stroke: 2px rgba(14,139,139,0.85);
-  color: transparent;
-  background: linear-gradient(90deg, var(--teal-lt), var(--green));
+  background: linear-gradient(90deg, #1fe0e0, #7ee84a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 20px rgba(20,200,200,0.3));
 }
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
@@ -782,6 +783,36 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: rgba(255,255,255,0.08);
   flex-shrink: 0;
 }
+
+/* Scroll indicator */
+.hero-scroll-cue {
+  position: absolute;
+  bottom: 100px;
+  right: 48px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  animation: scrollCueFade 2s ease-in-out 2s infinite alternate;
+}
+.hero-scroll-arrow {
+  animation: scrollBounce 1.4s ease-in-out infinite;
+}
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+@keyframes scrollCueFade {
+  from { opacity: 0.4; }
+  to { opacity: 0.9; }
+}
+@media (max-width: 768px) { .hero-scroll-cue { display: none; } }
 
 /* ═══════════════════════════════════════════════════
    MARQUEE
@@ -1319,6 +1350,31 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: 100px;
 }
 
+/* Capabilities Dots */
+.cap-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px 0 16px;
+  position: relative;
+  z-index: 2;
+}
+.cap-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  padding: 0;
+}
+.cap-dot.active {
+  width: 24px;
+  border-radius: 4px;
+  background: var(--teal-lt);
+}
+.cap-dot:hover:not(.active) { background: rgba(255,255,255,0.5); }
+
 /* ═══════════════════════════════════════════════════
    FACILITIES
    ═══════════════════════════════════════════════════ */
@@ -1819,7 +1875,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav-cta-group .btn-gettouched { display: none; }
   .nav-links.nav-open { top: 64px; }
 
-  .hero-body { padding: 100px 20px 60px; }
+  .hero-body { padding: 100px 20px 60px; min-height: 100svh; }
   .hero-metrics { flex-wrap: wrap; }
   .hm-item { flex: 1 1 50%; }
   .hm-divider { display: none; }
@@ -1866,8 +1922,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .pitch-grid { grid-template-columns: 1fr; }
   .quality-metrics { grid-template-columns: 1fr; }
   .cta-actions, .fcta-actions { flex-direction: column; align-items: center; }
-  .hero-actions { flex-direction: column; }
-  .hero-btn-primary, .hero-btn-secondary { width: 100%; justify-content: center; }
+  .hero-actions { gap: 10px; }
+  .hero-btn-primary, .hero-btn-secondary { padding: 11px 18px; font-size: 0.82rem; width: 100%; justify-content: center; }
+  .hero-heading { font-size: clamp(1.5rem, 6.5vw, 2rem) !important; }
+  .hero-sub { font-size: 0.875rem; }
   .hm-item { flex: 1 1 100%; text-align: center; }
   .sec-title { font-size: clamp(1.7rem, 7vw, 2.4rem); }
   .footer-grid { grid-template-columns: 1fr; }

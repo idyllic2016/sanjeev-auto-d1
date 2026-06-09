@@ -195,6 +195,61 @@ if (capWrap) {
   }, { passive: true });
 }
 
+// ─── Capabilities Auto-Slider ─────────────────────
+const capDotsContainer = document.getElementById('capDots');
+if (capWrap && capDotsContainer) {
+  const cards = capScroll ? capScroll.querySelectorAll('.cap-card') : [];
+  let capAutoTimer;
+  let currentDot = 0;
+  const totalCards = cards.length;
+
+  // Create dots
+  cards.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'cap-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    dot.addEventListener('click', () => {
+      currentDot = i;
+      goToCard(i);
+      restartTimer();
+    });
+    capDotsContainer.appendChild(dot);
+  });
+
+  function updateDots(idx) {
+    capDotsContainer.querySelectorAll('.cap-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === idx);
+    });
+  }
+
+  function goToCard(idx) {
+    const offset = idx * CARD_W;
+    capWrap.scrollTo({ left: offset, behavior: 'smooth' });
+    currentDot = idx;
+    updateDots(idx);
+  }
+
+  function autoAdvance() {
+    currentDot = (currentDot + 1) % totalCards;
+    goToCard(currentDot);
+  }
+
+  function startTimer() { capAutoTimer = setInterval(autoAdvance, 4200); }
+  function restartTimer() { clearInterval(capAutoTimer); startTimer(); }
+
+  // Sync dots on manual scroll
+  capWrap.addEventListener('scroll', () => {
+    const idx = Math.round(capWrap.scrollLeft / CARD_W);
+    if (idx !== currentDot) { currentDot = idx; updateDots(idx); }
+  }, { passive: true });
+
+  // Pause on hover
+  capWrap.addEventListener('mouseenter', () => clearInterval(capAutoTimer));
+  capWrap.addEventListener('mouseleave', startTimer);
+
+  startTimer();
+}
+
 // ─── Smooth Card Tilt (desktop only) ─────────────
 if (window.innerWidth > 900) {
   $$('.prod-card, .bento-card, .pitch-card, .fac-sm').forEach(card => {
