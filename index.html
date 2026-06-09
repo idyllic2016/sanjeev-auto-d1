@@ -1,27 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sanjeev Auto | Precision Engineering Group â€” Aurangabad, Maharashtra</title>
-  <meta name="description" content="Sanjeev Auto Group â€” 45+ years of precision gear manufacturing for automotive, agriculture, construction & industrial sectors. 5 plants, 20+ global OEM partners, ISO 9001:2015 certified." />
+  <title>Sanjeev Auto | Precision Engineering Group — Aurangabad, Maharashtra</title>
+  <meta name="description" content="Sanjeev Auto Group — 45+ years of precision gear manufacturing for automotive, agriculture, construction & industrial sectors. 5 plants, 20+ global OEM partners, ISO 9001:2015 certified." />
   <meta property="og:title" content="Sanjeev Auto | Precision Engineering Group" />
   <meta property="og:description" content="Manufacturing precision since 1978. Five plants, 1000+ components, serving 20+ global OEMs." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#050A06" />
+  <meta name="theme-color" content="#0a0a0a" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=90&auto=format&fit=crop" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="premium.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tesla.css" />
   <link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- ══════════════════════════════════════════════════
      POPUP CONTACT FORM
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+     ══════════════════════════════════════════════════ -->
 <div class="popup-overlay" id="popupOverlay">
   <div class="popup-modal" id="popupModal" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
     <div class="popup-left">
@@ -74,7 +72,7 @@
         </div>
         <div class="form-group">
           <label class="form-label">Your Requirement</label>
-          <textarea name="message" rows="4" placeholder="Describe your component requirement, volume expectations, or partnership interestâ€¦"></textarea>
+          <textarea name="message" rows="4" placeholder="Describe your component requirement, volume expectations, or partnership interest…"></textarea>
         </div>
         <button type="submit" class="btn-submit">Send Inquiry &#8594;</button>
       </form>
@@ -82,9 +80,9 @@
   </div>
 </div>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     NAVBAR
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ══════════════════════════════════════════════════
+     NAVBAR — Tesla-style: transparent → solid on scroll
+     ══════════════════════════════════════════════════ -->
 <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" aria-label="Sanjeev Auto Home">
@@ -113,9 +111,7 @@
     </ul>
 
     <div class="nav-cta-group">
-      <button class="btn-gettouched" id="openPopupNav">
-        Get In Touch <span class="btn-arrow">&#8594;</span>
-      </button>
+      <button class="nav-cta-btn" id="openPopupNav">Get In Touch</button>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -123,443 +119,418 @@
   </div>
 </nav>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S1 â€” HERO
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-hero" id="hero" aria-label="Hero â€” Precision Manufacturing Group">
-  <div class="sa-hero-bg">
+<!-- ══════════════════════════════════════════════════
+     S1 — HERO (Tesla full-viewport cinematic)
+     ══════════════════════════════════════════════════ -->
+<section class="hero-section" id="hero" aria-label="Hero — Precision Manufacturing Group">
+  <div class="hero-bg">
     <img
       src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=90&auto=format&fit=crop"
       alt="Precision manufacturing facility"
-      class="sa-hero-photo"
+      class="hero-bg-img"
       fetchpriority="high"
     />
-    <div class="sa-hero-overlay"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-grain"></div>
   </div>
 
-  <!-- Hidden video element preserved for main.js compatibility -->
-  <video id="heroBgVideo" style="display:none" muted playsinline></video>
-
-  <div class="sa-hero-inner">
-    <div class="sa-hero-left">
-      <div class="sa-eyebrow sa-eyebrow--inv">
-        <span>Sanjeev Auto Group</span>
-      </div>
-      <h1 class="sa-hero-h1">
-        <span class="line"><span class="inner">Engineered</span></span>
-        <span class="line"><span class="inner">for a <span class="green">Stronger</span></span></span>
-        <span class="line"><span class="inner">World</span></span>
-      </h1>
-      <p class="sa-hero-sub">
-        45 years of precision gear manufacturing. Five plants across Aurangabad, Maharashtra.
-        Supplying mission-critical components to the world's leading OEMs.
-      </p>
-      <div class="sa-hero-actions">
-        <button class="sa-btn sa-btn--green" id="openPopupHero">
-          Partner With Us
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-        <a href="products.html" class="sa-btn sa-btn--ghost">Explore Products</a>
-      </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-dot"></span>
+      <span>Sanjeev Auto Group · Est. 1978</span>
     </div>
-
-    <div class="sa-hero-stats">
-      <div class="sa-hstat">
-        <div class="sa-hstat-n">45<sup>+</sup></div>
-        <div class="sa-hstat-l">Years of Precision</div>
-      </div>
-      <div class="sa-hstat">
-        <div class="sa-hstat-n">5</div>
-        <div class="sa-hstat-l">Manufacturing Plants</div>
-      </div>
-      <div class="sa-hstat">
-        <div class="sa-hstat-n">20<sup>+</sup></div>
-        <div class="sa-hstat-l">Global OEM Partners</div>
-      </div>
-      <div class="sa-hstat">
-        <div class="sa-hstat-n">1000<sup>+</sup></div>
-        <div class="sa-hstat-l">Component Types</div>
-      </div>
+    <h1 class="hero-h1">
+      <span class="hero-line">Engineered</span>
+      <span class="hero-line hero-line-accent">for a Stronger</span>
+      <span class="hero-line">World</span>
+    </h1>
+    <p class="hero-desc">
+      45 years of precision gear manufacturing. Five plants across Aurangabad, Maharashtra.
+      Supplying mission-critical components to the world's leading OEMs.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary" id="openPopupHero">
+        Partner With Us
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <a href="products.html" class="btn-secondary">Explore Products</a>
+    </div>
+    <div class="hero-certs">
+      <span class="cert-badge"><span class="cert-dot"></span>ISO 9001:2015</span>
+      <span class="cert-badge"><span class="cert-dot"></span>IATF 16949</span>
+      <span class="cert-badge"><span class="cert-dot"></span>ISO 14001:2015</span>
     </div>
   </div>
 
-  <div class="sa-hero-bottom">
-    <div class="sa-hero-certs">
-      <div class="sa-cert-item"><span class="sa-cert-dot"></span>ISO 9001:2015</div>
-      <div class="sa-cert-item"><span class="sa-cert-dot"></span>IATF 16949</div>
-      <div class="sa-cert-item"><span class="sa-cert-dot"></span>ISO 14001:2015</div>
-      <div class="sa-cert-item"><span class="sa-cert-dot"></span>Est. 1978</div>
+  <div class="hero-stats-bar">
+    <div class="hero-stat">
+      <div class="hero-stat-num">45<sup>+</sup></div>
+      <div class="hero-stat-label">Years of Precision</div>
     </div>
-    <div class="sa-scroll-cue">
-      <div class="sa-scroll-line"></div>
-      <span>Scroll</span>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">5</div>
+      <div class="hero-stat-label">Manufacturing Plants</div>
     </div>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">20<sup>+</sup></div>
+      <div class="hero-stat-label">Global OEM Partners</div>
+    </div>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">1000<sup>+</sup></div>
+      <div class="hero-stat-label">Component Types</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S2 â€” MARQUEE
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<div class="sa-marquee-bar" aria-hidden="true">
-  <div class="sa-marquee-track" id="saMarqueeTrack">
-    <div class="sa-marq-item">
+<!-- ══════════════════════════════════════════════════
+     S2 — MARQUEE / TICKER (Tata Motors style)
+     ══════════════════════════════════════════════════ -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-content">
       <span>Precision Gears</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Spline Rolling</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>ISO 9001:2015</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>CNC Machining</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Gear Cutting</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>IATF 16949</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Honing &amp; Grinding</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>John Deere Supplier</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>45+ Years</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>5 Plants Aurangabad</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Profile Grinding</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>CMM Quality Control</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Zero Defect Culture</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
     </div>
-    <div class="sa-marq-item" aria-hidden="true">
+    <div class="marquee-content" aria-hidden="true">
       <span>Precision Gears</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Spline Rolling</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>ISO 9001:2015</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>CNC Machining</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Gear Cutting</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>IATF 16949</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Honing &amp; Grinding</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>John Deere Supplier</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>45+ Years</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>5 Plants Aurangabad</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Profile Grinding</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <strong>CMM Quality Control</strong>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
       <span>Zero Defect Culture</span>
-      <span class="sa-marq-sep">&#10022;</span>
+      <span class="mq-sep">·</span>
     </div>
   </div>
 </div>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S3 â€” STORY / ABOUT
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-story" id="story">
-  <div class="sa-story-inner">
-    <div class="sa-story-text sa-reveal sa-reveal--left">
-      <div class="sa-founding-badge">
-        <span>1978</span>
-        Founded in Aurangabad, Maharashtra
+<!-- ══════════════════════════════════════════════════
+     S3 — STORY / ABOUT (Tata Motors layout)
+     ══════════════════════════════════════════════════ -->
+<section class="story-section" id="story">
+  <div class="story-inner">
+    <div class="story-text t-reveal t-reveal--left">
+      <div class="founding-badge">
+        <span>1978</span> Founded in Aurangabad, Maharashtra
       </div>
-      <div class="sa-eyebrow">Our Story</div>
-      <h2 class="sa-story-h2">
+      <div class="section-eyebrow">Our Story</div>
+      <h2 class="section-title">
         A legacy built on<br/>
         <em>uncompromising</em><br/>
         precision
       </h2>
-      <p class="sa-story-body">
+      <p class="story-body">
         From a single workshop in 1978 to a 5-plant manufacturing group,
-        Sanjeev Auto has grown by doing one thing exceptionally well &#8212;
+        Sanjeev Auto has grown by doing one thing exceptionally well —
         crafting precision gears and transmission components that global
         OEMs can bet their equipment on.
       </p>
-      <p class="sa-story-body">
+      <p class="story-body">
         Every component we deliver carries 45 years of metallurgical expertise,
         rigorous process discipline, and an obsession with zero-defect output
         that has made us the partner of choice for John Deere, Mahindra,
         CLAAS, ZF, and 17 more leading manufacturers.
       </p>
-      <a href="about.html" class="sa-link-arrow">Learn Our Full Story</a>
+      <a href="about.html" class="link-arrow">Learn Our Full Story &#8594;</a>
     </div>
 
-    <div class="sa-story-images sa-reveal sa-reveal--right">
-      <div class="sa-si sa-si--tall">
-        <img
-          src="images/3.-CNC-Machining-scaled.jpg"
-          alt="CNC Machining at Sanjeev Auto"
-          loading="lazy"
-        />
+    <div class="story-images t-reveal t-reveal--right">
+      <div class="story-img story-img--tall">
+        <img src="images/3.-CNC-Machining-scaled.jpg" alt="CNC Machining at Sanjeev Auto" loading="lazy" />
       </div>
-      <div class="sa-si">
-        <img
-          src="images/K96-5.jpg"
-          alt="K96 Plant"
-          loading="lazy"
-        />
+      <div class="story-img">
+        <img src="images/K96-5.jpg" alt="K96 Plant" loading="lazy" />
       </div>
-      <div class="sa-si sa-si--green-overlay">
-        <img
-          src="images/G168-plant-photo.jpeg"
-          alt="G168 Plant â€” Aurangabad"
-          loading="lazy"
-        />
+      <div class="story-img story-img--accent">
+        <img src="images/G168-plant-photo.jpeg" alt="G168 Plant — Aurangabad" loading="lazy" />
       </div>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S4 â€” SECTORS WE SERVE
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-sectors" id="sectors">
-  <div class="sa-sectors-header">
+<!-- ══════════════════════════════════════════════════
+     S4 — SECTORS WE SERVE (Tesla grid approach)
+     ══════════════════════════════════════════════════ -->
+<section class="sectors-section" id="sectors">
+  <div class="sectors-header">
     <div>
-      <div class="sa-eyebrow sa-eyebrow--inv">Industries We Power</div>
-      <h2 class="sa-sectors-h2">
+      <div class="section-eyebrow section-eyebrow--light">Industries We Power</div>
+      <h2 class="section-title section-title--light">
         Built for the<br/>
         machines that<br/>
-        <span class="sa-green-word--lt">move the world</span>
+        <span class="accent-text">move the world</span>
       </h2>
     </div>
-    <p class="sa-sectors-sub">
-      From tractors in golden fields to construction rigs on city skylines &#8212; our gears power the equipment that builds civilization.
+    <p class="sectors-sub">
+      From tractors in golden fields to construction rigs on city skylines — our gears power the equipment that builds civilization.
     </p>
   </div>
 
-  <div class="sa-sectors-bento sa-reveal sa-reveal--scale">
-    <div class="sa-sector-card">
-      <img
-        src="images/3.-Gear-Cutting-with-Automation.jpg"
-        alt="Automotive Sector"
-        class="sa-sector-img"
-        loading="lazy"
-      />
-      <div class="sa-sector-overlay"></div>
-      <div class="sa-sector-label">
-        <div class="sa-sector-cat">Sector 01</div>
-        <div class="sa-sector-name">Automotive &amp;<br/>Commercial Vehicles</div>
-        <span class="sa-sector-stat">Transmission &#183; Axle &#183; Differential</span>
+  <div class="sectors-grid t-reveal t-reveal--scale">
+    <div class="sector-card">
+      <img src="images/3.-Gear-Cutting-with-Automation.jpg" alt="Automotive Sector" class="sector-img" loading="lazy" />
+      <div class="sector-overlay"></div>
+      <div class="sector-label">
+        <div class="sector-cat">Sector 01</div>
+        <div class="sector-name">Automotive &amp;<br/>Commercial Vehicles</div>
+        <span class="sector-tags">Transmission · Axle · Differential</span>
       </div>
     </div>
 
-    <div class="sa-sector-card">
-      <img
-        src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=85&auto=format&fit=crop"
-        alt="Agriculture Sector"
-        class="sa-sector-img"
-        loading="lazy"
-      />
-      <div class="sa-sector-overlay"></div>
-      <div class="sa-sector-label">
-        <div class="sa-sector-cat">Sector 02</div>
-        <div class="sa-sector-name">Agriculture &amp;<br/>Farm Equipment</div>
-        <span class="sa-sector-stat">Tractor Gears &#183; PTO Shafts</span>
+    <div class="sector-card">
+      <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=85&auto=format&fit=crop" alt="Agriculture Sector" class="sector-img" loading="lazy" />
+      <div class="sector-overlay"></div>
+      <div class="sector-label">
+        <div class="sector-cat">Sector 02</div>
+        <div class="sector-name">Agriculture &amp;<br/>Farm Equipment</div>
+        <span class="sector-tags">Tractor Gears · PTO Shafts</span>
       </div>
     </div>
 
-    <div class="sa-sector-card">
-      <img
-        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85&auto=format&fit=crop"
-        alt="Construction Sector"
-        class="sa-sector-img"
-        loading="lazy"
-      />
-      <div class="sa-sector-overlay"></div>
-      <div class="sa-sector-label">
-        <div class="sa-sector-cat">Sector 03</div>
-        <div class="sa-sector-name">Construction &amp;<br/>Earthmoving</div>
-        <span class="sa-sector-stat">Heavy Duty &#183; Planetary Gears</span>
+    <div class="sector-card">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85&auto=format&fit=crop" alt="Construction Sector" class="sector-img" loading="lazy" />
+      <div class="sector-overlay"></div>
+      <div class="sector-label">
+        <div class="sector-cat">Sector 03</div>
+        <div class="sector-name">Construction &amp;<br/>Earthmoving</div>
+        <span class="sector-tags">Heavy Duty · Planetary Gears</span>
       </div>
     </div>
 
-    <div class="sa-sector-card">
-      <img
-        src="images/3.-CNC-Machining-scaled.jpg"
-        alt="Industrial Machinery"
-        class="sa-sector-img"
-        loading="lazy"
-        style="object-position: center 60%;"
-      />
-      <div class="sa-sector-overlay"></div>
-      <div class="sa-sector-label">
-        <div class="sa-sector-cat">Sector 04</div>
-        <div class="sa-sector-name">Industrial<br/>Machinery</div>
-        <span class="sa-sector-stat">Custom Gears &#183; Special Profile</span>
+    <div class="sector-card">
+      <img src="images/3.-CNC-Machining-scaled.jpg" alt="Industrial Machinery" class="sector-img" loading="lazy" style="object-position: center 60%;" />
+      <div class="sector-overlay"></div>
+      <div class="sector-label">
+        <div class="sector-cat">Sector 04</div>
+        <div class="sector-name">Industrial<br/>Machinery</div>
+        <span class="sector-tags">Custom Gears · Special Profile</span>
       </div>
     </div>
 
-    <div class="sa-sector-card">
-      <img
-        src="images/Spline-Rolling-scaled.jpg"
-        alt="Power Transmission"
-        class="sa-sector-img"
-        loading="lazy"
-      />
-      <div class="sa-sector-overlay"></div>
-      <div class="sa-sector-label">
-        <div class="sa-sector-cat">Sector 05</div>
-        <div class="sa-sector-name">Power<br/>Transmission</div>
-        <span class="sa-sector-stat">Splines &#183; Shafts &#183; Couplings</span>
+    <div class="sector-card">
+      <img src="images/Spline-Rolling-scaled.jpg" alt="Power Transmission" class="sector-img" loading="lazy" />
+      <div class="sector-overlay"></div>
+      <div class="sector-label">
+        <div class="sector-cat">Sector 05</div>
+        <div class="sector-name">Power<br/>Transmission</div>
+        <span class="sector-tags">Splines · Shafts · Couplings</span>
       </div>
     </div>
   </div>
-  <div class="sa-sectors-pad"></div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S5 â€” MANUFACTURING CAPABILITIES
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-caps" id="capabilities">
-  <div class="sa-caps-inner">
-    <div class="sa-caps-header sa-reveal">
-      <div class="sa-eyebrow" style="justify-content:center;">Manufacturing Excellence</div>
-      <h2 class="sa-caps-h2">
+<!-- ══════════════════════════════════════════════════
+     S5 — MANUFACTURING CAPABILITIES
+     ══════════════════════════════════════════════════ -->
+<section class="caps-section" id="capabilities">
+  <div class="caps-inner">
+    <div class="caps-header t-reveal">
+      <div class="section-eyebrow" style="justify-content:center;">Manufacturing Excellence</div>
+      <h2 class="section-title" style="text-align:center;">
         End-to-End<br/>
-        <span style="color: var(--sa-green-dk);">Manufacturing Mastery</span>
+        <span class="accent-text-dark">Manufacturing Mastery</span>
       </h2>
-      <p class="sa-caps-sub">
-        From raw steel to finished precision component &#8212; our integrated capabilities
+      <p class="caps-sub">
+        From raw steel to finished precision component — our integrated capabilities
         eliminate supply chain risk and ensure consistent quality at every stage.
       </p>
     </div>
 
-    <div class="sa-caps-grid">
-      <div class="sa-cap-card sa-reveal" style="--sd:.05s">
-        <img src="images/3.-Gear-Cutting-with-Automation.jpg" alt="Gear Cutting" class="sa-cap-img" loading="lazy" />
-        <div class="sa-cap-body">
+    <div class="caps-grid">
+      <div class="cap-card t-reveal" style="--sd:.05s">
+        <div class="cap-img-wrap">
+          <img src="images/3.-Gear-Cutting-with-Automation.jpg" alt="Gear Cutting" class="cap-img" loading="lazy" />
+          <div class="cap-img-overlay"></div>
+        </div>
+        <div class="cap-body">
           <h4>Gear Cutting &amp; Hobbing</h4>
-          <p>High-precision spur, helical, and bevel gear cutting with automated CNC hobbing centers. Modules 1&#8211;8, DIN Q7 accuracy standard.</p>
-          <span class="sa-cap-chip">CNC Automated</span>
+          <p>High-precision spur, helical, and bevel gear cutting with automated CNC hobbing centers. Modules 1–8, DIN Q7 accuracy standard.</p>
+          <span class="cap-chip">CNC Automated</span>
         </div>
       </div>
 
-      <div class="sa-cap-card sa-reveal" style="--sd:.1s">
-        <img src="images/Profile-Grinding-scaled.jpg" alt="Profile Grinding" class="sa-cap-img" loading="lazy" />
-        <div class="sa-cap-body">
+      <div class="cap-card t-reveal" style="--sd:.1s">
+        <div class="cap-img-wrap">
+          <img src="images/Profile-Grinding-scaled.jpg" alt="Profile Grinding" class="cap-img" loading="lazy" />
+          <div class="cap-img-overlay"></div>
+        </div>
+        <div class="cap-body">
           <h4>Profile &amp; Cylindrical Grinding</h4>
-          <p>Sub-micron surface finishing with CNC profile grinders and cylindrical grinding centers. Tolerances down to &#177;0.002mm.</p>
-          <span class="sa-cap-chip">&#177;0.002mm Tolerance</span>
+          <p>Sub-micron surface finishing with CNC profile grinders and cylindrical grinding centers. Tolerances down to ±0.002mm.</p>
+          <span class="cap-chip">±0.002mm Tolerance</span>
         </div>
       </div>
 
-      <div class="sa-cap-card sa-reveal" style="--sd:.15s">
-        <img src="images/Honing-1-scaled.jpg" alt="Honing" class="sa-cap-img" loading="lazy" />
-        <div class="sa-cap-body">
+      <div class="cap-card t-reveal" style="--sd:.15s">
+        <div class="cap-img-wrap">
+          <img src="images/Honing-1-scaled.jpg" alt="Honing" class="cap-img" loading="lazy" />
+          <div class="cap-img-overlay"></div>
+        </div>
+        <div class="cap-body">
           <h4>Gear Honing &amp; Shaving</h4>
           <p>Post-heat-treatment precision honing for flawless tooth surface finish, noise reduction, and extended gear life.</p>
-          <span class="sa-cap-chip">Post-Heat Treatment</span>
+          <span class="cap-chip">Post-Heat Treatment</span>
         </div>
       </div>
 
-      <div class="sa-cap-card sa-reveal" style="--sd:.2s">
-        <img src="images/Spline-Rolling-scaled.jpg" alt="Spline Rolling" class="sa-cap-img" loading="lazy" />
-        <div class="sa-cap-body">
+      <div class="cap-card t-reveal" style="--sd:.2s">
+        <div class="cap-img-wrap">
+          <img src="images/Spline-Rolling-scaled.jpg" alt="Spline Rolling" class="cap-img" loading="lazy" />
+          <div class="cap-img-overlay"></div>
+        </div>
+        <div class="cap-body">
           <h4>Spline Rolling &amp; Forming</h4>
           <p>Cold-roll forming of external and internal splines, providing superior strength-to-weight characteristics vs. cut splines.</p>
-          <span class="sa-cap-chip">Cold Roll Forming</span>
+          <span class="cap-chip">Cold Roll Forming</span>
         </div>
       </div>
 
-      <div class="sa-cap-card sa-reveal" style="--sd:.25s">
-        <img src="images/CMM.jpg" alt="CMM Quality" class="sa-cap-img" loading="lazy" />
-        <div class="sa-cap-body">
+      <div class="cap-card t-reveal" style="--sd:.25s">
+        <div class="cap-img-wrap">
+          <img src="images/CMM.jpg" alt="CMM Quality" class="cap-img" loading="lazy" />
+          <div class="cap-img-overlay"></div>
+        </div>
+        <div class="cap-body">
           <h4>CMM &amp; Metrology</h4>
           <p>Zeiss CMM machines, TTI gear testers, Klingenberg analyzers, and profile projectors for comprehensive dimensional verification.</p>
-          <span class="sa-cap-chip">Zeiss CMM</span>
+          <span class="cap-chip">Zeiss CMM</span>
         </div>
       </div>
 
-      <div class="sa-cap-card sa-reveal" style="--sd:.3s">
-        <img src="images/Spectro.jpg" alt="Spectro Analysis" class="sa-cap-img" loading="lazy" />
-        <div class="sa-cap-body">
+      <div class="cap-card t-reveal" style="--sd:.3s">
+        <div class="cap-img-wrap">
+          <img src="images/Spectro.jpg" alt="Spectro Analysis" class="cap-img" loading="lazy" />
+          <div class="cap-img-overlay"></div>
+        </div>
+        <div class="cap-body">
           <h4>Metallurgical Lab</h4>
           <p>In-house spectro analysis, hardness testing, micro-structure analysis, and material certification for complete traceability.</p>
-          <span class="sa-cap-chip">Full Traceability</span>
+          <span class="cap-chip">Full Traceability</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S6 â€” OUR PLANTS
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-plants" id="plants">
-  <div class="sa-plants-header">
+<!-- ══════════════════════════════════════════════════
+     S6 — OUR PLANTS (Tesla horizontal scroll style)
+     ══════════════════════════════════════════════════ -->
+<section class="plants-section" id="plants">
+  <div class="plants-header">
     <div>
-      <div class="sa-eyebrow sa-eyebrow--inv">Our Footprint</div>
-      <h2 class="sa-plants-h2">
+      <div class="section-eyebrow section-eyebrow--light">Our Footprint</div>
+      <h2 class="section-title section-title--light">
         5 Plants.<br/>
-        <span class="sa-green-word--lt">One Standard</span><br/>
+        <span class="accent-text">One Standard</span><br/>
         of Excellence.
       </h2>
     </div>
-    <div class="sa-plants-nav">
-      <button class="sa-plants-btn" id="saPlantPrev" aria-label="Previous plant">&#8592;</button>
-      <button class="sa-plants-btn" id="saPlantNext" aria-label="Next plant">&#8594;</button>
+    <div class="plants-nav">
+      <button class="plants-btn" id="plantPrev" aria-label="Previous plant">&#8592;</button>
+      <button class="plants-btn" id="plantNext" aria-label="Next plant">&#8594;</button>
     </div>
   </div>
 
-  <div class="sa-plants-viewport" id="saPlantsViewport">
-    <div class="sa-plants-track" id="saPlantsTrack">
+  <div class="plants-viewport" id="plantsViewport">
+    <div class="plants-track" id="plantsTrack">
 
-      <div class="sa-plant-card">
+      <div class="plant-card">
         <img src="images/K96-3.jpg" alt="Plant K96" loading="lazy" />
-        <div class="sa-plant-fog"></div>
-        <div class="sa-plant-label">
-          <div class="sa-plant-id">Plant &#183; K96</div>
-          <div class="sa-plant-name">K96 &#8212; Flagship<br/>Manufacturing Hub</div>
-          <div class="sa-plant-detail">Gear Cutting &#183; CNC Machining &#183; Grinding</div>
+        <div class="plant-fog"></div>
+        <div class="plant-label">
+          <div class="plant-id">Plant · K96</div>
+          <div class="plant-name">K96 — Flagship<br/>Manufacturing Hub</div>
+          <div class="plant-detail">Gear Cutting · CNC Machining · Grinding</div>
         </div>
       </div>
 
-      <div class="sa-plant-card">
+      <div class="plant-card">
         <img src="images/C7-2.jpg" alt="Plant C7" loading="lazy" />
-        <div class="sa-plant-fog"></div>
-        <div class="sa-plant-label">
-          <div class="sa-plant-id">Plant &#183; C7</div>
-          <div class="sa-plant-name">C7 &#8212; Precision<br/>Machining Centre</div>
-          <div class="sa-plant-detail">CNC Cylindrical Grinding &#183; Spline Rolling</div>
+        <div class="plant-fog"></div>
+        <div class="plant-label">
+          <div class="plant-id">Plant · C7</div>
+          <div class="plant-name">C7 — Precision<br/>Machining Centre</div>
+          <div class="plant-detail">CNC Cylindrical Grinding · Spline Rolling</div>
         </div>
       </div>
 
-      <div class="sa-plant-card">
+      <div class="plant-card">
         <img src="images/C4.jpg" alt="Plant C4" loading="lazy" />
-        <div class="sa-plant-fog"></div>
-        <div class="sa-plant-label">
-          <div class="sa-plant-id">Plant &#183; C4</div>
-          <div class="sa-plant-name">C4 &#8212; High-Volume<br/>Production</div>
-          <div class="sa-plant-detail">Automotive Gear Shafts &#183; Transmission</div>
+        <div class="plant-fog"></div>
+        <div class="plant-label">
+          <div class="plant-id">Plant · C4</div>
+          <div class="plant-name">C4 — High-Volume<br/>Production</div>
+          <div class="plant-detail">Automotive Gear Shafts · Transmission</div>
         </div>
       </div>
 
-      <div class="sa-plant-card">
+      <div class="plant-card">
         <img src="images/M115.jpg" alt="Plant M115" loading="lazy" />
-        <div class="sa-plant-fog"></div>
-        <div class="sa-plant-label">
-          <div class="sa-plant-id">Plant &#183; M115</div>
-          <div class="sa-plant-name">M115 &#8212; Agricultural<br/>Components Plant</div>
-          <div class="sa-plant-detail">Farm Equipment &#183; Tractor Transmission</div>
+        <div class="plant-fog"></div>
+        <div class="plant-label">
+          <div class="plant-id">Plant · M115</div>
+          <div class="plant-name">M115 — Agricultural<br/>Components Plant</div>
+          <div class="plant-detail">Farm Equipment · Tractor Transmission</div>
         </div>
       </div>
 
-      <div class="sa-plant-card">
+      <div class="plant-card">
         <img src="images/G168-plant-photo.jpeg" alt="Plant G168" loading="lazy" />
-        <div class="sa-plant-fog"></div>
-        <div class="sa-plant-label">
-          <div class="sa-plant-id">Plant &#183; G168</div>
-          <div class="sa-plant-name">G168 &#8212; Quality &amp;<br/>Metrology Centre</div>
-          <div class="sa-plant-detail">CMM Inspection &#183; Spectro Lab &#183; R&amp;D</div>
+        <div class="plant-fog"></div>
+        <div class="plant-label">
+          <div class="plant-id">Plant · G168</div>
+          <div class="plant-name">G168 — Quality &amp;<br/>Metrology Centre</div>
+          <div class="plant-detail">CMM Inspection · Spectro Lab · R&amp;D</div>
         </div>
       </div>
 
@@ -567,203 +538,199 @@
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S7 â€” NUMBERS
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-numbers" id="numbers" aria-label="Key statistics">
-  <div class="sa-numbers-inner">
-    <div class="sa-num-item sa-reveal" style="--sd:0s">
-      <span class="sa-num-val counter" data-target="45">0</span><sup style="color:var(--sa-green);font-family:Manrope,sans-serif;font-weight:900;font-size:2rem;">+</sup>
-      <div class="sa-num-label">Years of Precision</div>
-      <div class="sa-num-sub">Founded 1978, Aurangabad</div>
+<!-- ══════════════════════════════════════════════════
+     S7 — NUMBERS (Tata Motors impact numbers)
+     ══════════════════════════════════════════════════ -->
+<section class="numbers-section" id="numbers" aria-label="Key statistics">
+  <div class="numbers-bg-text" aria-hidden="true">45</div>
+  <div class="numbers-inner">
+    <div class="num-item t-reveal" style="--sd:0s">
+      <span class="num-val counter" data-target="45">0</span><sup class="num-sup">+</sup>
+      <div class="num-label">Years of Precision</div>
+      <div class="num-sub">Founded 1978, Aurangabad</div>
     </div>
-    <div class="sa-num-item sa-reveal" style="--sd:.1s">
-      <span class="sa-num-val counter" data-target="20">0</span><sup style="color:var(--sa-green);font-family:Manrope,sans-serif;font-weight:900;font-size:2rem;">+</sup>
-      <div class="sa-num-label">Global OEM Partners</div>
-      <div class="sa-num-sub">John Deere, Mahindra, ZF &amp; more</div>
+    <div class="num-item t-reveal" style="--sd:.1s">
+      <span class="num-val counter" data-target="20">0</span><sup class="num-sup">+</sup>
+      <div class="num-label">Global OEM Partners</div>
+      <div class="num-sub">John Deere, Mahindra, ZF &amp; more</div>
     </div>
-    <div class="sa-num-item sa-reveal" style="--sd:.2s">
-      <span class="sa-num-val counter" data-target="1000">0</span><sup style="color:var(--sa-green);font-family:Manrope,sans-serif;font-weight:900;font-size:2rem;">+</sup>
-      <div class="sa-num-label">Component Types</div>
-      <div class="sa-num-sub">Gears, shafts, splines, housings</div>
+    <div class="num-item t-reveal" style="--sd:.2s">
+      <span class="num-val counter" data-target="1000">0</span><sup class="num-sup">+</sup>
+      <div class="num-label">Component Types</div>
+      <div class="num-sub">Gears, shafts, splines, housings</div>
     </div>
-    <div class="sa-num-item sa-reveal" style="--sd:.3s">
-      <span class="sa-num-val counter" data-target="5">0</span>
-      <div class="sa-num-label">Manufacturing Plants</div>
-      <div class="sa-num-sub">K96 &#183; C7 &#183; C4 &#183; M115 &#183; G168</div>
+    <div class="num-item t-reveal" style="--sd:.3s">
+      <span class="num-val counter" data-target="5">0</span>
+      <div class="num-label">Manufacturing Plants</div>
+      <div class="num-sub">K96 · C7 · C4 · M115 · G168</div>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S8 â€” TRUSTED BY / OEM PARTNERS
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-partners" id="partners">
-  <div class="sa-partners-inner">
-    <div class="sa-eyebrow" style="justify-content:center;" aria-hidden="true">Our Clients</div>
-    <h2 class="sa-partners-h2 sa-reveal">
+<!-- ══════════════════════════════════════════════════
+     S8 — TRUSTED BY / OEM PARTNERS
+     ══════════════════════════════════════════════════ -->
+<section class="partners-section" id="partners">
+  <div class="partners-inner">
+    <div class="section-eyebrow" style="justify-content:center;" aria-hidden="true">Our Clients</div>
+    <h2 class="section-title partners-h2 t-reveal">
       Trusted by the world's leading<br/>machinery brands
     </h2>
-    <p class="sa-partners-sub sa-reveal" style="--sd:.08s">
+    <p class="partners-sub t-reveal" style="--sd:.08s">
       We supply precision-critical components to 20+ global OEMs across 5 industry verticals.
     </p>
 
-    <div class="sa-oem-grid sa-reveal" style="--sd:.12s">
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">John Deere</div>
-        <div class="sa-oem-sector">Agriculture</div>
+    <div class="oem-grid t-reveal" style="--sd:.12s">
+      <div class="oem-item">
+        <div class="oem-name">John Deere</div>
+        <div class="oem-sector">Agriculture</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">Mahindra</div>
-        <div class="sa-oem-sector">Automotive &amp; Farm</div>
+      <div class="oem-item">
+        <div class="oem-name">Mahindra</div>
+        <div class="oem-sector">Automotive &amp; Farm</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">CLAAS</div>
-        <div class="sa-oem-sector">Agriculture</div>
+      <div class="oem-item">
+        <div class="oem-name">CLAAS</div>
+        <div class="oem-sector">Agriculture</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">ZF Group</div>
-        <div class="sa-oem-sector">Automotive</div>
+      <div class="oem-item">
+        <div class="oem-name">ZF Group</div>
+        <div class="oem-sector">Automotive</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">Escorts Kubota</div>
-        <div class="sa-oem-sector">Agriculture</div>
+      <div class="oem-item">
+        <div class="oem-name">Escorts Kubota</div>
+        <div class="oem-sector">Agriculture</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">General Motors</div>
-        <div class="sa-oem-sector">Automotive</div>
+      <div class="oem-item">
+        <div class="oem-name">General Motors</div>
+        <div class="oem-sector">Automotive</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">CNH Industrial</div>
-        <div class="sa-oem-sector">Construction</div>
+      <div class="oem-item">
+        <div class="oem-name">CNH Industrial</div>
+        <div class="oem-sector">Construction</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">Tata Motors</div>
-        <div class="sa-oem-sector">Commercial Vehicles</div>
+      <div class="oem-item">
+        <div class="oem-name">Tata Motors</div>
+        <div class="oem-sector">Commercial Vehicles</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">Kion Group</div>
-        <div class="sa-oem-sector">Industrial</div>
+      <div class="oem-item">
+        <div class="oem-name">Kion Group</div>
+        <div class="oem-sector">Industrial</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">Dana Inc.</div>
-        <div class="sa-oem-sector">Power Transmission</div>
+      <div class="oem-item">
+        <div class="oem-name">Dana Inc.</div>
+        <div class="oem-sector">Power Transmission</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">AGCO Corp.</div>
-        <div class="sa-oem-sector">Agriculture</div>
+      <div class="oem-item">
+        <div class="oem-name">AGCO Corp.</div>
+        <div class="oem-sector">Agriculture</div>
       </div>
-      <div class="sa-oem-item">
-        <div class="sa-oem-name">20+ OEM Partners</div>
-        <div class="sa-oem-sector">And growing</div>
+      <div class="oem-item oem-item--more">
+        <div class="oem-name">20+ OEM Partners</div>
+        <div class="oem-sector">And growing</div>
       </div>
     </div>
 
-    <div class="sa-cert-row sa-reveal" style="--sd:.2s">
-      <div class="sa-cert-badge">
-        <div class="sa-cert-icon">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
+    <div class="cert-row t-reveal" style="--sd:.2s">
+      <div class="cert-badge-lrg">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         ISO 9001:2015
       </div>
-      <div class="sa-cert-badge">
-        <div class="sa-cert-icon">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
+      <div class="cert-badge-lrg">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         IATF 16949
       </div>
-      <div class="sa-cert-badge">
-        <div class="sa-cert-icon">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
+      <div class="cert-badge-lrg">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         ISO 14001:2015
       </div>
-      <div class="sa-cert-badge">
-        <div class="sa-cert-icon">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        </div>
+      <div class="cert-badge-lrg">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         Zero Defect Mission
       </div>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     S9 â€” FULL CTA
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="sa-cta" id="cta" aria-label="Partner with us CTA">
-  <div class="sa-cta-bg">
-    <img
-      src="images/K96-4.jpg"
-      alt="Sanjeev Auto Manufacturing Plant"
-      loading="lazy"
-    />
+<!-- ══════════════════════════════════════════════════
+     S9 — FULL CTA (Tesla-style full-bleed)
+     ══════════════════════════════════════════════════ -->
+<section class="cta-section" id="cta" aria-label="Partner with us CTA">
+  <div class="cta-bg">
+    <img src="images/K96-4.jpg" alt="Sanjeev Auto Manufacturing Plant" loading="lazy" />
+    <div class="cta-overlay"></div>
   </div>
 
-  <div class="sa-cta-inner">
-    <div class="sa-cta-tag">
-      <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/></svg>
+  <div class="cta-inner">
+    <div class="cta-live-tag">
+      <span class="cta-dot"></span>
       Partnership Enquiries Open
     </div>
-    <h2 class="sa-cta-h2">
+    <h2 class="cta-h2">
       Ready to build<br/>
-      <span class="green">precision</span><br/>
+      <span class="cta-accent">precision</span><br/>
       together?
     </h2>
-    <p class="sa-cta-sub">
+    <p class="cta-sub">
       Whether you need a single component or a long-term manufacturing partnership,
       our engineering team is ready to work with your specifications.
     </p>
-    <div class="sa-cta-actions">
-      <button class="sa-btn sa-btn--green" id="openPopupCta">
+    <div class="cta-actions">
+      <button class="btn-primary" id="openPopupCta">
         Start a Partnership
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </button>
-      <a href="contact.html" class="sa-btn sa-btn--ghost">View All Contacts</a>
+      <a href="contact.html" class="btn-secondary">View All Contacts</a>
     </div>
 
-    <div class="sa-cta-props">
-      <div class="sa-cprop">
-        <div class="sa-cprop-icon">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div class="cta-props">
+      <div class="cta-prop">
+        <div class="cta-prop-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <div>
-          <div class="sa-cprop-title">Quality Guaranteed</div>
-          <div class="sa-cprop-text">ISO 9001:2015 &amp; IATF 16949 certified</div>
+          <div class="cta-prop-title">Quality Guaranteed</div>
+          <div class="cta-prop-text">ISO 9001:2015 &amp; IATF 16949 certified</div>
         </div>
       </div>
-      <div class="sa-cprop">
-        <div class="sa-cprop-icon">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <div class="cta-prop">
+        <div class="cta-prop-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         </div>
         <div>
-          <div class="sa-cprop-title">24-Hour Response</div>
-          <div class="sa-cprop-text">Engineering team responds within one business day</div>
+          <div class="cta-prop-title">24-Hour Response</div>
+          <div class="cta-prop-text">Engineering team responds within one business day</div>
         </div>
       </div>
-      <div class="sa-cprop">
-        <div class="sa-cprop-icon">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div class="cta-prop">
+        <div class="cta-prop-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
         <div>
-          <div class="sa-cprop-title">5 Plants, Ready to Scale</div>
-          <div class="sa-cprop-text">Aurangabad, Maharashtra &#8212; strategically located</div>
+          <div class="cta-prop-title">5 Plants, Ready to Scale</div>
+          <div class="cta-prop-text">Aurangabad, Maharashtra — strategically located</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     FOOTER
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ══════════════════════════════════════════════════
+     FOOTER (Tata Motors structure + Tesla minimal style)
+     ══════════════════════════════════════════════════ -->
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-brand">
       <img src="logo.png" alt="Sanjeev Auto" class="footer-logo" />
       <p class="footer-tagline">Precision engineering since 1978.<br/>Building the components that move the world.</p>
+      <div class="footer-certs-small">
+        <span>ISO 9001:2015</span>
+        <span>IATF 16949</span>
+        <span>ISO 14001:2015</span>
+      </div>
     </div>
-    <div class="footer-links">
+
+    <div class="footer-nav-cols">
       <div class="footer-col">
         <h5>Company</h5>
         <a href="about.html">About Us</a>
@@ -781,14 +748,23 @@
         <a href="contact.html">Get In Touch</a>
         <a href="contact.html">Enquiry Form</a>
       </div>
+      <div class="footer-col">
+        <h5>Sectors</h5>
+        <a href="products.html">Automotive</a>
+        <a href="products.html">Agriculture</a>
+        <a href="products.html">Construction</a>
+        <a href="products.html">Industrial</a>
+      </div>
     </div>
   </div>
+
+  <div class="footer-divider"></div>
+
   <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2024 Sanjeev Auto Group. All rights reserved. &nbsp;&#183;&nbsp; Aurangabad, Maharashtra, India</p>
-    <div class="footer-certs">
-      <span>ISO 9001:2015</span>
-      <span>IATF 16949</span>
-      <span>ISO 14001:2015</span>
+    <p class="footer-copy">&copy; 2024 Sanjeev Auto Group. All rights reserved. &nbsp;·&nbsp; Aurangabad, Maharashtra, India</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
     </div>
   </div>
 </footer>
@@ -797,10 +773,98 @@
 <button id="scrollTop" aria-label="Scroll to top" class="scroll-top-btn">&#8593;</button>
 
 <!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="main.js" defer></script>
-<script src="premium.js" defer></script>
+<script>
+// ── Navbar scroll behaviour (Tesla: transparent → solid) ──
+(function() {
+  const nav = document.getElementById('navbar');
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    nav.classList.toggle('nav-scrolled', y > 60);
+    nav.classList.toggle('nav-hidden', y > lastY && y > 200);
+    lastY = y;
+  }, { passive: true });
+})();
 
+// ── Hamburger ──
+(function() {
+  const btn = document.getElementById('hamburger');
+  const links = document.getElementById('navLinks');
+  btn.addEventListener('click', () => {
+    const open = links.classList.toggle('mobile-open');
+    btn.setAttribute('aria-expanded', open);
+  });
+})();
+
+// ── Popup ──
+(function() {
+  const overlay = document.getElementById('popupOverlay');
+  const triggers = ['openPopupNav','openPopupHero','openPopupCta'];
+  triggers.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => overlay.classList.add('active'));
+  });
+  document.getElementById('popupClose').addEventListener('click', () => overlay.classList.remove('active'));
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('active'); });
+})();
+
+// ── Counter animation ──
+(function() {
+  const counters = document.querySelectorAll('.counter');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = +el.dataset.target;
+      const dur = 2000;
+      const step = target / (dur / 16);
+      let val = 0;
+      const tick = () => {
+        val = Math.min(val + step, target);
+        el.textContent = Math.floor(val).toLocaleString();
+        if (val < target) requestAnimationFrame(tick);
+      };
+      tick();
+      obs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => obs.observe(c));
+})();
+
+// ── Plants slider ──
+(function() {
+  const track = document.getElementById('plantsTrack');
+  if (!track) return;
+  let idx = 0;
+  const cards = track.querySelectorAll('.plant-card');
+  const total = cards.length;
+  const cardW = () => cards[0].offsetWidth + parseInt(getComputedStyle(track).gap || 24);
+
+  document.getElementById('plantNext').addEventListener('click', () => {
+    idx = Math.min(idx + 1, total - 1);
+    track.style.transform = `translateX(-${idx * cardW()}px)`;
+  });
+  document.getElementById('plantPrev').addEventListener('click', () => {
+    idx = Math.max(idx - 1, 0);
+    track.style.transform = `translateX(-${idx * cardW()}px)`;
+  });
+})();
+
+// ── Scroll reveals ──
+(function() {
+  const els = document.querySelectorAll('.t-reveal, .t-reveal--left, .t-reveal--right, .t-reveal--scale');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('t-visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el => obs.observe(el));
+})();
+
+// ── Scroll top ──
+(function() {
+  const btn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 600), { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+</script>
 </body>
 </html>
