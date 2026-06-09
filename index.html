@@ -3,867 +3,481 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sanjeev Auto | Precision Engineering Group — Aurangabad, Maharashtra</title>
-  <meta name="description" content="Sanjeev Auto Group — 45+ years of precision gear manufacturing for automotive, agriculture, construction & industrial sectors. 5 plants, 20+ global OEM partners, ISO 9001:2015 certified." />
-  <meta property="og:title" content="Sanjeev Auto | Precision Engineering Group" />
+  <title>Sanjeev Auto Group | Precision Engineering Since 1978 — Aurangabad</title>
+  <meta name="description" content="Sanjeev Auto Group — 45+ years of precision gear &amp; component manufacturing for automotive, agriculture, construction &amp; industrial OEMs. 5 IATF plants, 20+ global partners." />
+  <meta property="og:title" content="Sanjeev Auto Group | Precision Engineering Since 1978" />
   <meta property="og:description" content="Manufacturing precision since 1978. Five plants, 1000+ components, serving 20+ global OEMs." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="theme-color" content="#002147" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="tesla.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tata.css" />
   <link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════
-     POPUP CONTACT FORM
-     ══════════════════════════════════════════════════ -->
+<!-- ═══════ POPUP FORM ═══════ -->
 <div class="popup-overlay" id="popupOverlay">
-  <div class="popup-modal" id="popupModal" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+  <div class="popup-modal">
     <div class="popup-left">
-      <div class="popup-brand">
-        <img src="logo.png" alt="Sanjeev Auto" class="popup-logo" />
-      </div>
-      <h2 id="popupTitle" class="popup-title">Let's Build<br/><span>Something</span> Great</h2>
-      <p class="popup-tagline">Share your requirement and our engineering team responds within 24 hours.</p>
+      <img src="logo.png" alt="Sanjeev Auto" class="popup-logo" />
+      <h2 class="popup-h2">Let's Build<br/><span>Something</span> Great</h2>
+      <p class="popup-sub">Share your requirement and our engineering team responds within 24 hours.</p>
       <div class="popup-stats">
-        <div class="pstat"><span class="pstat-n">45<sup>+</sup></span><span class="pstat-l">Years Precision</span></div>
-        <div class="pstat"><span class="pstat-n">20<sup>+</sup></span><span class="pstat-l">Global OEM Partners</span></div>
+        <div><span class="popup-stat-n">45<sup>+</sup></span><span class="popup-stat-l">Years Precision</span></div>
+        <div><span class="popup-stat-n">20<sup>+</sup></span><span class="popup-stat-l">Global OEM Partners</span></div>
       </div>
     </div>
     <div class="popup-right">
       <button class="popup-close" id="popupClose" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
+      <div class="popup-title">Send Inquiry</div>
       <form id="popupForm" novalidate>
         <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Full Name <span>*</span></label>
-            <input type="text" name="name" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Company <span>*</span></label>
-            <input type="text" name="company" placeholder="Company Name" required />
-          </div>
+          <div class="form-group"><label class="form-label">Full Name <span>*</span></label><input class="form-input" type="text" placeholder="Your Name" required /></div>
+          <div class="form-group"><label class="form-label">Company <span>*</span></label><input class="form-input" type="text" placeholder="Company Name" required /></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Email <span>*</span></label>
-            <input type="email" name="email" placeholder="you@company.com" required />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Phone</label>
-            <input type="tel" name="phone" placeholder="+91 98765 43210" />
-          </div>
+          <div class="form-group"><label class="form-label">Email <span>*</span></label><input class="form-input" type="email" placeholder="you@company.com" required /></div>
+          <div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" placeholder="+91 98765 43210" /></div>
         </div>
         <div class="form-group">
           <label class="form-label">Industry / Sector</label>
-          <select name="sector">
-            <option value="">Select Sector</option>
-            <option>Automotive</option>
-            <option>Agriculture &amp; Farm Equipment</option>
-            <option>Construction &amp; Earthmoving</option>
-            <option>Industrial Machinery</option>
-            <option>Power Transmission</option>
-            <option>Other</option>
-          </select>
+          <select class="form-select"><option value="">Select Sector</option><option>Automotive</option><option>Agriculture &amp; Farm Equipment</option><option>Construction &amp; Earthmoving</option><option>Industrial Machinery</option><option>Power Transmission</option><option>Other</option></select>
         </div>
-        <div class="form-group">
-          <label class="form-label">Your Requirement</label>
-          <textarea name="message" rows="4" placeholder="Describe your component requirement, volume expectations, or partnership interest…"></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send Inquiry &#8594;</button>
+        <div class="form-group"><label class="form-label">Your Requirement</label><textarea class="form-textarea" rows="3" placeholder="Describe your component requirement…"></textarea></div>
+        <button type="submit" class="popup-submit">Send Inquiry →</button>
       </form>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════
-     NAVBAR — Tesla-style: transparent → solid on scroll
-     ══════════════════════════════════════════════════ -->
-<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+<!-- ═══════ NAVBAR ═══════ -->
+<nav class="navbar at-top" id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo" aria-label="Sanjeev Auto Home">
-      <img src="logo.png" alt="Sanjeev Auto Group" />
-    </a>
-
-    <ul class="nav-links" id="navLinks" role="list">
-      <li><a href="index.html" class="nav-link nav-link-active">Home</a></li>
-      <li class="nav-dropdown">
-        <a href="about.html" class="nav-link">About <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto Group" /></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link">About <span class="nav-chevron">▾</span></a>
+        <div class="nav-dropdown-menu">
           <a href="about.html">About Us</a>
-          <a href="facilities.html">Our Facilities</a>
+          <a href="about.html#pledge">Our Values</a>
+          <a href="facilities.html">Facilities</a>
           <a href="quality.html">Quality Systems</a>
         </div>
       </li>
-      <li class="nav-dropdown">
-        <a href="products.html" class="nav-link">Products <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu">
+      <li class="nav-item">
+        <a href="products.html" class="nav-link">Products <span class="nav-chevron">▾</span></a>
+        <div class="nav-dropdown-menu">
           <a href="products.html">Product Range</a>
-          <a href="capabilities.html">Capabilities</a>
+          <a href="products.html#oem">OEM Partners</a>
         </div>
       </li>
-      <li><a href="careers.html" class="nav-link">Careers</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+      <li class="nav-item"><a href="blog.html" class="nav-link">Insights</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
-
-    <div class="nav-cta-group">
-      <button class="nav-cta-btn" id="openPopupNav">Get In Touch</button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="nav-actions">
+      <button class="nav-btn-primary" id="openPopupNav">Get In Touch</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 
-<!-- ══════════════════════════════════════════════════
-     S1 — HERO (Tesla full-viewport cinematic)
-     ══════════════════════════════════════════════════ -->
-<section class="hero-section" id="hero" aria-label="Hero — Precision Manufacturing Group">
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mob-nav-link">Home</a>
+  <a href="about.html" class="mob-nav-link">About Us</a>
+  <a href="facilities.html" class="mob-nav-sub">Facilities</a>
+  <a href="quality.html" class="mob-nav-sub">Quality Systems</a>
+  <a href="products.html" class="mob-nav-link">Products</a>
+  <a href="careers.html" class="mob-nav-link">Careers</a>
+  <a href="blog.html" class="mob-nav-link">Insights</a>
+  <a href="contact.html" class="mob-nav-link">Contact</a>
+</div>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero">
   <div class="hero-bg">
-    <img
-      src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=90&auto=format&fit=crop"
-      alt="Precision manufacturing facility"
-      class="hero-bg-img"
-      fetchpriority="high"
-    />
-    <div class="hero-bg-overlay"></div>
-    <div class="hero-grain"></div>
+    <img class="hero-bg-img" src="images/K96-5.jpg" alt="Sanjeev Auto Precision Manufacturing" />
   </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay-bottom"></div>
+  <div class="hero-dots"></div>
 
   <div class="hero-content">
-    <div class="hero-eyebrow">
-      <span class="hero-eyebrow-dot"></span>
-      <span>Sanjeev Auto Group · Est. 1978</span>
-    </div>
     <h1 class="hero-h1">
-      <span class="hero-line">Engineered</span>
-      <span class="hero-line hero-line-accent">for a Stronger</span>
-      <span class="hero-line">World</span>
+      <span class="hero-line">From Vision to</span>
+      <span class="hero-line"><em>Precision</em></span>
     </h1>
-    <p class="hero-desc">
-      45 years of precision gear manufacturing. Five plants across Aurangabad, Maharashtra.
-      Supplying mission-critical components to the world's leading OEMs.
-    </p>
-    <div class="hero-actions">
-      <button class="btn-primary" id="openPopupHero">
-        Partner With Us
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </button>
-      <a href="products.html" class="btn-secondary">Explore Products</a>
+
+    <div class="hero-rotating-text">
+      <div class="hero-rotating-bar"></div>
+      <div class="hero-rotating-word">
+        <span>Engineered to Excel</span>
+        <span>Systems in Motion</span>
+        <span>Movement that Matters</span>
+      </div>
     </div>
-    <div class="hero-certs">
-      <span class="cert-badge"><span class="cert-dot"></span>ISO 9001:2015</span>
-      <span class="cert-badge"><span class="cert-dot"></span>IATF 16949</span>
-      <span class="cert-badge"><span class="cert-dot"></span>ISO 14001:2015</span>
+
+    <div class="hero-cta-group">
+      <a href="products.html" class="btn-tata btn-tata--gold">Explore Products <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="about.html" class="btn-tata btn-tata--outline">Our Story <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 
   <div class="hero-stats-bar">
-    <div class="hero-stat">
-      <div class="hero-stat-num">45<sup>+</sup></div>
-      <div class="hero-stat-label">Years of Precision</div>
-    </div>
-    <div class="hero-stat-divider"></div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">5</div>
-      <div class="hero-stat-label">Manufacturing Plants</div>
-    </div>
-    <div class="hero-stat-divider"></div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">20<sup>+</sup></div>
-      <div class="hero-stat-label">Global OEM Partners</div>
-    </div>
-    <div class="hero-stat-divider"></div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">1000<sup>+</sup></div>
-      <div class="hero-stat-label">Component Types</div>
+    <div class="hero-stats-inner">
+      <div class="hero-stat"><span class="hero-stat-n">45<sup>+</sup></span><span class="hero-stat-l">Years Legacy</span></div>
+      <div class="hero-stat"><span class="hero-stat-n">5</span><span class="hero-stat-l">IATF Plants</span></div>
+      <div class="hero-stat"><span class="hero-stat-n">1000<sup>+</sup></span><span class="hero-stat-l">Components</span></div>
+      <div class="hero-stat"><span class="hero-stat-n">20<sup>+</sup></span><span class="hero-stat-l">Global OEMs</span></div>
     </div>
   </div>
 
-  <div class="hero-scroll-cue" aria-hidden="true">
-    <div class="scroll-line"></div>
-    <span>Scroll</span>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-txt">Scroll</span>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     S2 — MARQUEE / TICKER (Tata Motors style)
-     ══════════════════════════════════════════════════ -->
-<div class="marquee-bar" aria-hidden="true">
+<!-- ═══════ MARQUEE ═══════ -->
+<div class="marquee-section">
   <div class="marquee-track">
-    <div class="marquee-content">
-      <span>Precision Gears</span>
-      <span class="mq-sep">·</span>
-      <span>Spline Rolling</span>
-      <span class="mq-sep">·</span>
-      <strong>ISO 9001:2015</strong>
-      <span class="mq-sep">·</span>
-      <span>CNC Machining</span>
-      <span class="mq-sep">·</span>
-      <span>Gear Cutting</span>
-      <span class="mq-sep">·</span>
-      <strong>IATF 16949</strong>
-      <span class="mq-sep">·</span>
-      <span>Honing &amp; Grinding</span>
-      <span class="mq-sep">·</span>
-      <span>John Deere Supplier</span>
-      <span class="mq-sep">·</span>
-      <strong>45+ Years</strong>
-      <span class="mq-sep">·</span>
-      <span>5 Plants Aurangabad</span>
-      <span class="mq-sep">·</span>
-      <span>Profile Grinding</span>
-      <span class="mq-sep">·</span>
-      <strong>CMM Quality Control</strong>
-      <span class="mq-sep">·</span>
-      <span>Zero Defect Culture</span>
-      <span class="mq-sep">·</span>
-    </div>
-    <div class="marquee-content" aria-hidden="true">
-      <span>Precision Gears</span>
-      <span class="mq-sep">·</span>
-      <span>Spline Rolling</span>
-      <span class="mq-sep">·</span>
-      <strong>ISO 9001:2015</strong>
-      <span class="mq-sep">·</span>
-      <span>CNC Machining</span>
-      <span class="mq-sep">·</span>
-      <span>Gear Cutting</span>
-      <span class="mq-sep">·</span>
-      <strong>IATF 16949</strong>
-      <span class="mq-sep">·</span>
-      <span>Honing &amp; Grinding</span>
-      <span class="mq-sep">·</span>
-      <span>John Deere Supplier</span>
-      <span class="mq-sep">·</span>
-      <strong>45+ Years</strong>
-      <span class="mq-sep">·</span>
-      <span>5 Plants Aurangabad</span>
-      <span class="mq-sep">·</span>
-      <span>Profile Grinding</span>
-      <span class="mq-sep">·</span>
-      <strong>CMM Quality Control</strong>
-      <span class="mq-sep">·</span>
-      <span>Zero Defect Culture</span>
-      <span class="mq-sep">·</span>
-    </div>
+    <div class="marquee-content"><strong>John Deere</strong><span class="mq-dot"></span><strong>Mahindra</strong><span class="mq-dot"></span><strong>Kubota</strong><span class="mq-dot"></span><strong>ZF Group</strong><span class="mq-dot"></span><strong>General Motors</strong><span class="mq-dot"></span><strong>Eaton</strong><span class="mq-dot"></span><strong>Bajaj Auto</strong><span class="mq-dot"></span>IATF 16949 Certified<span class="mq-dot"></span>ISO 14001:2015<span class="mq-dot"></span>JIPM TPM Award<span class="mq-dot"></span>Since 1978<span class="mq-dot"></span></div>
+    <div class="marquee-content"><strong>John Deere</strong><span class="mq-dot"></span><strong>Mahindra</strong><span class="mq-dot"></span><strong>Kubota</strong><span class="mq-dot"></span><strong>ZF Group</strong><span class="mq-dot"></span><strong>General Motors</strong><span class="mq-dot"></span><strong>Eaton</strong><span class="mq-dot"></span><strong>Bajaj Auto</strong><span class="mq-dot"></span>IATF 16949 Certified<span class="mq-dot"></span>ISO 14001:2015<span class="mq-dot"></span>JIPM TPM Award<span class="mq-dot"></span>Since 1978<span class="mq-dot"></span></div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════
-     S3 — STORY / ABOUT (Tata Motors layout)
-     ══════════════════════════════════════════════════ -->
-<section class="story-section" id="story">
-  <div class="story-inner">
-    <div class="story-text t-reveal t-reveal--left">
-      <div class="founding-badge">
-        <span>1978</span> Founded in Aurangabad, Maharashtra
-      </div>
-      <div class="section-eyebrow">Our Story</div>
-      <h2 class="section-title">
-        A legacy built on<br/>
-        <em>uncompromising</em><br/>
-        precision
-      </h2>
-      <p class="story-body">
-        From a single workshop in 1978 to a 5-plant manufacturing group,
-        Sanjeev Auto has grown by doing one thing exceptionally well —
-        crafting precision gears and transmission components that global
-        OEMs can bet their equipment on.
-      </p>
-      <p class="story-body">
-        Every component we deliver carries 45 years of metallurgical expertise,
-        rigorous process discipline, and an obsession with zero-defect output
-        that has made us the partner of choice for John Deere, Mahindra,
-        CLAAS, ZF, and 17 more leading manufacturers.
-      </p>
-      <a href="about.html" class="link-arrow">Learn Our Full Story &#8594;</a>
-    </div>
+<!-- ═══════ WELCOME ═══════ -->
+<section class="welcome-section">
+  <div class="welcome-dots-l"></div>
+  <div class="welcome-dots-r"></div>
+  <div class="welcome-inner reveal">
+    <h2>Welcome to<br/>Sanjeev Auto Group</h2>
+    <p>India's leading name in precision gear &amp; component manufacturing — serving the world's most demanding OEMs across automotive, agricultural, and industrial sectors since 1978.</p>
+  </div>
+</section>
 
-    <div class="story-images t-reveal t-reveal--right">
-      <div class="story-img story-img--tall">
-        <img src="images/3.-CNC-Machining-scaled.jpg" alt="CNC Machining at Sanjeev Auto" loading="lazy" />
+<!-- ═══════ ENGINEERED FOR EVOLUTION (Pillars) ═══════ -->
+<section class="pillars-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:16px;">
+      <div class="eyebrow" style="justify-content:center;">Business Pillars</div>
+      <h2 class="section-h2">Engineered for <em>Evolution</em></h2>
+      <p class="section-sub" style="margin:0 auto;">Guided by a rich legacy of innovation, we remain committed to a relentless pursuit of excellence — adapting to the evolving needs of mobility with purpose and precision.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal" style="--sd:0s">
+        <div class="pillar-card-img">
+          <img src="images/Spline-Rolling-scaled.jpg" alt="Precision Gears" loading="lazy" />
+          <div class="pillar-card-img-overlay"></div>
+          <div class="pillar-num">01</div>
+        </div>
+        <div class="pillar-card-body">
+          <h3>Precision Gears &amp; Shafts Division</h3>
+          <p>India's leading manufacturer of spur, helical, bevel &amp; worm gears. ISO Grade 5–7 accuracy on Liebherr hobbing machines. 1,000+ component variants for global OEMs.</p>
+          <a href="products.html" class="pillar-link">Explore Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
       </div>
-      <div class="story-img">
-        <img src="images/K96-5.jpg" alt="K96 Plant" loading="lazy" />
+      <div class="pillar-card reveal" style="--sd:.1s">
+        <div class="pillar-card-img">
+          <img src="images/K96-3.jpg" alt="Machined Forgings" loading="lazy" />
+          <div class="pillar-card-img-overlay"></div>
+          <div class="pillar-num">02</div>
+        </div>
+        <div class="pillar-card-body">
+          <h3>Machined Forgings &amp; Castings Division</h3>
+          <p>1600T forging press for in-house blanks. 5-axis CNC machining centres for complex geometries. Fully traceable from raw material to finished component.</p>
+          <a href="products.html" class="pillar-link">View Capabilities <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
       </div>
-      <div class="story-img story-img--accent">
-        <img src="images/G168-plant-photo.jpeg" alt="G168 Plant — Aurangabad" loading="lazy" />
+      <div class="pillar-card reveal" style="--sd:.2s">
+        <div class="pillar-card-img">
+          <img src="images/3.-Gear-Cutting-with-Automation.jpg" alt="Sub-assemblies" loading="lazy" />
+          <div class="pillar-card-img-overlay"></div>
+          <div class="pillar-num">03</div>
+        </div>
+        <div class="pillar-card-body">
+          <h3>Drive-train Sub-assembly Division</h3>
+          <p>Complete gear train and drivetrain sub-assembly supply — from individual components to ready-to-install modules. Robotic assembly lines with end-of-line testing.</p>
+          <a href="facilities.html" class="pillar-link">Our Facilities <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     S4 — SECTORS WE SERVE (Tesla grid approach)
-     ══════════════════════════════════════════════════ -->
-<section class="sectors-section" id="sectors">
-  <div class="sectors-header">
+<!-- ═══════ SYSTEMS IN MOTION ═══════ -->
+<section class="motion-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow eyebrow--gold">Core Capabilities</div>
+      <h2 class="section-h2 section-h2--light">Systems in <em>Motion</em></h2>
+      <p class="section-sub section-sub--light">With intelligent fusion of next-generation technologies, operational excellence, and continuous value creation — driving innovation across every component and process.</p>
+    </div>
+    <div class="motion-grid">
+      <div class="motion-card reveal" style="--sd:0s">
+        <div class="motion-card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+        <h3>CNC Machining &amp; Automation</h3>
+        <p>200+ multi-axis CNC turning and machining centres from Mazak, DMG Mori, and Doosan. Automated loading systems for high-volume production runs.</p>
+        <a href="facilities.html" class="motion-card-link">Learn More →</a>
+      </div>
+      <div class="motion-card reveal" style="--sd:.08s">
+        <div class="motion-card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Quality &amp; Metrology Lab</h3>
+        <p>Zeiss Contura CMM for 3D dimensional inspection. Klingelnberg P40 gear analyser. Dedicated IATF-compliant quality labs at every plant.</p>
+        <a href="quality.html" class="motion-card-link">Learn More →</a>
+      </div>
+      <div class="motion-card reveal" style="--sd:.16s">
+        <div class="motion-card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Gear Manufacturing</h3>
+        <p>Liebherr gear hobbing machines for spur, helical and bevel gears. Gleason spiral bevel generators. Klingelnberg analysers for 100% first-off inspection.</p>
+        <a href="products.html" class="motion-card-link">Learn More →</a>
+      </div>
+      <div class="motion-card reveal" style="--sd:.24s">
+        <div class="motion-card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h3>Heat Treatment</h3>
+        <p>In-house carburising, hardening, and tempering furnaces. Induction hardening for critical surfaces. Full traceability per batch and cycle.</p>
+        <a href="facilities.html" class="motion-card-link">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTORS ═══════ -->
+<section class="sectors-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:16px;">
+      <div class="eyebrow" style="justify-content:center;">Sectors We Serve</div>
+      <h2 class="section-h2">Movement that <em>Matters</em></h2>
+    </div>
+    <div class="sectors-row reveal--scale">
+      <div class="sector-card">
+        <img src="images/K96-3.jpg" alt="Automotive" loading="lazy" />
+        <div class="sector-fog"></div>
+        <div class="sector-label"><span class="sector-pill">Sector</span><div class="sector-title">Automotive</div><span class="sector-tags">Transmission gears · Shafts · Shifter forks</span></div>
+      </div>
+      <div class="sector-card">
+        <img src="images/Spline-Rolling-scaled.jpg" alt="Agriculture" loading="lazy" />
+        <div class="sector-fog"></div>
+        <div class="sector-label"><span class="sector-pill">Sector</span><div class="sector-title">Agriculture</div><span class="sector-tags">PTO gears · Drive shafts · Bevel gears</span></div>
+      </div>
+      <div class="sector-card">
+        <img src="images/3.-CNC-Machining-scaled.jpg" alt="Construction" loading="lazy" />
+        <div class="sector-fog"></div>
+        <div class="sector-label"><span class="sector-pill">Sector</span><div class="sector-title">Construction</div><span class="sector-tags">Earthmoving · Heavy transmission components</span></div>
+      </div>
+      <div class="sector-card">
+        <img src="images/Profile-Grinding-scaled.jpg" alt="Industrial" loading="lazy" />
+        <div class="sector-fog"></div>
+        <div class="sector-label"><span class="sector-pill">Sector</span><div class="sector-title">Industrial</div><span class="sector-tags">Gearboxes · Power transmission · Shafts</span></div>
+      </div>
+      <div class="sector-card">
+        <img src="images/K96-4.jpg" alt="Defence" loading="lazy" />
+        <div class="sector-fog"></div>
+        <div class="sector-label"><span class="sector-pill">Sector</span><div class="sector-title">Defence</div><span class="sector-tags">Precision components · Heavy-duty drives</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ IMPACT NUMBERS ═══════ -->
+<section class="impact-section">
+  <div class="container">
+    <div class="impact-grid">
+      <div class="impact-item reveal" style="--sd:0s">
+        <div class="impact-num"><span class="counter" data-target="45">0</span><sup>+</sup></div>
+        <div class="impact-unit">Years</div>
+        <div class="impact-label">Manufacturing Excellence</div>
+      </div>
+      <div class="impact-item reveal" style="--sd:.08s">
+        <div class="impact-num"><span class="counter" data-target="5">0</span></div>
+        <div class="impact-unit">Plants</div>
+        <div class="impact-label">IATF 16949 Certified</div>
+      </div>
+      <div class="impact-item reveal" style="--sd:.16s">
+        <div class="impact-num"><span class="counter" data-target="1000">0</span><sup>+</sup></div>
+        <div class="impact-unit">Variants</div>
+        <div class="impact-label">Component Range</div>
+      </div>
+      <div class="impact-item reveal" style="--sd:.24s">
+        <div class="impact-num"><span class="counter" data-target="20">0</span><sup>+</sup></div>
+        <div class="impact-unit">Partners</div>
+        <div class="impact-label">Global OEM Network</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ QUALITY (split image) ═══════ -->
+<section class="quality-section">
+  <div class="quality-img-side">
+    <img src="images/CMM.jpg" alt="CMM Quality Lab" loading="lazy" />
+  </div>
+  <div class="quality-text-side">
+    <div class="eyebrow eyebrow--gold">Quality Systems</div>
+    <h2 class="section-h2 section-h2--light">Certified to the World's<br/><em>Highest Standards</em></h2>
+    <p class="section-sub section-sub--light" style="margin-bottom:8px;">Every Sanjeev Auto facility operates under stringent international quality, environmental, and safety management systems — ensuring every component meets global OEM requirements.</p>
+    <div class="cert-tags">
+      <span class="cert-tag">IATF 16949</span>
+      <span class="cert-tag">ISO 9001:2015</span>
+      <span class="cert-tag">ISO 14001:2015</span>
+      <span class="cert-tag">ISO 45001:2018</span>
+      <span class="cert-tag">JIPM TPM</span>
+      <span class="cert-tag">VDA 6.3</span>
+      <span class="cert-tag">Six Sigma</span>
+    </div>
+    <a href="quality.html" class="btn-tata btn-tata--gold" style="align-self:flex-start;margin-top:24px;">View Quality Systems →</a>
+  </div>
+</section>
+
+<!-- ═══════ PLANTS CAROUSEL ═══════ -->
+<section class="plants-section">
+  <div class="plants-scroll-header">
     <div>
-      <div class="section-eyebrow section-eyebrow--light">Industries We Power</div>
-      <h2 class="section-title section-title--light">
-        Built for the<br/>
-        machines that<br/>
-        <span class="accent-text">move the world</span>
-      </h2>
+      <div class="eyebrow">Manufacturing Facilities</div>
+      <h2 class="section-h2">Our <em>Plants</em></h2>
     </div>
-    <p class="sectors-sub">
-      From tractors in golden fields to construction rigs on city skylines — our gears power the equipment that builds civilization.
-    </p>
-  </div>
-
-  <div class="sectors-grid t-reveal t-reveal--scale">
-    <div class="sector-card">
-      <img src="images/3.-Gear-Cutting-with-Automation.jpg" alt="Automotive Sector" class="sector-img" loading="lazy" />
-      <div class="sector-overlay"></div>
-      <div class="sector-label">
-        <div class="sector-cat">Sector 01</div>
-        <div class="sector-name">Automotive &amp;<br/>Commercial Vehicles</div>
-        <span class="sector-tags">Transmission · Axle · Differential</span>
-      </div>
-    </div>
-
-    <div class="sector-card">
-      <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=85&auto=format&fit=crop" alt="Agriculture Sector" class="sector-img" loading="lazy" />
-      <div class="sector-overlay"></div>
-      <div class="sector-label">
-        <div class="sector-cat">Sector 02</div>
-        <div class="sector-name">Agriculture &amp;<br/>Farm Equipment</div>
-        <span class="sector-tags">Tractor Gears · PTO Shafts</span>
-      </div>
-    </div>
-
-    <div class="sector-card">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85&auto=format&fit=crop" alt="Construction Sector" class="sector-img" loading="lazy" />
-      <div class="sector-overlay"></div>
-      <div class="sector-label">
-        <div class="sector-cat">Sector 03</div>
-        <div class="sector-name">Construction &amp;<br/>Earthmoving</div>
-        <span class="sector-tags">Heavy Duty · Planetary Gears</span>
-      </div>
-    </div>
-
-    <div class="sector-card">
-      <img src="images/3.-CNC-Machining-scaled.jpg" alt="Industrial Machinery" class="sector-img" loading="lazy" style="object-position: center 60%;" />
-      <div class="sector-overlay"></div>
-      <div class="sector-label">
-        <div class="sector-cat">Sector 04</div>
-        <div class="sector-name">Industrial<br/>Machinery</div>
-        <span class="sector-tags">Custom Gears · Special Profile</span>
-      </div>
-    </div>
-
-    <div class="sector-card">
-      <img src="images/Spline-Rolling-scaled.jpg" alt="Power Transmission" class="sector-img" loading="lazy" />
-      <div class="sector-overlay"></div>
-      <div class="sector-label">
-        <div class="sector-cat">Sector 05</div>
-        <div class="sector-name">Power<br/>Transmission</div>
-        <span class="sector-tags">Splines · Shafts · Couplings</span>
-      </div>
+    <div class="plants-nav-btns">
+      <button class="plant-nav-btn" id="plantPrev" aria-label="Previous">←</button>
+      <button class="plant-nav-btn" id="plantNext" aria-label="Next">→</button>
     </div>
   </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════
-     S5 — MANUFACTURING CAPABILITIES
-     ══════════════════════════════════════════════════ -->
-<section class="caps-section" id="capabilities">
-  <div class="caps-inner">
-    <div class="caps-header t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Manufacturing Excellence</div>
-      <h2 class="section-title" style="text-align:center;">
-        End-to-End<br/>
-        <span class="accent-text-dark">Manufacturing Mastery</span>
-      </h2>
-      <p class="caps-sub">
-        From raw steel to finished precision component — our integrated capabilities
-        eliminate supply chain risk and ensure consistent quality at every stage.
-      </p>
-    </div>
-
-    <div class="caps-grid">
-      <div class="cap-card t-reveal" style="--sd:.05s">
-        <div class="cap-img-wrap">
-          <img src="images/3.-Gear-Cutting-with-Automation.jpg" alt="Gear Cutting" class="cap-img" loading="lazy" />
-          <div class="cap-img-overlay"></div>
-        </div>
-        <div class="cap-body">
-          <h4>Gear Cutting &amp; Hobbing</h4>
-          <p>High-precision spur, helical, and bevel gear cutting with automated CNC hobbing centers. Modules 1–8, DIN Q7 accuracy standard.</p>
-          <span class="cap-chip">CNC Automated</span>
-        </div>
-      </div>
-
-      <div class="cap-card t-reveal" style="--sd:.1s">
-        <div class="cap-img-wrap">
-          <img src="images/Profile-Grinding-scaled.jpg" alt="Profile Grinding" class="cap-img" loading="lazy" />
-          <div class="cap-img-overlay"></div>
-        </div>
-        <div class="cap-body">
-          <h4>Profile &amp; Cylindrical Grinding</h4>
-          <p>Sub-micron surface finishing with CNC profile grinders and cylindrical grinding centers. Tolerances down to ±0.002mm.</p>
-          <span class="cap-chip">±0.002mm Tolerance</span>
-        </div>
-      </div>
-
-      <div class="cap-card t-reveal" style="--sd:.15s">
-        <div class="cap-img-wrap">
-          <img src="images/Honing-1-scaled.jpg" alt="Honing" class="cap-img" loading="lazy" />
-          <div class="cap-img-overlay"></div>
-        </div>
-        <div class="cap-body">
-          <h4>Gear Honing &amp; Shaving</h4>
-          <p>Post-heat-treatment precision honing for flawless tooth surface finish, noise reduction, and extended gear life.</p>
-          <span class="cap-chip">Post-Heat Treatment</span>
-        </div>
-      </div>
-
-      <div class="cap-card t-reveal" style="--sd:.2s">
-        <div class="cap-img-wrap">
-          <img src="images/Spline-Rolling-scaled.jpg" alt="Spline Rolling" class="cap-img" loading="lazy" />
-          <div class="cap-img-overlay"></div>
-        </div>
-        <div class="cap-body">
-          <h4>Spline Rolling &amp; Forming</h4>
-          <p>Cold-roll forming of external and internal splines, providing superior strength-to-weight characteristics vs. cut splines.</p>
-          <span class="cap-chip">Cold Roll Forming</span>
-        </div>
-      </div>
-
-      <div class="cap-card t-reveal" style="--sd:.25s">
-        <div class="cap-img-wrap">
-          <img src="images/CMM.jpg" alt="CMM Quality" class="cap-img" loading="lazy" />
-          <div class="cap-img-overlay"></div>
-        </div>
-        <div class="cap-body">
-          <h4>CMM &amp; Metrology</h4>
-          <p>Zeiss CMM machines, TTI gear testers, Klingenberg analyzers, and profile projectors for comprehensive dimensional verification.</p>
-          <span class="cap-chip">Zeiss CMM</span>
-        </div>
-      </div>
-
-      <div class="cap-card t-reveal" style="--sd:.3s">
-        <div class="cap-img-wrap">
-          <img src="images/Spectro.jpg" alt="Spectro Analysis" class="cap-img" loading="lazy" />
-          <div class="cap-img-overlay"></div>
-        </div>
-        <div class="cap-body">
-          <h4>Metallurgical Lab</h4>
-          <p>In-house spectro analysis, hardness testing, micro-structure analysis, and material certification for complete traceability.</p>
-          <span class="cap-chip">Full Traceability</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════
-     S6 — OUR PLANTS (Tesla horizontal scroll style)
-     ══════════════════════════════════════════════════ -->
-<section class="plants-section" id="plants">
-  <div class="plants-header">
-    <div>
-      <div class="section-eyebrow section-eyebrow--light">Our Footprint</div>
-      <h2 class="section-title section-title--light">
-        5 Plants.<br/>
-        <span class="accent-text">One Standard</span><br/>
-        of Excellence.
-      </h2>
-    </div>
-    <div class="plants-nav">
-      <button class="plants-btn" id="plantPrev" aria-label="Previous plant">&#8592;</button>
-      <button class="plants-btn" id="plantNext" aria-label="Next plant">&#8594;</button>
-    </div>
-  </div>
-
-  <div class="plants-viewport" id="plantsViewport">
+  <div class="plants-viewport">
     <div class="plants-track" id="plantsTrack">
-
-      <div class="plant-card">
-        <img src="images/K96-3.jpg" alt="Plant K96" loading="lazy" />
-        <div class="plant-fog"></div>
-        <div class="plant-label">
-          <div class="plant-id">Plant · K96</div>
-          <div class="plant-name">K96 — Flagship<br/>Manufacturing Hub</div>
-          <div class="plant-detail">Gear Cutting · CNC Machining · Grinding</div>
-        </div>
-      </div>
-
-      <div class="plant-card">
-        <img src="images/C7-2.jpg" alt="Plant C7" loading="lazy" />
-        <div class="plant-fog"></div>
-        <div class="plant-label">
-          <div class="plant-id">Plant · C7</div>
-          <div class="plant-name">C7 — Precision<br/>Machining Centre</div>
-          <div class="plant-detail">CNC Cylindrical Grinding · Spline Rolling</div>
-        </div>
-      </div>
-
-      <div class="plant-card">
-        <img src="images/C4.jpg" alt="Plant C4" loading="lazy" />
-        <div class="plant-fog"></div>
-        <div class="plant-label">
-          <div class="plant-id">Plant · C4</div>
-          <div class="plant-name">C4 — High-Volume<br/>Production</div>
-          <div class="plant-detail">Automotive Gear Shafts · Transmission</div>
-        </div>
-      </div>
-
-      <div class="plant-card">
-        <img src="images/M115.jpg" alt="Plant M115" loading="lazy" />
-        <div class="plant-fog"></div>
-        <div class="plant-label">
-          <div class="plant-id">Plant · M115</div>
-          <div class="plant-name">M115 — Agricultural<br/>Components Plant</div>
-          <div class="plant-detail">Farm Equipment · Tractor Transmission</div>
-        </div>
-      </div>
-
-      <div class="plant-card">
-        <img src="images/G168-plant-photo.jpeg" alt="Plant G168" loading="lazy" />
-        <div class="plant-fog"></div>
-        <div class="plant-label">
-          <div class="plant-id">Plant · G168</div>
-          <div class="plant-name">G168 — Quality &amp;<br/>Metrology Centre</div>
-          <div class="plant-detail">CMM Inspection · Spectro Lab · R&amp;D</div>
-        </div>
-      </div>
-
+      <div class="plant-card"><img src="images/K96-3.jpg" alt="Plant C-7" loading="lazy" /><div class="plant-fog"></div><div class="plant-info"><div class="plant-id">Plant 01 — HQ</div><div class="plant-name">C-7, MIDC Waluj</div><div class="plant-detail">Gear Hobbing · CNC Turning · Quality Lab</div></div></div>
+      <div class="plant-card"><img src="images/K96-5.jpg" alt="Plant G-168" loading="lazy" /><div class="plant-fog"></div><div class="plant-info"><div class="plant-id">Plant 02 — G168</div><div class="plant-name">G-168, MIDC Waluj</div><div class="plant-detail">1600T Press · 5-Axis CNC · Machined Castings</div></div></div>
+      <div class="plant-card"><img src="images/plants-page-img-1.jpg" alt="Spline Plant" loading="lazy" /><div class="plant-fog"></div><div class="plant-info"><div class="plant-id">Plant 03 — Spline</div><div class="plant-name">MIDC Waluj, Aurangabad</div><div class="plant-detail">Spline Rolling · Shaft Turning · Heat Treatment</div></div></div>
+      <div class="plant-card"><img src="images/3.-CNC-Machining-scaled.jpg" alt="Assembly Plant" loading="lazy" /><div class="plant-fog"></div><div class="plant-info"><div class="plant-id">Plant 04 — Assembly</div><div class="plant-name">MIDC Waluj, Aurangabad</div><div class="plant-detail">Sub-Assembly · Robotic Assembly · End-of-Line Testing</div></div></div>
+      <div class="plant-card"><img src="images/C4.jpg" alt="Plant C4" loading="lazy" /><div class="plant-fog"></div><div class="plant-info"><div class="plant-id">Plant 05 — C4</div><div class="plant-name">MIDC Waluj, Aurangabad</div><div class="plant-detail">Gear Grinding · Cylindrical Grinding · Inspection</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     S7 — NUMBERS (Tata Motors impact numbers)
-     ══════════════════════════════════════════════════ -->
-<section class="numbers-section" id="numbers" aria-label="Key statistics">
-  <div class="numbers-bg-text" aria-hidden="true">45</div>
-  <div class="numbers-inner">
-    <div class="num-item t-reveal" style="--sd:0s">
-      <span class="num-val counter" data-target="45">0</span><sup class="num-sup">+</sup>
-      <div class="num-label">Years of Precision</div>
-      <div class="num-sub">Founded 1978, Aurangabad</div>
-    </div>
-    <div class="num-item t-reveal" style="--sd:.1s">
-      <span class="num-val counter" data-target="20">0</span><sup class="num-sup">+</sup>
-      <div class="num-label">Global OEM Partners</div>
-      <div class="num-sub">John Deere, Mahindra, ZF &amp; more</div>
-    </div>
-    <div class="num-item t-reveal" style="--sd:.2s">
-      <span class="num-val counter" data-target="1000">0</span><sup class="num-sup">+</sup>
-      <div class="num-label">Component Types</div>
-      <div class="num-sub">Gears, shafts, splines, housings</div>
-    </div>
-    <div class="num-item t-reveal" style="--sd:.3s">
-      <span class="num-val counter" data-target="5">0</span>
-      <div class="num-label">Manufacturing Plants</div>
-      <div class="num-sub">K96 · C7 · C4 · M115 · G168</div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════
-     S8 — TRUSTED BY / OEM PARTNERS
-     ══════════════════════════════════════════════════ -->
-<section class="partners-section" id="partners">
-  <div class="partners-inner">
-    <div class="section-eyebrow" style="justify-content:center;" aria-hidden="true">Our Clients</div>
-    <h2 class="section-title partners-h2 t-reveal">
-      Trusted by the world's leading<br/>machinery brands
-    </h2>
-    <p class="partners-sub t-reveal" style="--sd:.08s">
-      We supply precision-critical components to 20+ global OEMs across 5 industry verticals.
-    </p>
-
-    <div class="oem-grid t-reveal" style="--sd:.12s">
-      <div class="oem-item">
-        <div class="oem-name">John Deere</div>
-        <div class="oem-sector">Agriculture</div>
+<!-- ═══════ OEM TRUST ═══════ -->
+<section class="movement-section">
+  <div class="container">
+    <div class="movement-grid">
+      <div class="movement-img reveal reveal--left">
+        <img src="images/K96-4.jpg" alt="OEM Partner Trust" loading="lazy" />
+        <div class="movement-img-badge">Since 1978</div>
       </div>
-      <div class="oem-item">
-        <div class="oem-name">Mahindra</div>
-        <div class="oem-sector">Automotive &amp; Farm</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">CLAAS</div>
-        <div class="oem-sector">Agriculture</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">ZF Group</div>
-        <div class="oem-sector">Automotive</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">Escorts Kubota</div>
-        <div class="oem-sector">Agriculture</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">General Motors</div>
-        <div class="oem-sector">Automotive</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">CNH Industrial</div>
-        <div class="oem-sector">Construction</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">Tata Motors</div>
-        <div class="oem-sector">Commercial Vehicles</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">Kion Group</div>
-        <div class="oem-sector">Industrial</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">Dana Inc.</div>
-        <div class="oem-sector">Power Transmission</div>
-      </div>
-      <div class="oem-item">
-        <div class="oem-name">AGCO Corp.</div>
-        <div class="oem-sector">Agriculture</div>
-      </div>
-      <div class="oem-item oem-item--more">
-        <div class="oem-name">20+ OEM Partners</div>
-        <div class="oem-sector">And growing</div>
-      </div>
-    </div>
-
-    <div class="cert-row t-reveal" style="--sd:.2s">
-      <div class="cert-badge-lrg">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        ISO 9001:2015
-      </div>
-      <div class="cert-badge-lrg">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        IATF 16949
-      </div>
-      <div class="cert-badge-lrg">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        ISO 14001:2015
-      </div>
-      <div class="cert-badge-lrg">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        Zero Defect Mission
+      <div class="reveal reveal--right">
+        <div class="eyebrow">Trusted Worldwide</div>
+        <h2 class="section-h2">20+ Global OEM<br/><em>Partners</em></h2>
+        <p class="section-sub">Sanjeev Auto components are trusted in the most demanding applications across the globe — powering vehicles and machinery from India to every continent.</p>
+        <div class="oem-list">
+          <div class="oem-chip">John Deere</div>
+          <div class="oem-chip">Mahindra</div>
+          <div class="oem-chip">Kubota</div>
+          <div class="oem-chip">ZF Group</div>
+          <div class="oem-chip">General Motors</div>
+          <div class="oem-chip">Eaton</div>
+          <div class="oem-chip">Bajaj Auto</div>
+          <div class="oem-chip" style="background:var(--navy);color:var(--gold-lt);border-color:var(--navy);font-size:1.1rem;">20+</div>
+        </div>
+        <a href="contact.html" class="btn-tata btn-tata--navy" style="margin-top:28px;">Contact Sales →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     S9 — FULL CTA (Tesla-style full-bleed)
-     ══════════════════════════════════════════════════ -->
-<section class="cta-section" id="cta" aria-label="Partner with us CTA">
-  <div class="cta-bg">
-    <img src="images/K96-4.jpg" alt="Sanjeev Auto Manufacturing Plant" loading="lazy" />
-    <div class="cta-overlay"></div>
-  </div>
-
-  <div class="cta-inner">
-    <div class="cta-live-tag">
-      <span class="cta-dot"></span>
-      Partnership Enquiries Open
-    </div>
-    <h2 class="cta-h2">
-      Ready to build<br/>
-      <span class="cta-accent">precision</span><br/>
-      together?
-    </h2>
-    <p class="cta-sub">
-      Whether you need a single component or a long-term manufacturing partnership,
-      our engineering team is ready to work with your specifications.
-    </p>
-    <div class="cta-actions">
-      <button class="btn-primary" id="openPopupCta">
-        Start a Partnership
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </button>
-      <a href="contact.html" class="btn-secondary">View All Contacts</a>
-    </div>
-
-    <div class="cta-props">
-      <div class="cta-prop">
-        <div class="cta-prop-icon">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div>
-          <div class="cta-prop-title">Quality Guaranteed</div>
-          <div class="cta-prop-text">ISO 9001:2015 &amp; IATF 16949 certified</div>
-        </div>
-      </div>
-      <div class="cta-prop">
-        <div class="cta-prop-icon">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        </div>
-        <div>
-          <div class="cta-prop-title">24-Hour Response</div>
-          <div class="cta-prop-text">Engineering team responds within one business day</div>
-        </div>
-      </div>
-      <div class="cta-prop">
-        <div class="cta-prop-icon">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <div>
-          <div class="cta-prop-title">5 Plants, Ready to Scale</div>
-          <div class="cta-prop-text">Aurangabad, Maharashtra — strategically located</div>
-        </div>
-      </div>
+<!-- ═══════ CTA STRIP ═══════ -->
+<section class="section section--navy" style="padding:64px 0;">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-h2 section-h2--light reveal" style="margin-bottom:12px;">Ready to <em>Build Together?</em></h2>
+    <p class="section-sub section-sub--light reveal" style="margin:0 auto 28px;">Share your requirement and our engineering team prepares a detailed response within 24 hours.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <button class="btn-tata btn-tata--gold" id="openPopupCTA">Send Inquiry →</button>
+      <a href="contact.html" class="btn-tata btn-tata--outline">Contact Page →</a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     FOOTER (Tata Motors structure + Tesla minimal style)
-     ══════════════════════════════════════════════════ -->
+<!-- ═══════ FOOTER ═══════ -->
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-brand">
       <img src="logo.png" alt="Sanjeev Auto" class="footer-logo" />
       <p class="footer-tagline">Precision engineering since 1978.<br/>Building the components that move the world.</p>
-      <div class="footer-certs-small">
-        <span>ISO 9001:2015</span>
-        <span>IATF 16949</span>
-        <span>ISO 14001:2015</span>
+      <div class="footer-cert-strip">
+        <span class="footer-cert">ISO 9001</span>
+        <span class="footer-cert">IATF 16949</span>
+        <span class="footer-cert">ISO 14001</span>
       </div>
     </div>
-
-    <div class="footer-nav-cols">
-      <div class="footer-col">
-        <h5>Company</h5>
-        <a href="about.html">About Us</a>
-        <a href="facilities.html">Facilities</a>
-        <a href="quality.html">Quality</a>
-        <a href="careers.html">Careers</a>
-      </div>
-      <div class="footer-col">
-        <h5>Products</h5>
-        <a href="products.html">Product Range</a>
-        <a href="capabilities.html">Capabilities</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="contact.html">Get In Touch</a>
-        <a href="contact.html">Enquiry Form</a>
-      </div>
-      <div class="footer-col">
-        <h5>Sectors</h5>
-        <a href="products.html">Automotive</a>
-        <a href="products.html">Agriculture</a>
-        <a href="products.html">Construction</a>
-        <a href="products.html">Industrial</a>
-      </div>
-    </div>
+    <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a><a href="blog.html">Insights</a></div>
+    <div class="footer-col"><h5>Products</h5><a href="products.html">Product Range</a><a href="products.html">Gears &amp; Shafts</a><a href="products.html">Forgings</a><a href="products.html">Sub-assemblies</a></div>
+    <div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a><a href="tel:+912406640900">+91-240-664 0900</a></div>
+    <div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a><a href="products.html">Construction</a><a href="products.html">Industrial</a></div>
   </div>
-
   <div class="footer-divider"></div>
-
   <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2024 Sanjeev Auto Group. All rights reserved. &nbsp;·&nbsp; Aurangabad, Maharashtra, India</p>
-    <div class="footer-bottom-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-    </div>
+    <p class="footer-copy">© 2024 Sanjeev Auto Group. All rights reserved. · Aurangabad, Maharashtra, India</p>
+    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
   </div>
 </footer>
 
-<!-- Scroll to top -->
-<button id="scrollTop" aria-label="Scroll to top" class="scroll-top-btn">&#8593;</button>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 
-<!-- Scripts -->
 <script>
-// ── Navbar scroll behaviour (Tesla: transparent → solid) ──
 (function() {
+  // Navbar scroll
   const nav = document.getElementById('navbar');
   let lastY = 0;
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    nav.classList.toggle('nav-scrolled', y > 60);
-    nav.classList.toggle('nav-hidden', y > lastY && y > 200);
+    nav.classList.toggle('at-top', y < 60);
+    nav.classList.toggle('scrolled', y >= 60);
+    nav.classList.toggle('hidden', y > lastY && y > 300);
     lastY = y;
   }, { passive: true });
-})();
 
-// ── Hamburger ──
-(function() {
-  const btn = document.getElementById('hamburger');
-  const links = document.getElementById('navLinks');
-  btn.addEventListener('click', () => {
-    const open = links.classList.toggle('mobile-open');
-    btn.setAttribute('aria-expanded', open);
-  });
-})();
+  // Hamburger
+  const ham = document.getElementById('hamburger');
+  const mob = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
 
-// ── Popup ──
-(function() {
+  // Popup
   const overlay = document.getElementById('popupOverlay');
-  const triggers = ['openPopupNav','openPopupHero','openPopupCta'];
-  triggers.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('click', () => overlay.classList.add('active'));
-  });
-  document.getElementById('popupClose').addEventListener('click', () => overlay.classList.remove('active'));
-  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('active'); });
-})();
+  function openPopup() { overlay.classList.add('open'); }
+  function closePopup() { overlay.classList.remove('open'); }
+  document.getElementById('openPopupNav').addEventListener('click', openPopup);
+  document.getElementById('openPopupCTA').addEventListener('click', openPopup);
+  document.getElementById('popupClose').addEventListener('click', closePopup);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closePopup(); });
 
-// ── Counter animation ──
-(function() {
-  const counters = document.querySelectorAll('.counter');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = +el.dataset.target;
-      const dur = 2000;
-      const step = target / (dur / 16);
-      let val = 0;
-      const tick = () => {
-        val = Math.min(val + step, target);
-        el.textContent = Math.floor(val).toLocaleString();
-        if (val < target) requestAnimationFrame(tick);
-      };
-      tick();
-      obs.unobserve(el);
-    });
-  }, { threshold: 0.5 });
-  counters.forEach(c => obs.observe(c));
-})();
-
-// ── Plants slider ──
-(function() {
+  // Plant carousel
   const track = document.getElementById('plantsTrack');
-  if (!track) return;
-  let idx = 0;
-  const cards = track.querySelectorAll('.plant-card');
-  const total = cards.length;
-  const cardW = () => cards[0].offsetWidth + parseInt(getComputedStyle(track).gap || 24);
+  let pos = 0;
+  const step = 400;
+  document.getElementById('plantPrev').addEventListener('click', () => { pos = Math.max(pos - step, 0); track.style.transform = 'translateX(-' + pos + 'px)'; });
+  document.getElementById('plantNext').addEventListener('click', () => { const max = track.scrollWidth - track.parentElement.clientWidth; pos = Math.min(pos + step, max); track.style.transform = 'translateX(-' + pos + 'px)'; });
 
-  document.getElementById('plantNext').addEventListener('click', () => {
-    idx = Math.min(idx + 1, total - 1);
-    track.style.transform = `translateX(-${idx * cardW()}px)`;
+  // Scroll reveal
+  document.querySelectorAll('.reveal,.reveal--left,.reveal--right,.reveal--scale').forEach(el => {
+    new IntersectionObserver(([e]) => { if (e.isIntersecting) el.classList.add('revealed'); }, { threshold: 0.1 }).observe(el);
   });
-  document.getElementById('plantPrev').addEventListener('click', () => {
-    idx = Math.max(idx - 1, 0);
-    track.style.transform = `translateX(-${idx * cardW()}px)`;
+
+  // Counter animation
+  document.querySelectorAll('.counter').forEach(el => {
+    new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      const t = +el.dataset.target, d = 2000, s = t / (d / 16);
+      let v = 0;
+      const tick = () => { v = Math.min(v + s, t); el.textContent = Math.floor(v).toLocaleString(); if (v < t) requestAnimationFrame(tick); };
+      tick();
+    }, { threshold: 0.5 }).observe(el);
   });
-})();
 
-// ── Scroll reveals ──
-(function() {
-  const els = document.querySelectorAll('.t-reveal, .t-reveal--left, .t-reveal--right, .t-reveal--scale');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('t-visible'); obs.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  els.forEach(el => obs.observe(el));
-})();
-
-// ── Scroll top ──
-(function() {
-  const btn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 600), { passive: true });
-  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  // Scroll to top
+  const stb = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => stb.classList.toggle('show', window.scrollY > 500), { passive: true });
+  stb.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
 </script>
 </body>

@@ -1,220 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products | Sanjeev Auto — Precision Gears, Shafts &amp; Components</title>
-  <meta name="description" content="Sanjeev Auto manufactures precision gears, shafts, shifter forks, machined forgings and castings for automotive, agriculture, construction and industrial OEMs." />
-  <meta property="og:title" content="Products | Sanjeev Auto Precision Components" />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0a0a0a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="tesla.css" />
-  <link rel="stylesheet" href="pages-tesla.css" />
-  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="description" content="1000+ precision component variants — gears, shafts, shifter forks, machined forgings, castings, sub-assemblies for global OEMs." />
+  <meta name="theme-color" content="#002147" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tata.css" /><link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
+<div class="popup-overlay" id="popupOverlay"><div class="popup-modal"><div class="popup-left"><img src="logo.png" alt="" class="popup-logo" /><h2 class="popup-h2">Request a<br/><span>Product</span> Quote</h2><p class="popup-sub">Tell us your spec and we prepare a quote within 48 hours.</p><div class="popup-stats"><div><span class="popup-stat-n">1000<sup>+</sup></span><span class="popup-stat-l">Components</span></div><div><span class="popup-stat-n">20<sup>+</sup></span><span class="popup-stat-l">OEMs</span></div></div></div><div class="popup-right"><button class="popup-close" id="popupClose" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="popup-title">Request Quote</div><form novalidate><div class="form-row"><div class="form-group"><label class="form-label">Name <span>*</span></label><input class="form-input" required /></div><div class="form-group"><label class="form-label">Company</label><input class="form-input" /></div></div><div class="form-row"><div class="form-group"><label class="form-label">Email <span>*</span></label><input class="form-input" type="email" required /></div><div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" /></div></div><div class="form-group"><label class="form-label">Product Category</label><select class="form-select"><option value="">Select</option><option>Gears</option><option>Shafts</option><option>Shifter Forks</option><option>Forgings</option><option>Castings</option><option>Sub-assemblies</option></select></div><div class="form-group"><label class="form-label">Requirement</label><textarea class="form-textarea" rows="3" placeholder="Volume, specs, application…"></textarea></div><button type="submit" class="popup-submit">Request Quote →</button></form></div></div></div>
+<nav class="navbar at-top" id="navbar"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto" /></a><ul class="nav-links"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link">About <span class="nav-chevron">▾</span></a><div class="nav-dropdown-menu"><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a></div></li><li class="nav-item"><a href="products.html" class="nav-link active">Products</a></li><li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li><li class="nav-item"><a href="blog.html" class="nav-link">Insights</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul><div class="nav-actions"><button class="nav-btn-primary" data-popup>Get Quote</button><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></div></nav>
+<div class="mobile-nav" id="mobileNav"><a href="index.html" class="mob-nav-link">Home</a><a href="about.html" class="mob-nav-link">About</a><a href="products.html" class="mob-nav-link">Products</a><a href="careers.html" class="mob-nav-link">Careers</a><a href="contact.html" class="mob-nav-link">Contact</a></div>
 
-<!-- POPUP -->
-<div class="popup-overlay" id="popupOverlay">
-  <div class="popup-modal" role="dialog" aria-modal="true">
-    <div class="popup-left">
-      <img src="logo.png" alt="Sanjeev Auto" class="popup-logo" />
-      <h2 class="popup-title">Request a<br/><span>Product</span> Quote</h2>
-      <p class="popup-tagline">Tell us your specification and our team prepares a detailed quote within 48 hours.</p>
-      <div class="popup-stats">
-        <div class="pstat"><span class="pstat-n">1000<sup>+</sup></span><span class="pstat-l">Component Variants</span></div>
-        <div class="pstat"><span class="pstat-n">20<sup>+</sup></span><span class="pstat-l">Global OEM Partners</span></div>
-      </div>
+<div class="page-banner"><div class="pb-bg"><img src="images/K96-3.jpg" alt="Products" /></div><div class="pb-overlay"></div><div class="pb-overlay-bottom"></div><div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Products</span></div><div class="pb-content"><div class="pb-eyebrow">Product Range</div><h1>1,000+ Precision<br/><em>Component Variants</em></h1><p>From spur gears to complex sub-assemblies — engineered to micron-level tolerances for the world's most demanding OEMs.</p></div></div>
+
+<section class="inner-section section--off-white">
+  <div class="inner-container">
+    <div style="text-align:center;max-width:700px;margin:0 auto 56px;" class="reveal">
+      <div class="eyebrow" style="justify-content:center;">Manufacturing Range</div>
+      <h2 class="section-h2">Engineered for Every<br/><em>Drive Train Application</em></h2>
+      <p class="section-sub" style="margin:0 auto;">Serving John Deere, Mahindra, Kubota, ZF, GM, Eaton and 20+ global partners across automotive, agricultural, construction, and industrial sectors.</p>
     </div>
-    <div class="popup-right">
-      <button class="popup-close" id="popupClose" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-      <form id="popupForm" novalidate>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Full Name <span>*</span></label><input type="text" placeholder="Your Name" required /></div>
-          <div class="form-group"><label class="form-label">Company <span>*</span></label><input type="text" placeholder="Company Name" required /></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Email <span>*</span></label><input type="email" placeholder="you@company.com" required /></div>
-          <div class="form-group"><label class="form-label">Phone</label><input type="tel" placeholder="+91 98765 43210" /></div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Product Category</label>
-          <select><option value="">Select Category</option><option>Gears — Spur / Helical / Bevel / Worm</option><option>Shafts — Splined / Stepped / Hollow</option><option>Shifter Forks</option><option>Gear Assemblies / Sub-assemblies</option><option>Machined Forgings</option><option>Machined Castings</option><option>Drive-train Sub-assemblies</option><option>Custom Engineering</option></select>
-        </div>
-        <div class="form-group"><label class="form-label">Your Requirement</label><textarea rows="4" placeholder="Describe your component requirement, volume, and application…"></textarea></div>
-        <button type="submit" class="btn-submit">Request Quote &#8594;</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto Group" /></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li class="nav-dropdown"><a href="about.html" class="nav-link">About <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="about.html">About Us</a><a href="facilities.html">Our Facilities</a><a href="quality.html">Quality Systems</a></div>
-      </li>
-      <li class="nav-dropdown"><a href="products.html" class="nav-link nav-link-active">Products <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="products.html">Product Range</a><a href="capabilities.html">Capabilities</a></div>
-      </li>
-      <li><a href="careers.html" class="nav-link">Careers</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-cta-group">
-      <button class="nav-cta-btn" id="openPopupNav">Get Quote</button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-
-<!-- PAGE BANNER -->
-<div class="page-banner">
-  <img class="pb-img" src="images/K96-3.jpg" alt="Sanjeev Auto Products" loading="eager" />
-  <div class="pb-overlay"></div>
-  <div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Products</span></div>
-  <div class="pb-content">
-    <div class="pb-eyebrow">Product Range</div>
-    <h1>1,000+ Precision<br/>Component Variants</h1>
-    <p>From spur gears to complex sub-assemblies — engineered to micron-level tolerances for the world's most demanding OEMs.</p>
-  </div>
-</div>
-
-<!-- INTRO -->
-<section class="page-section page-section--light">
-  <div class="page-inner">
-    <div style="text-align:center;max-width:700px;margin:0 auto;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Our Manufacturing Range</div>
-      <h2 class="section-title">Engineered for Every<br/>Drive Train Application</h2>
-      <p style="font-size:0.95rem;color:var(--text-faint);line-height:1.85;">Sanjeev Auto supplies precision-machined components across automotive, agricultural, construction, and industrial sectors — serving John Deere, Mahindra, Kubota, ZF, GM, Eaton and 20+ global partners.</p>
+    <div class="card-grid-3">
+      <div class="pillar-card reveal" style="--sd:0s"><div class="pillar-card-img"><img src="images/Spline-Rolling-scaled.jpg" alt="Gears" /><div class="pillar-card-img-overlay"></div></div><div class="pillar-card-body"><h3>Spur &amp; Helical Gears</h3><p>Precision-hobbed and ground on Liebherr machines. ISO Grade 5–7. Module 1.5–12. Automotive transmissions and agricultural drives.</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;"><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Automotive</span><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Agriculture</span></div></div></div>
+      <div class="pillar-card reveal" style="--sd:.07s"><div class="pillar-card-img"><img src="images/K96-3.jpg" alt="Bevel Gears" /><div class="pillar-card-img-overlay"></div></div><div class="pillar-card-body"><h3>Bevel &amp; Worm Gears</h3><p>High-precision bevel and worm gear sets for differential and axle applications. Manufactured on Gleason machines to AGMA/DIN standards.</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;"><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Differential</span><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">AGMA/DIN</span></div></div></div>
+      <div class="pillar-card reveal" style="--sd:.14s"><div class="pillar-card-img"><img src="images/K96-5.jpg" alt="Shafts" /><div class="pillar-card-img-overlay"></div></div><div class="pillar-card-body"><h3>Precision Shafts</h3><p>Splined, stepped, and hollow transmission shafts. Roll-forged splines. CNC turned and ground to Ra 0.8 μm or better.</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;"><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Splined</span><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Ra 0.8μm</span></div></div></div>
+      <div class="pillar-card reveal" style="--sd:.21s"><div class="pillar-card-img"><img src="images/plants-page-img-1.jpg" alt="Shifter Forks" /><div class="pillar-card-img-overlay"></div></div><div class="pillar-card-body"><h3>Shifter Forks</h3><p>Precision-machined gearbox shifter forks for manual and AMT transmissions. Die-forged steel blanks.</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;"><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Gearbox</span><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Forged</span></div></div></div>
+      <div class="pillar-card reveal" style="--sd:.28s"><div class="pillar-card-img"><img src="images/3.-CNC-Machining-scaled.jpg" alt="Forgings" /><div class="pillar-card-img-overlay"></div></div><div class="pillar-card-body"><h3>Machined Forgings</h3><p>1600T forging press. 5-axis CNC for complex geometry. Full traceability from raw material to finished component.</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;"><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">1600T Press</span><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">5-Axis CNC</span></div></div></div>
+      <div class="pillar-card reveal" style="--sd:.35s"><div class="pillar-card-img"><img src="images/3.-Gear-Cutting-with-Automation.jpg" alt="Sub-assemblies" /><div class="pillar-card-img-overlay"></div></div><div class="pillar-card-body"><h3>Drive-train Sub-assemblies</h3><p>Complete gear train and drivetrain sub-assembly supply. Robotic assembly. End-of-line testing.</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;"><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Sub-Assembly</span><span style="padding:3px 10px;background:rgba(0,74,173,0.08);border:1px solid rgba(0,74,173,0.15);border-radius:var(--r-pill);font-size:0.68rem;font-weight:700;color:var(--blue);">Module Supply</span></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS GRID -->
-<section class="page-section page-section--light" style="padding-top:0;">
-  <div class="page-inner">
-    <div class="products-grid">
-      <div class="product-card t-reveal" style="--sd:0s">
-        <div class="product-img-wrap"><img src="images/Spline-Rolling-scaled.jpg" alt="Spur &amp; Helical Gears" loading="lazy" /><div class="product-img-overlay"></div></div>
-        <div class="product-body">
-          <h3>Spur &amp; Helical Gears</h3>
-          <p>Precision-hobbed and ground gears manufactured on Liebherr gear hobbing machines. ISO Grade 5–7 accuracy. Module range: 1.5 – 12. Suitable for automotive transmissions and agricultural drives.</p>
-          <div class="product-tags"><span class="product-tag">Automotive</span><span class="product-tag">Agriculture</span><span class="product-tag">Module 1.5–12</span></div>
-        </div>
-      </div>
-      <div class="product-card t-reveal" style="--sd:.07s">
-        <div class="product-img-wrap"><img src="images/K96-3.jpg" alt="Bevel &amp; Worm Gears" loading="lazy" /><div class="product-img-overlay"></div></div>
-        <div class="product-body">
-          <h3>Bevel &amp; Worm Gears</h3>
-          <p>High-precision bevel and worm gear sets for differential and axle applications. Spiral bevel gears manufactured on Gleason machines to AGMA/DIN standards. Heat treated for superior fatigue life.</p>
-          <div class="product-tags"><span class="product-tag">Differential</span><span class="product-tag">Axle</span><span class="product-tag">AGMA/DIN</span></div>
-        </div>
-      </div>
-      <div class="product-card t-reveal" style="--sd:.14s">
-        <div class="product-img-wrap"><img src="images/K96-5.jpg" alt="Precision Shafts" loading="lazy" /><div class="product-img-overlay"></div></div>
-        <div class="product-body">
-          <h3>Precision Shafts</h3>
-          <p>Splined, stepped, and hollow transmission shafts. Roll-forged splines for superior fatigue strength. CNC turned and ground to Ra 0.8 μm or better. Custom specifications available.</p>
-          <div class="product-tags"><span class="product-tag">Splined</span><span class="product-tag">Stepped</span><span class="product-tag">Hollow</span></div>
-        </div>
-      </div>
-      <div class="product-card t-reveal" style="--sd:.21s">
-        <div class="product-img-wrap"><img src="images/plants-page-img-1.jpg" alt="Shifter Forks" loading="lazy" /><div class="product-img-overlay"></div></div>
-        <div class="product-body">
-          <h3>Shifter Forks</h3>
-          <p>Precision-machined gearbox shifter forks for manual and automated manual transmissions. Die-forged steel blanks, precision machined to critical engagement dimensions. Supplied to major OEM transmission lines.</p>
-          <div class="product-tags"><span class="product-tag">Gearbox</span><span class="product-tag">Transmission</span><span class="product-tag">Forged</span></div>
-        </div>
-      </div>
-      <div class="product-card t-reveal" style="--sd:.28s">
-        <div class="product-img-wrap"><img src="images/K96-3.jpg" alt="Machined Forgings" loading="lazy" /><div class="product-img-overlay"></div></div>
-        <div class="product-body">
-          <h3>Machined Forgings</h3>
-          <p>Precision machining of die and drop forgings. 1600T forging press for in-house blanks. 5-axis CNC centres for complex geometry. Fully traceable from raw material to finished component.</p>
-          <div class="product-tags"><span class="product-tag">1600T Press</span><span class="product-tag">5-axis CNC</span><span class="product-tag">Traceable</span></div>
-        </div>
-      </div>
-      <div class="product-card t-reveal" style="--sd:.35s">
-        <div class="product-img-wrap"><img src="images/Spline-Rolling-scaled.jpg" alt="Drive-train Sub-assemblies" loading="lazy" /><div class="product-img-overlay"></div></div>
-        <div class="product-body">
-          <h3>Drive-train Sub-assemblies</h3>
-          <p>Complete gear train and drivetrain sub-assembly supply — from individual components to ready-to-install modules. Reduces customer's internal operations and supply chain complexity.</p>
-          <div class="product-tags"><span class="product-tag">Sub-assembly</span><span class="product-tag">Gear Train</span><span class="product-tag">Module Supply</span></div>
-        </div>
-      </div>
+<section class="inner-section section--navy" id="oem">
+  <div class="inner-container">
+    <div style="text-align:center;margin-bottom:16px;" class="reveal"><div class="eyebrow eyebrow--gold" style="justify-content:center;">Trusted By</div><h2 class="section-h2 section-h2--light">20+ Global OEM <em>Partners</em></h2></div>
+    <div class="oem-grid reveal">
+      <div class="oem-block"><div class="oem-block-name">John Deere</div><div class="oem-block-sector">Agricultural OEM</div></div>
+      <div class="oem-block"><div class="oem-block-name">Mahindra</div><div class="oem-block-sector">Automotive &amp; Agri</div></div>
+      <div class="oem-block"><div class="oem-block-name">Kubota</div><div class="oem-block-sector">Agricultural OEM</div></div>
+      <div class="oem-block"><div class="oem-block-name">ZF Group</div><div class="oem-block-sector">Transmission OEM</div></div>
+      <div class="oem-block"><div class="oem-block-name">General Motors</div><div class="oem-block-sector">Automotive OEM</div></div>
+      <div class="oem-block"><div class="oem-block-name">Eaton</div><div class="oem-block-sector">Power Management</div></div>
+      <div class="oem-block"><div class="oem-block-name">Bajaj Auto</div><div class="oem-block-sector">Automotive OEM</div></div>
+      <div class="oem-block" style="background:rgba(201,168,76,0.1);border-color:rgba(201,168,76,0.25);"><div class="oem-block-name" style="font-size:1.5rem;color:var(--gold-lt);">20+</div><div class="oem-block-sector">Global Partners</div></div>
     </div>
+    <div style="text-align:center;margin-top:40px;" class="reveal"><button class="btn-tata btn-tata--gold" data-popup>Request a Quote →</button></div>
   </div>
 </section>
 
-<!-- OEM SECTION -->
-<section class="page-section page-section--dark">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:56px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Trusted By</div>
-      <h2 class="section-title section-title--light">20+ Global OEM Partners</h2>
-      <p style="font-size:0.95rem;color:rgba(255,255,255,0.4);max-width:520px;margin:0 auto;line-height:1.8;">Sanjeev Auto components are trusted in the most demanding applications across the globe.</p>
-    </div>
-    <div class="oem-grid t-reveal">
-      <div class="oem-item"><div class="oem-name" style="color:#fff;">John Deere</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Agricultural OEM</div></div>
-      <div class="oem-item"><div class="oem-name" style="color:#fff;">Mahindra</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Automotive &amp; Agri OEM</div></div>
-      <div class="oem-item"><div class="oem-name" style="color:#fff;">Kubota</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Agricultural OEM</div></div>
-      <div class="oem-item"><div class="oem-name" style="color:#fff;">ZF Group</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Transmission OEM</div></div>
-      <div class="oem-item"><div class="oem-name" style="color:#fff;">General Motors</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Automotive OEM</div></div>
-      <div class="oem-item"><div class="oem-name" style="color:#fff;">Eaton</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Power Management</div></div>
-      <div class="oem-item"><div class="oem-name" style="color:#fff;">Bajaj Auto</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Automotive OEM</div></div>
-      <div class="oem-item oem-item--more" style="background:rgba(62,207,110,0.08);border:1px solid rgba(62,207,110,0.15);"><div class="oem-name" style="color:var(--accent);font-size:1.5rem;">20+</div><div class="oem-sector" style="color:rgba(255,255,255,0.4);">Global OEM Partners</div></div>
-    </div>
-    <div style="text-align:center;margin-top:48px;" class="t-reveal">
-      <button class="btn-primary" id="openPopupOEM">Request a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <img src="logo.png" alt="Sanjeev Auto" class="footer-logo" />
-      <p class="footer-tagline">Precision engineering since 1978.<br/>Building the components that move the world.</p>
-      <div class="footer-certs-small"><span>ISO 9001:2015</span><span>IATF 16949</span><span>ISO 14001:2015</span></div>
-    </div>
-    <div class="footer-nav-cols">
-      <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div>
-      <div class="footer-col"><h5>Products</h5><a href="products.html">Product Range</a><a href="capabilities.html">Capabilities</a></div>
-      <div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a><a href="tel:+912406640900">+91-240-664 0900</a></div>
-      <div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a><a href="products.html">Construction</a><a href="products.html">Industrial</a></div>
-    </div>
-  </div>
-  <div class="footer-divider"></div>
-  <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2024 Sanjeev Auto Group. All rights reserved. &nbsp;·&nbsp; Aurangabad, Maharashtra, India</p>
-    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
-  </div>
-</footer>
-<button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">&#8593;</button>
-<script>
-(function(){
-  const nav=document.getElementById('navbar'); let lastY=0;
-  window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('nav-scrolled',y>60);nav.classList.toggle('nav-hidden',y>lastY&&y>200);lastY=y;},{passive:true});
-  document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('mobile-open');});
-  const overlay=document.getElementById('popupOverlay');
-  document.getElementById('openPopupNav').addEventListener('click',()=>overlay.classList.add('active'));
-  const oemBtn=document.getElementById('openPopupOEM'); if(oemBtn) oemBtn.addEventListener('click',()=>overlay.classList.add('active'));
-  document.getElementById('popupClose').addEventListener('click',()=>overlay.classList.remove('active'));
-  overlay.addEventListener('click',e=>{if(e.target===overlay)overlay.classList.remove('active');});
-  document.querySelectorAll('.t-reveal,.t-reveal--left,.t-reveal--right').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting)el.classList.add('t-visible');},{threshold:0.1}).observe(el);});
-  const btn=document.getElementById('scrollTop');
-  window.addEventListener('scroll',()=>btn.classList.toggle('visible',window.scrollY>600),{passive:true});
-  btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-})();
-</script>
+<footer class="footer"><div class="footer-top"><div class="footer-brand"><img src="logo.png" alt="Sanjeev Auto" class="footer-logo" /><p class="footer-tagline">Precision engineering since 1978.</p><div class="footer-cert-strip"><span class="footer-cert">ISO 9001</span><span class="footer-cert">IATF 16949</span></div></div><div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div><div class="footer-col"><h5>Products</h5><a href="products.html">Range</a><a href="products.html">Gears</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a></div><div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copy">© 2024 Sanjeev Auto Group.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+<button class="scroll-top" id="scrollTop" aria-label="Top">↑</button>
+<script src="tata.js"></script>
 </body>
 </html>

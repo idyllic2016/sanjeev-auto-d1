@@ -1,315 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Careers at Sanjeev Auto | Engineering &amp; Manufacturing Jobs Aurangabad</title>
-  <meta name="description" content="Join Sanjeev Auto Industries — 500+ employees, 5 plants, 75% team under 40. Engineering, quality, production &amp; management roles in Aurangabad." />
-  <meta property="og:title" content="Careers at Sanjeev Auto | Engineering Jobs in Aurangabad" />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0a0a0a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="tesla.css" />
-  <link rel="stylesheet" href="pages-tesla.css" />
-  <link rel="icon" type="image/png" href="logo.png" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | Sanjeev Auto — Engineering Career Opportunities</title>
+  <meta name="description" content="Join Sanjeev Auto Group. Engineering, quality, operations and management opportunities across 5 precision manufacturing plants." />
+  <meta name="theme-color" content="#002147" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tata.css" /><link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
+<div class="popup-overlay" id="popupOverlay"><div class="popup-modal"><div class="popup-left"><img src="logo.png" alt="" class="popup-logo" /><h2 class="popup-h2">Let's Build<br/><span>Careers</span> Together</h2><p class="popup-sub">Apply and our HR team responds promptly.</p><div class="popup-stats"><div><span class="popup-stat-n">5</span><span class="popup-stat-l">Plants</span></div><div><span class="popup-stat-n">45<sup>+</sup></span><span class="popup-stat-l">Years</span></div></div></div><div class="popup-right"><button class="popup-close" id="popupClose" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="popup-title">Apply Now</div><form novalidate><div class="form-row"><div class="form-group"><label class="form-label">Name <span>*</span></label><input class="form-input" required /></div><div class="form-group"><label class="form-label">Email <span>*</span></label><input class="form-input" type="email" required /></div></div><div class="form-row"><div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" /></div><div class="form-group"><label class="form-label">Position</label><input class="form-input" /></div></div><div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" rows="3"></textarea></div><button type="submit" class="popup-submit">Submit Application →</button></form></div></div></div>
+<nav class="navbar at-top" id="navbar"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto" /></a><ul class="nav-links"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link">About <span class="nav-chevron">▾</span></a><div class="nav-dropdown-menu"><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a></div></li><li class="nav-item"><a href="products.html" class="nav-link">Products</a></li><li class="nav-item"><a href="careers.html" class="nav-link active">Careers</a></li><li class="nav-item"><a href="blog.html" class="nav-link">Insights</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul><div class="nav-actions"><button class="nav-btn-primary" data-popup>Apply Now</button><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></div></nav>
+<div class="mobile-nav" id="mobileNav"><a href="index.html" class="mob-nav-link">Home</a><a href="about.html" class="mob-nav-link">About</a><a href="products.html" class="mob-nav-link">Products</a><a href="careers.html" class="mob-nav-link">Careers</a><a href="contact.html" class="mob-nav-link">Contact</a></div>
 
-<!-- POPUP -->
-<div class="popup-overlay" id="popupOverlay">
-  <div class="popup-modal" role="dialog" aria-modal="true">
-    <div class="popup-left">
-      <img src="logo.png" alt="Sanjeev Auto" class="popup-logo" />
-      <h2 class="popup-title">Join Our<br/><span>Engineering</span> Team</h2>
-      <p class="popup-tagline">Send us your application and our HR team responds within 5 business days.</p>
-      <div class="popup-stats">
-        <div class="pstat"><span class="pstat-n">500<sup>+</sup></span><span class="pstat-l">Employees</span></div>
-        <div class="pstat"><span class="pstat-n">75<sup>%</sup></span><span class="pstat-l">Team Under 40</span></div>
-      </div>
-    </div>
-    <div class="popup-right">
-      <button class="popup-close" id="popupClose" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-      <form id="popupForm" novalidate>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Full Name <span>*</span></label><input type="text" placeholder="Your Name" required /></div>
-          <div class="form-group"><label class="form-label">Email <span>*</span></label><input type="email" placeholder="you@email.com" required /></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Phone</label><input type="tel" placeholder="+91 98765 43210" /></div>
-          <div class="form-group">
-            <label class="form-label">Position</label>
-            <select><option value="">Select Position</option><option>CNC Operator</option><option>Quality Engineer</option><option>Gear Grinding Specialist</option><option>Production Supervisor</option><option>Speculative Application</option></select>
-          </div>
-        </div>
-        <div class="form-group"><label class="form-label">Cover Note</label><textarea rows="4" placeholder="Tell us about yourself and why you want to join Sanjeev Auto…"></textarea></div>
-        <button type="submit" class="btn-submit">Submit Application &#8594;</button>
-      </form>
-    </div>
-  </div>
-</div>
+<div class="page-banner"><div class="pb-bg"><img src="images/plants-page-img-1.jpg" alt="Careers" /></div><div class="pb-overlay"></div><div class="pb-overlay-bottom"></div><div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Careers</span></div><div class="pb-content"><div class="pb-eyebrow">Careers</div><h1>Build Your Career<br/><em>in Precision</em></h1><p>Join a team of 1,000+ engineers across 5 plants — shaping the future of precision manufacturing.</p></div></div>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto Group" /></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li class="nav-dropdown"><a href="about.html" class="nav-link">About <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="about.html">About Us</a><a href="facilities.html">Our Facilities</a><a href="quality.html">Quality Systems</a></div>
-      </li>
-      <li class="nav-dropdown"><a href="products.html" class="nav-link">Products <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="products.html">Product Range</a><a href="capabilities.html">Capabilities</a></div>
-      </li>
-      <li><a href="careers.html" class="nav-link nav-link-active">Careers</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-cta-group">
-      <button class="nav-cta-btn" id="openPopupNav">Get In Touch</button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-
-<!-- PAGE BANNER -->
-<div class="page-banner">
-  <img class="pb-img" src="images/plants-page-img-1.jpg" alt="Sanjeev Auto Manufacturing Team" loading="eager" />
-  <div class="pb-overlay"></div>
-  <div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Careers</span></div>
-  <div class="pb-content">
-    <div class="pb-eyebrow">Join The Team</div>
-    <h1>Build The Future<br/>Of Manufacturing</h1>
-    <p>Work with world-class precision equipment in Aurangabad. 45+ years of engineering excellence — and we're still growing.</p>
-  </div>
-</div>
-
-<!-- STATS STRIP -->
-<div class="stats-strip">
-  <div class="stats-strip-inner">
-    <div class="strip-stat"><div class="strip-stat-num"><span class="counter" data-target="45">0</span>+</div><div class="strip-stat-label">Years of Excellence</div></div>
-    <div class="strip-stat"><div class="strip-stat-num"><span class="counter" data-target="5">0</span></div><div class="strip-stat-label">Manufacturing Plants</div></div>
-    <div class="strip-stat"><div class="strip-stat-num"><span class="counter" data-target="500">0</span>+</div><div class="strip-stat-label">Employees Across Plants</div></div>
-    <div class="strip-stat"><div class="strip-stat-num"><span class="counter" data-target="75">0</span>%</div><div class="strip-stat-label">Team Under 40</div></div>
-  </div>
-</div>
-
-<!-- WHY JOIN -->
-<section class="page-section page-section--light" id="why">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:60px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Join Team Sanjeev</div>
-      <h2 class="section-title">More Than a Job.<br/>A Career In Engineering.</h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-card t-reveal" style="--sd:0s">
-        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M16.24 7.76a6 6 0 010 8.49M7.76 7.76a6 6 0 000 8.49"/></svg></div>
-        <h3><span style="color:var(--accent-dk);">DISCOVER</span> the latest in manufacturing technology</h3>
-        <p>At Sanjeev we believe that technology is the leading driver of growth. Work with Liebherr hobbing, Klingelnberg analysers &amp; Zeiss CMM every day.</p>
+<!-- Culture -->
+<section class="inner-section section--white">
+  <div class="inner-container">
+    <div class="intro-cols" style="gap:60px;">
+      <div class="reveal reveal--left">
+        <div class="eyebrow">Life @ Sanjeev Auto</div>
+        <h2 class="section-h2">Where Engineers<br/><em>Thrive</em></h2>
+        <p class="section-sub" style="max-width:none;margin-bottom:12px;">At Sanjeev Auto, we believe in growing talent from within. 85% of our senior positions are filled by internal promotions. We invest in our people through technical training, Six Sigma certifications, and leadership development.</p>
+        <p class="section-sub" style="max-width:none;">Our Individual Development Plan (IDP) programme ensures every team member has a clear growth trajectory — from apprentice to engineer to leadership.</p>
       </div>
-      <div class="why-card t-reveal" style="--sd:.07s">
-        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
-        <h3><span style="color:var(--accent-dk);">ENCOURAGING</span> young talent</h3>
-        <p>We believe that youth provides a fresh perspective that can catalyse innovation. 75% of our team is under 40.</p>
-      </div>
-      <div class="why-card t-reveal" style="--sd:.14s">
-        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
-        <h3><span style="color:var(--accent-dk);">FREEDOM</span> to explore knowledge</h3>
-        <p>Our IDP helps identify learning needs and high potential amongst our team. Sponsored Six Sigma &amp; APQP certifications included.</p>
-      </div>
-      <div class="why-card t-reveal" style="--sd:.21s">
-        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <h3><span style="color:var(--accent-dk);">TRANSPARENCY</span> flows both ways</h3>
-        <p>We believe that true transparency flows both ways — bottom up AND top-down — in any successful organization.</p>
-      </div>
-      <div class="why-card t-reveal" style="--sd:.28s">
-        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3><span style="color:var(--accent-dk);">VALUES</span> that you can be proud of</h3>
-        <p>Sanjeev Auto has always believed in a strong adherence to good values — honesty, integrity, and dignity in all we do.</p>
-      </div>
-      <div class="why-card t-reveal" style="--sd:.35s">
-        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-        <h3><span style="color:var(--accent-dk);">SUPPORT</span> to learn and grow together</h3>
-        <p>85% of senior roles are filled internally, with clear pathways from engineer to leadership.</p>
+      <div class="intro-img-wrap reveal reveal--right">
+        <img src="images/quality_circles.jpg" alt="Team" /><div class="intro-img-badge">1000+ Team</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CULTURE -->
-<section class="page-section page-section--darker" id="culture" style="padding:0;">
-  <div class="culture-wrap">
-    <div class="culture-img"><img src="images/K96-5.jpg" alt="Sanjeev Auto Plant" loading="lazy" /></div>
-    <div class="culture-text">
-      <div class="section-eyebrow">Our Work Culture</div>
-      <h2 class="section-title section-title--light" style="font-size:clamp(1.8rem,3vw,2.8rem);">Life and Work at Sanjeev Group</h2>
-      <div style="font-family:'Outfit',sans-serif;font-size:0.8rem;font-weight:900;letter-spacing:0.14em;color:var(--accent);text-transform:uppercase;margin-bottom:20px;">EVERYONE &nbsp;|&nbsp; EVERYWHERE &nbsp;|&nbsp; EVERY DAY</div>
-      <p style="font-size:0.92rem;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:20px;">At Sanjeev Auto, we believe the best components are built by the best teams. Our culture is rooted in respect, continuous learning, and a shared commitment to precision. From the shop floor to the boardroom, every voice matters.</p>
-      <blockquote style="border-left:3px solid var(--accent);padding-left:16px;margin:0 0 24px;font-size:0.88rem;font-style:italic;color:rgba(255,255,255,0.45);line-height:1.7;">"There's no magic formula for great company culture, the key is just to treat your people how you would like to be treated." <br/><strong style="font-style:normal;color:rgba(255,255,255,0.6);">— Richard Branson, Virgin Group UK</strong></blockquote>
-      <div class="culture-chips">
-        <span class="culture-chip">IATF 16949 Training</span>
-        <span class="culture-chip">Six Sigma Sponsorship</span>
-        <span class="culture-chip">TPM Practitioner</span>
-        <span class="culture-chip">Annual IDPs</span>
-        <span class="culture-chip">Leadership Programs</span>
-      </div>
+<!-- Benefits -->
+<section class="inner-section section--off-white">
+  <div class="inner-container">
+    <div style="text-align:center;margin-bottom:52px;" class="reveal"><div class="eyebrow" style="justify-content:center;">Why Join Us</div><h2 class="section-h2">Benefits &amp;<br/><em>Culture</em></h2></div>
+    <div class="card-grid-4">
+      <div class="tata-card reveal" style="--sd:0s"><div class="tata-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg></div><h3>Career Growth</h3><p>Structured IDP programs. 85% internal promotions to senior positions.</p></div>
+      <div class="tata-card reveal" style="--sd:.06s"><div class="tata-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Learning</h3><p>Technical training, Six Sigma Green Belt &amp; Black Belt certification programs.</p></div>
+      <div class="tata-card reveal" style="--sd:.12s"><div class="tata-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Health &amp; Safety</h3><p>ISO 45001 certified workplace. Insurance, health checkups, accident coverage.</p></div>
+      <div class="tata-card reveal" style="--sd:.18s"><div class="tata-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><h3>Team Culture</h3><p>Quality circles, sports events, festivals, and team celebrations across all plants.</p></div>
     </div>
   </div>
 </section>
 
-<!-- BENEFITS -->
-<section class="page-section page-section--dark">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:52px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Employee Benefits</div>
-      <h2 class="section-title section-title--light">We Take Care of Our People</h2>
-    </div>
-    <div class="benefits-grid">
-      <div class="benefit-card t-reveal" style="--sd:0s"><div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><div><h4>Health Insurance</h4><p>Comprehensive medical coverage for employee and immediate family. Cashless hospitalisation at network hospitals.</p></div></div>
-      <div class="benefit-card t-reveal" style="--sd:.06s"><div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><div><h4>Provident Fund</h4><p>PF and gratuity as per statutory requirements. Additional voluntary PF contribution option for all employees.</p></div></div>
-      <div class="benefit-card t-reveal" style="--sd:.12s"><div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><div><h4>Transport</h4><p>Company-provided transport from key residential zones to all MIDC Waluj plant locations. AC bus service.</p></div></div>
-      <div class="benefit-card t-reveal" style="--sd:.18s"><div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><div><h4>Subsidised Canteen</h4><p>On-site canteen with nutritious hot meals. Multiple menus catering to diverse dietary preferences.</p></div></div>
-      <div class="benefit-card t-reveal" style="--sd:.24s"><div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div><div><h4>Training &amp; Certifications</h4><p>Sponsored Six Sigma, APQP, and technical certifications. IDP-driven learning plans with internal and external training budget.</p></div></div>
-      <div class="benefit-card t-reveal" style="--sd:.30s"><div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><h4>Performance Bonus</h4><p>Annual performance-linked bonus. Recognition programs for Six Sigma projects, safety champions, and innovation ideas.</p></div></div>
+<!-- Openings -->
+<section class="inner-section section--white">
+  <div class="inner-container">
+    <div style="text-align:center;margin-bottom:48px;" class="reveal"><div class="eyebrow" style="justify-content:center;">Openings</div><h2 class="section-h2">Current <em>Opportunities</em></h2></div>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div class="job-card reveal" style="--sd:0s"><div class="job-title-row"><div class="job-title">Senior CNC Operator</div><span class="job-dept-pill">Manufacturing</span></div><div class="job-meta"><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Aurangabad</span><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Full-time</span><span class="job-meta-item">3–6 years</span></div><p class="job-desc">Operate and program multi-axis CNC turning and milling centres. Mazak, DMG Mori experience preferred.</p><button class="job-apply-btn" data-popup>Apply Now →</button></div>
+      <div class="job-card reveal" style="--sd:.06s"><div class="job-title-row"><div class="job-title">Quality Engineer — IATF</div><span class="job-dept-pill">Quality</span></div><div class="job-meta"><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Aurangabad</span><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Full-time</span><span class="job-meta-item">4–8 years</span></div><p class="job-desc">Lead quality improvement across plants. Six Sigma Green/Black Belt, CMM programming, PPAP experience required.</p><button class="job-apply-btn" data-popup>Apply Now →</button></div>
+      <div class="job-card reveal" style="--sd:.12s"><div class="job-title-row"><div class="job-title">Plant Maintenance Engineer</div><span class="job-dept-pill">Maintenance</span></div><div class="job-meta"><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Aurangabad</span><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Full-time</span><span class="job-meta-item">2–5 years</span></div><p class="job-desc">TPM implementation. Preventive and predictive maintenance for CNC and special-purpose machines.</p><button class="job-apply-btn" data-popup>Apply Now →</button></div>
+      <div class="job-card reveal" style="--sd:.18s"><div class="job-title-row"><div class="job-title">Design Engineer — CAD/CAM</div><span class="job-dept-pill">Engineering</span></div><div class="job-meta"><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Aurangabad</span><span class="job-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Full-time</span><span class="job-meta-item">1–4 years</span></div><p class="job-desc">3D modelling, process planning, and tool design for precision gear and shaft manufacturing.</p><button class="job-apply-btn" data-popup>Apply Now →</button></div>
     </div>
   </div>
 </section>
 
-<!-- CURRENT OPENINGS -->
-<section class="page-section page-section--light" id="openings">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:52px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Current Openings</div>
-      <h2 class="section-title">Open Positions</h2>
-      <p style="font-size:0.95rem;color:var(--text-faint);max-width:520px;margin:0 auto;line-height:1.8;">All positions based at Aurangabad, Maharashtra. IATF-certified environment with world-class precision equipment.</p>
-    </div>
-    <div class="jobs-grid">
-      <div class="job-card t-reveal" style="--sd:0s;background:#fff;border:1px solid #e0e0e0;">
-        <div class="job-header-row"><div class="job-title">CNC Operator</div><span class="job-dept">Manufacturing</span></div>
-        <div class="job-meta"><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Aurangabad</span><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Full-time</span></div>
-        <p class="job-desc" style="color:var(--text-mid);">Operate and set up CNC turning and milling machines for gear and shaft production. Experience on Liebherr or similar gear hobbing machines preferred. Minimum ITI or Diploma in Mechanical Engineering.</p>
-        <button class="job-apply-btn" id="openPopupJob1">Apply Now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      </div>
-      <div class="job-card t-reveal" style="--sd:.07s;background:#fff;border:1px solid #e0e0e0;">
-        <div class="job-header-row"><div class="job-title">Quality Engineer</div><span class="job-dept">Quality</span></div>
-        <div class="job-meta"><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Aurangabad</span><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Full-time</span></div>
-        <p class="job-desc" style="color:var(--text-mid);">Conduct incoming, in-process, and final inspections using CMM and gear testing equipment. Prepare PPAP documentation, SPC charts, and customer quality reports. IATF 16949 knowledge required.</p>
-        <button class="job-apply-btn" id="openPopupJob2">Apply Now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      </div>
-      <div class="job-card t-reveal" style="--sd:.14s;background:#fff;border:1px solid #e0e0e0;">
-        <div class="job-header-row"><div class="job-title">Gear Grinding Specialist</div><span class="job-dept">Manufacturing</span></div>
-        <div class="job-meta"><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Aurangabad</span><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Full-time</span></div>
-        <p class="job-desc" style="color:var(--text-mid);">Set up and operate Gleason/Liebherr gear grinding machines for hard gear finishing. Ensure ISO Grade 5–7 accuracy. Experience in burn-free grinding and first-off inspection on Klingelnberg analyser preferred.</p>
-        <button class="job-apply-btn" id="openPopupJob3">Apply Now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      </div>
-      <div class="job-card t-reveal" style="--sd:.21s;background:#fff;border:1px solid #e0e0e0;">
-        <div class="job-header-row"><div class="job-title">Production Supervisor</div><span class="job-dept">Operations</span></div>
-        <div class="job-meta"><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Aurangabad</span><span class="job-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Full-time</span></div>
-        <p class="job-desc" style="color:var(--text-mid);">Supervise shift operations across CNC machining and gear manufacturing lines. Drive OEE improvement, manage daily production targets, and ensure IATF 16949 compliance. Diploma/BE in Mechanical with 5+ years experience.</p>
-        <button class="job-apply-btn" id="openPopupJob4">Apply Now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:44px;" class="t-reveal">
-      <p style="font-size:0.9rem;color:var(--text-faint);margin-bottom:16px;">Don't see your role? We're always looking for exceptional talent.</p>
-      <button class="job-apply-btn" id="openPopupSpec">Send Speculative Application <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+<!-- Application -->
+<section class="inner-section section--navy">
+  <div class="inner-container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div class="reveal reveal--left"><div class="eyebrow eyebrow--gold">General Application</div><h2 class="section-h2 section-h2--light">Don't See Your<br/>Role <em>Listed?</em></h2><p class="section-sub section-sub--light">Send us your CV and we'll match you with relevant opportunities as they open. All applications are reviewed by our HR team.</p><a href="mailto:careers@sanjeevgroup.com" class="btn-tata btn-tata--gold" style="margin-top:20px;">Email CV to HR →</a></div>
+      <div class="reveal reveal--right"><div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r-xl);padding:36px;">
+        <form novalidate>
+          <div class="form-row"><div class="form-group"><label class="form-label" style="color:rgba(255,255,255,0.5);">Name <span>*</span></label><input class="form-input" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12);color:#fff;" required /></div><div class="form-group"><label class="form-label" style="color:rgba(255,255,255,0.5);">Email <span>*</span></label><input class="form-input" type="email" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12);color:#fff;" required /></div></div>
+          <div class="form-group"><label class="form-label" style="color:rgba(255,255,255,0.5);">Position of Interest</label><input class="form-input" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12);color:#fff;" placeholder="e.g. Quality Engineer" /></div>
+          <div class="form-group"><label class="form-label" style="color:rgba(255,255,255,0.5);">Resume</label><div class="file-drop" id="fileDropArea" style="border-color:rgba(255,255,255,0.15);background:rgba(255,255,255,0.02);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg><p style="color:rgba(255,255,255,0.5);">Click to upload or drag &amp; drop<br/><span style="color:var(--gold-lt);">Browse files</span></p><small style="color:rgba(255,255,255,0.25);">PDF, DOC up to 5MB</small><input type="file" id="resumeFile" style="display:none;" accept=".pdf,.doc,.docx" /></div></div>
+          <button type="submit" class="popup-submit">Submit Application →</button>
+        </form>
+      </div></div>
     </div>
   </div>
 </section>
 
-<!-- APPLICATION FORM -->
-<section class="page-section page-section--darker" id="applicationForm">
-  <div class="page-inner">
-    <div class="app-form-wrap">
-      <div style="margin-bottom:48px;" class="t-reveal">
-        <div class="section-eyebrow">Apply Now</div>
-        <h2 class="section-title section-title--light">Start Your Application</h2>
-        <p style="font-size:0.9rem;color:rgba(255,255,255,0.4);margin-top:8px;line-height:1.7;">All applications are reviewed within 5 business days by our HR team in Aurangabad.</p>
-      </div>
-      <form class="app-form t-reveal" id="appForm">
-        <div class="af-row">
-          <div class="af-group"><label class="af-label">Full Name <span>*</span></label><input type="text" placeholder="Your full name" required /></div>
-          <div class="af-group"><label class="af-label">Email <span>*</span></label><input type="email" placeholder="your@email.com" required /></div>
-        </div>
-        <div class="af-row">
-          <div class="af-group"><label class="af-label">Phone <span>*</span></label><input type="tel" placeholder="+91 XXXXX XXXXX" required /></div>
-          <div class="af-group"><label class="af-label">Position Applying For</label><select><option value="">Select a position</option><option>CNC Operator</option><option>Quality Engineer</option><option>Gear Grinding Specialist</option><option>Production Supervisor</option><option>Speculative Application</option></select></div>
-        </div>
-        <div class="af-group">
-          <label class="af-label">Upload CV</label>
-          <div class="file-drop" id="fileDropArea">
-            <div class="file-drop-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="12"/><line x1="15" y1="15" x2="12" y2="12"/></svg></div>
-            <p>Drag &amp; drop your CV here or <span>browse files</span></p>
-            <small>PDF, DOC, DOCX — max 5MB</small>
-            <input type="file" accept=".pdf,.doc,.docx" id="resumeFile" style="display:none" />
-          </div>
-        </div>
-        <div class="af-group">
-          <label class="af-label">Cover Note (Optional)</label>
-          <textarea placeholder="Tell us about yourself and why you want to join Sanjeev Auto..." rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn-primary" style="align-self:flex-start;">Submit Application <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <img src="logo.png" alt="Sanjeev Auto" class="footer-logo" />
-      <p class="footer-tagline">Precision engineering since 1978.<br/>Building the components that move the world.</p>
-      <div class="footer-certs-small"><span>ISO 9001:2015</span><span>IATF 16949</span><span>ISO 14001:2015</span></div>
-    </div>
-    <div class="footer-nav-cols">
-      <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div>
-      <div class="footer-col"><h5>Products</h5><a href="products.html">Product Range</a><a href="capabilities.html">Capabilities</a></div>
-      <div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a><a href="tel:+912406640900">+91-240-664 0900</a></div>
-      <div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a><a href="products.html">Construction</a><a href="products.html">Industrial</a></div>
-    </div>
-  </div>
-  <div class="footer-divider"></div>
-  <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2024 Sanjeev Auto Group. All rights reserved. &nbsp;·&nbsp; Aurangabad, Maharashtra, India</p>
-    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
-  </div>
-</footer>
-
-<button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">&#8593;</button>
-
-<script>
-(function() {
-  const nav = document.getElementById('navbar');
-  let lastY = 0;
-  window.addEventListener('scroll', () => { const y = window.scrollY; nav.classList.toggle('nav-scrolled', y > 60); nav.classList.toggle('nav-hidden', y > lastY && y > 200); lastY = y; }, { passive: true });
-  document.getElementById('hamburger').addEventListener('click', function() { document.getElementById('navLinks').classList.toggle('mobile-open'); });
-  const overlay = document.getElementById('popupOverlay');
-  function openPopup() { overlay.classList.add('active'); }
-  document.getElementById('openPopupNav').addEventListener('click', openPopup);
-  ['openPopupJob1','openPopupJob2','openPopupJob3','openPopupJob4','openPopupSpec'].forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('click', openPopup); });
-  document.getElementById('popupClose').addEventListener('click', () => overlay.classList.remove('active'));
-  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('active'); });
-  document.querySelectorAll('.counter').forEach(el => {
-    new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      const t = +el.dataset.target, s = t / 120; let v = 0;
-      const tick = () => { v = Math.min(v + s, t); el.textContent = Math.floor(v).toLocaleString(); if (v < t) requestAnimationFrame(tick); }; tick();
-    }, { threshold: 0.5 }).observe(el);
-  });
-  document.querySelectorAll('.t-reveal,.t-reveal--left,.t-reveal--right').forEach(el => {
-    new IntersectionObserver(([e]) => { if (e.isIntersecting) el.classList.add('t-visible'); }, { threshold: 0.1 }).observe(el);
-  });
-  const btn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 600), { passive: true });
-  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  const fda = document.getElementById('fileDropArea');
-  const ri = document.getElementById('resumeFile');
-  if (fda) { fda.addEventListener('click', () => ri.click()); ri.addEventListener('change', () => { if (ri.files.length) fda.querySelector('p').innerHTML = 'Selected: <strong>' + ri.files[0].name + '</strong>'; }); }
-  const af = document.getElementById('appForm');
-  if (af) af.addEventListener('submit', e => { e.preventDefault(); af.innerHTML = '<div style="text-align:center;padding:60px 20px;"><div style="width:64px;height:64px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#071507" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h3 style="font-family:Outfit,sans-serif;font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:12px;">Application Submitted</h3><p style="font-size:0.875rem;color:rgba(255,255,255,0.5);line-height:1.7;">Our HR team will review your profile and reach out within 5 business days.</p></div>'; });
-})();
-</script>
+<footer class="footer"><div class="footer-top"><div class="footer-brand"><img src="logo.png" alt="Sanjeev Auto" class="footer-logo" /><p class="footer-tagline">Precision engineering since 1978.</p><div class="footer-cert-strip"><span class="footer-cert">ISO 9001</span><span class="footer-cert">IATF 16949</span></div></div><div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div><div class="footer-col"><h5>Products</h5><a href="products.html">Range</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a></div><div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copy">© 2024 Sanjeev Auto Group.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+<button class="scroll-top" id="scrollTop" aria-label="Top">↑</button>
+<script src="tata.js"></script>
 </body>
 </html>

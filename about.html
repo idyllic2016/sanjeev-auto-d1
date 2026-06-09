@@ -4,314 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Sanjeev Auto | 45+ Years of Precision Manufacturing Since 1978</title>
-  <meta name="description" content="Founded in 1978, Sanjeev Auto Industries is a premier precision component manufacturer in Aurangabad. 5 plants, 1000+ components, IATF 16949 certified, trusted by global OEMs." />
-  <meta property="og:title" content="About Sanjeev Auto | 45+ Years of Precision Manufacturing" />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0a0a0a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="tesla.css" />
-  <link rel="stylesheet" href="pages-tesla.css" />
-  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="description" content="Founded in 1978, Sanjeev Auto Industries is a premier precision component manufacturer in Aurangabad. 5 plants, 1000+ components, IATF 16949 certified." />
+  <meta name="theme-color" content="#002147" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tata.css" /><link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
+<!-- Popup -->
+<div class="popup-overlay" id="popupOverlay"><div class="popup-modal"><div class="popup-left"><img src="logo.png" alt="" class="popup-logo" /><h2 class="popup-h2">Let's Build<br/><span>Something</span> Great</h2><p class="popup-sub">Our engineering team responds within 24 hours.</p><div class="popup-stats"><div><span class="popup-stat-n">45<sup>+</sup></span><span class="popup-stat-l">Years</span></div><div><span class="popup-stat-n">20<sup>+</sup></span><span class="popup-stat-l">OEM Partners</span></div></div></div><div class="popup-right"><button class="popup-close" id="popupClose" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="popup-title">Send Inquiry</div><form novalidate><div class="form-row"><div class="form-group"><label class="form-label">Name <span>*</span></label><input class="form-input" placeholder="Your Name" required /></div><div class="form-group"><label class="form-label">Company</label><input class="form-input" placeholder="Company" /></div></div><div class="form-row"><div class="form-group"><label class="form-label">Email <span>*</span></label><input class="form-input" type="email" placeholder="you@co.com" required /></div><div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" placeholder="+91" /></div></div><div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" rows="3" placeholder="Your requirement…"></textarea></div><button type="submit" class="popup-submit">Send Inquiry →</button></form></div></div></div>
+<!-- Navbar -->
+<nav class="navbar at-top" id="navbar"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto" /></a><ul class="nav-links"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link active">About <span class="nav-chevron">▾</span></a><div class="nav-dropdown-menu"><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality Systems</a></div></li><li class="nav-item"><a href="products.html" class="nav-link">Products</a></li><li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li><li class="nav-item"><a href="blog.html" class="nav-link">Insights</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul><div class="nav-actions"><button class="nav-btn-primary" data-popup>Get In Touch</button><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></div></nav>
+<div class="mobile-nav" id="mobileNav"><a href="index.html" class="mob-nav-link">Home</a><a href="about.html" class="mob-nav-link">About Us</a><a href="facilities.html" class="mob-nav-sub">Facilities</a><a href="quality.html" class="mob-nav-sub">Quality</a><a href="products.html" class="mob-nav-link">Products</a><a href="careers.html" class="mob-nav-link">Careers</a><a href="blog.html" class="mob-nav-link">Insights</a><a href="contact.html" class="mob-nav-link">Contact</a></div>
 
-<!-- POPUP -->
-<div class="popup-overlay" id="popupOverlay">
-  <div class="popup-modal" role="dialog" aria-modal="true">
-    <div class="popup-left">
-      <img src="logo.png" alt="Sanjeev Auto" class="popup-logo" />
-      <h2 class="popup-title">Let's Build<br/><span>Something</span> Great</h2>
-      <p class="popup-tagline">Share your requirement and our engineering team responds within 24 hours.</p>
-      <div class="popup-stats">
-        <div class="pstat"><span class="pstat-n">45<sup>+</sup></span><span class="pstat-l">Years Precision</span></div>
-        <div class="pstat"><span class="pstat-n">20<sup>+</sup></span><span class="pstat-l">Global OEM Partners</span></div>
-      </div>
-    </div>
-    <div class="popup-right">
-      <button class="popup-close" id="popupClose" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-      <form id="popupForm" novalidate>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Full Name <span>*</span></label><input type="text" name="name" placeholder="Your Name" required /></div>
-          <div class="form-group"><label class="form-label">Company <span>*</span></label><input type="text" name="company" placeholder="Company Name" required /></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Email <span>*</span></label><input type="email" name="email" placeholder="you@company.com" required /></div>
-          <div class="form-group"><label class="form-label">Phone</label><input type="tel" name="phone" placeholder="+91 98765 43210" /></div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Industry / Sector</label>
-          <select name="sector"><option value="">Select Sector</option><option>Automotive</option><option>Agriculture &amp; Farm Equipment</option><option>Construction &amp; Earthmoving</option><option>Industrial Machinery</option><option>Power Transmission</option><option>Other</option></select>
-        </div>
-        <div class="form-group"><label class="form-label">Your Requirement</label><textarea name="message" rows="4" placeholder="Describe your component requirement…"></textarea></div>
-        <button type="submit" class="btn-submit">Send Inquiry &#8594;</button>
-      </form>
-    </div>
-  </div>
-</div>
+<!-- Page Banner -->
+<div class="page-banner"><div class="pb-bg"><img src="images/K96-5.jpg" alt="About" /></div><div class="pb-overlay"></div><div class="pb-overlay-bottom"></div><div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>About Us</span></div><div class="pb-content"><div class="pb-eyebrow">Our Story</div><h1>Built On Precision.<br/><em>Driven By Purpose.</em></h1><p>Four decades of engineering excellence from the precision manufacturing hub of Aurangabad, Maharashtra.</p></div></div>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto Group" /></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li class="nav-dropdown"><a href="about.html" class="nav-link nav-link-active">About <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="about.html">About Us</a><a href="facilities.html">Our Facilities</a><a href="quality.html">Quality Systems</a></div>
-      </li>
-      <li class="nav-dropdown"><a href="products.html" class="nav-link">Products <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="products.html">Product Range</a><a href="capabilities.html">Capabilities</a></div>
-      </li>
-      <li><a href="careers.html" class="nav-link">Careers</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-cta-group">
-      <button class="nav-cta-btn" id="openPopupNav">Get In Touch</button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-
-<!-- PAGE BANNER -->
-<div class="page-banner">
-  <img class="pb-img" src="images/K96-5.jpg" alt="About Sanjeev Auto" loading="eager" />
-  <div class="pb-overlay"></div>
-  <div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>About Us</span></div>
-  <div class="pb-content">
-    <div class="pb-eyebrow">Our Story</div>
-    <h1>Built On Precision.<br/>Driven By Purpose.</h1>
-    <p>Four decades of engineering excellence from the precision manufacturing hub of Aurangabad, Maharashtra.</p>
-  </div>
-</div>
-
-<!-- ABOUT INTRO -->
-<section class="page-section page-section--light">
-  <div class="page-inner">
-    <div class="intro-grid">
-      <div class="intro-text t-reveal t-reveal--left">
-        <div class="section-eyebrow">The Foundation</div>
-        <h2 class="section-title">Where It All<br/>Began — 1978.</h2>
-        <p class="intro-body">Founded in 1978 in Aurangabad, Maharashtra, Sanjeev Auto Industries has grown from a single-facility gear manufacturer into a 5-plant precision engineering powerhouse — trusted by the world's most demanding OEMs across automotive, agricultural, and industrial sectors.</p>
-        <p class="intro-body">Headquartered at C-7, MIDC Waluj, Aurangabad — India's precision manufacturing corridor — we supply 1,000+ component variants to John Deere, Mahindra, Kubota, ZF, GM, Eaton and 20+ global partners.</p>
-        <div class="intro-stats">
-          <div class="intro-stat"><span class="intro-stat-n">1978</span><span class="intro-stat-l">Founded</span></div>
-          <div class="intro-stat"><span class="intro-stat-n counter" data-target="5">0</span><span class="intro-stat-l">Plants</span></div>
-          <div class="intro-stat"><span class="intro-stat-n counter" data-target="1000">0</span><span class="intro-stat-l">+ Components</span></div>
-          <div class="intro-stat"><span class="intro-stat-n counter" data-target="20">0</span><span class="intro-stat-l">+ OEM Partners</span></div>
+<!-- Intro -->
+<section class="inner-section section--white">
+  <div class="inner-container">
+    <div class="intro-cols">
+      <div class="reveal reveal--left">
+        <div class="eyebrow">The Foundation</div>
+        <h2 class="section-h2">Where It All<br/>Began — <em>1978.</em></h2>
+        <p class="section-sub" style="max-width:none;margin-bottom:12px;">Founded in 1978 in Aurangabad, Maharashtra, Sanjeev Auto Industries has grown from a single-facility gear manufacturer into a 5-plant precision engineering powerhouse — trusted by the world's most demanding OEMs.</p>
+        <p class="section-sub" style="max-width:none;">Headquartered at C-7, MIDC Waluj — India's precision manufacturing corridor — we supply 1,000+ component variants to John Deere, Mahindra, Kubota, ZF, GM, Eaton and 20+ global partners.</p>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--grey-200);border-radius:var(--r-lg);overflow:hidden;margin-top:32px;">
+          <div style="padding:18px 14px;text-align:center;border-right:1px solid var(--grey-200);"><span style="font-family:Roboto;font-size:1.6rem;font-weight:900;color:var(--blue);display:block;">1978</span><span style="font-size:0.68rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">Founded</span></div>
+          <div style="padding:18px 14px;text-align:center;border-right:1px solid var(--grey-200);"><span style="font-family:Roboto;font-size:1.6rem;font-weight:900;color:var(--blue);display:block;" class="counter" data-target="5">0</span><span style="font-size:0.68rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">Plants</span></div>
+          <div style="padding:18px 14px;text-align:center;border-right:1px solid var(--grey-200);"><span style="font-family:Roboto;font-size:1.6rem;font-weight:900;color:var(--blue);display:block;" class="counter" data-target="1000">0</span><span style="font-size:0.68rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">+ Components</span></div>
+          <div style="padding:18px 14px;text-align:center;"><span style="font-family:Roboto;font-size:1.6rem;font-weight:900;color:var(--blue);display:block;" class="counter" data-target="20">0</span><span style="font-size:0.68rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">+ OEMs</span></div>
         </div>
       </div>
-      <div class="intro-image-wrap t-reveal t-reveal--right">
-        <img src="images/K96-3.jpg" alt="CNC Precision Machining" loading="lazy" />
-        <div class="intro-image-badge">IATF 16949</div>
+      <div class="intro-img-wrap reveal reveal--right">
+        <img src="images/K96-3.jpg" alt="CNC Machining" /><div class="intro-img-badge">IATF 16949</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TIMELINE -->
-<section class="page-section page-section--dark">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:64px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Growth Milestones</div>
-      <h2 class="section-title section-title--light">Four Decades of<br/>Engineering Progress</h2>
+<!-- Vision & Mission -->
+<section class="inner-section section--navy">
+  <div class="inner-container">
+    <div class="card-grid-2 reveal" style="margin-bottom:60px;">
+      <div class="dark-card"><div class="eyebrow eyebrow--gold" style="margin-bottom:12px;">Our Vision</div><p style="font-size:1.05rem;color:rgba(255,255,255,0.8);line-height:1.7;font-weight:500;">To be a global leader in providing end-to-end solutions in Motion Control Applications.</p></div>
+      <div class="dark-card"><div class="eyebrow eyebrow--gold" style="margin-bottom:12px;">Our Mission</div><p style="font-size:1.05rem;color:rgba(255,255,255,0.8);line-height:1.7;font-weight:500;">To be a preferred business partner for customers by leveraging a highly engaged team through technology and innovation.</p></div>
+    </div>
+    <div style="text-align:center;margin-bottom:52px;" class="reveal">
+      <div class="eyebrow eyebrow--gold" style="justify-content:center;">Corporate Pledge</div>
+      <h2 class="section-h2 section-h2--light">The P.I.T.C.H. <em>Philosophy</em></h2>
+    </div>
+    <div class="card-grid-3" style="grid-template-columns:repeat(5,1fr);gap:16px;">
+      <div class="dark-card reveal" style="--sd:0s;text-align:center;"><div style="font-family:Roboto;font-size:3rem;font-weight:900;color:var(--gold-lt);opacity:0.5;line-height:1;">P</div><h3 style="color:#fff;margin:8px 0 6px;">Passion</h3><p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.65;">High-level commitment to customer needs.</p></div>
+      <div class="dark-card reveal" style="--sd:.06s;text-align:center;"><div style="font-family:Roboto;font-size:3rem;font-weight:900;color:var(--blue-sky);opacity:0.5;line-height:1;">I</div><h3 style="color:#fff;margin:8px 0 6px;">Innovation</h3><p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.65;">Continuous investment in cutting-edge tech.</p></div>
+      <div class="dark-card reveal" style="--sd:.12s;text-align:center;"><div style="font-family:Roboto;font-size:3rem;font-weight:900;color:var(--gold-lt);opacity:0.5;line-height:1;">T</div><h3 style="color:#fff;margin:8px 0 6px;">Transparency</h3><p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.65;">Open communication with all stakeholders.</p></div>
+      <div class="dark-card reveal" style="--sd:.18s;text-align:center;"><div style="font-family:Roboto;font-size:3rem;font-weight:900;color:var(--blue-sky);opacity:0.5;line-height:1;">C</div><h3 style="color:#fff;margin:8px 0 6px;">Care</h3><p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.65;">Care for Self, Team, Environment & Society.</p></div>
+      <div class="dark-card reveal" style="--sd:.24s;text-align:center;"><div style="font-family:Roboto;font-size:3rem;font-weight:900;color:var(--gold-lt);opacity:0.5;line-height:1;">H</div><h3 style="color:#fff;margin:8px 0 6px;">Happiness</h3><p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.65;">Joy and satisfaction of all stakeholders.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="inner-section section--off-white">
+  <div class="inner-container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <div class="eyebrow" style="justify-content:center;">Growth Milestones</div>
+      <h2 class="section-h2">Four Decades of<br/><em>Engineering Progress</em></h2>
     </div>
     <div class="timeline">
-      <div class="tl-item t-reveal">
-        <div class="tl-year">1978</div>
-        <div class="tl-dot"></div>
-        <div class="tl-card"><h4>Company Founded</h4><p>Sanjeev Auto Industries established in Aurangabad, Maharashtra. Began as a precision gear manufacturer for local OEMs.</p></div>
+      <div class="tl-item reveal"><div class="tl-yr">1978</div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div class="tl-card"><h4>Company Founded</h4><p>Sanjeev Auto established in Aurangabad as a precision gear manufacturer for local OEMs.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-card tl-card--right"><h4>First OEM Partnerships</h4><p>Began supplying to Mahindra and Bajaj — establishing Tier-1 supply credentials.</p></div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div class="tl-yr tl-yr--right">1990s</div></div>
+      <div class="tl-item reveal"><div class="tl-yr">2000s</div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div class="tl-card"><h4>Capacity Expansion</h4><p>Multiple MIDC facilities. 200+ CNC machines. Heat treatment and gear grinding centres.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-card tl-card--right"><h4>Global OEM Onboarding</h4><p>John Deere, Kubota, ZF Group and General Motors added. Export volumes scale.</p></div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div class="tl-yr tl-yr--right">2010</div></div>
+      <div class="tl-item reveal"><div class="tl-yr">2015</div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div class="tl-card"><h4>IATF 16949 Certified</h4><p>Achieved the automotive industry's highest quality management standard.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-card tl-card--right tl-card--active"><h4>Precision Leadership — Today</h4><p>5 plants. 1,000+ variants. 20+ global OEMs. IATF, ISO 14001, ISO 45001, VDA 6.3.</p></div><div class="tl-dot-wrap"><div class="tl-dot tl-dot--active"></div></div><div class="tl-yr tl-yr--right">2026</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership -->
+<section class="inner-section section--navy-dk">
+  <div class="inner-container">
+    <div style="text-align:center;margin-bottom:52px;" class="reveal"><div class="eyebrow eyebrow--gold" style="justify-content:center;">Leadership</div><h2 class="section-h2 section-h2--light">The Team Behind<br/>The <em>Precision</em></h2></div>
+    <div class="card-grid-4">
+      <div class="dark-card reveal" style="--sd:0s;text-align:center;padding-top:40px;"><div style="width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 style="color:#fff;">Sanjeev Chaudhari</h3><span style="font-size:0.72rem;color:var(--gold-lt);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;display:block;margin:4px 0 10px;">Founder &amp; MD</span><p style="font-size:0.8rem;color:rgba(255,255,255,0.35);line-height:1.65;">45+ years of precision manufacturing expertise.</p></div>
+      <div class="dark-card reveal" style="--sd:.06s;text-align:center;padding-top:40px;"><div style="width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 style="color:#fff;">Director — Operations</h3><span style="font-size:0.72rem;color:var(--gold-lt);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;display:block;margin:4px 0 10px;">COO</span><p style="font-size:0.8rem;color:rgba(255,255,255,0.35);line-height:1.65;">Oversees all 5 manufacturing plants.</p></div>
+      <div class="dark-card reveal" style="--sd:.12s;text-align:center;padding-top:40px;"><div style="width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 style="color:#fff;">Director — Technology</h3><span style="font-size:0.72rem;color:var(--gold-lt);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;display:block;margin:4px 0 10px;">CTO</span><p style="font-size:0.8rem;color:rgba(255,255,255,0.35);line-height:1.65;">Leads process innovation &amp; automation.</p></div>
+      <div class="dark-card reveal" style="--sd:.18s;text-align:center;padding-top:40px;"><div style="width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 style="color:#fff;">Director — Business</h3><span style="font-size:0.72rem;color:var(--gold-lt);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;display:block;margin:4px 0 10px;">CBO</span><p style="font-size:0.8rem;color:rgba(255,255,255,0.35);line-height:1.65;">Global OEM relationships &amp; exports.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="inner-section section--white">
+  <div class="inner-container">
+    <div class="intro-cols" style="gap:60px;">
+      <div class="reveal reveal--left">
+        <div class="eyebrow">Quality Credentials</div>
+        <h2 class="section-h2">Certified to the<br/>World's <em>Highest Standards</em></h2>
+        <p class="section-sub" style="max-width:none;">Every facility operates under stringent international quality, environmental, and safety management systems.</p>
+        <a href="quality.html" class="btn-tata btn-tata--navy" style="margin-top:20px;">View Quality Systems →</a>
       </div>
-      <div class="tl-item tl-right t-reveal">
-        <div class="tl-year">1990s</div>
-        <div class="tl-dot"></div>
-        <div class="tl-card"><h4>First OEM Partnerships</h4><p>Began supplying to Mahindra and Bajaj — establishing Sanjeev Auto as a quality Tier-1 component supplier.</p></div>
-      </div>
-      <div class="tl-item t-reveal">
-        <div class="tl-year">2000s</div>
-        <div class="tl-dot"></div>
-        <div class="tl-card"><h4>Capacity Expansion</h4><p>Multiple MIDC Waluj facilities commissioned. 200+ CNC machines. Heat treatment and gear grinding centres established.</p></div>
-      </div>
-      <div class="tl-item tl-right t-reveal">
-        <div class="tl-year">2010</div>
-        <div class="tl-dot"></div>
-        <div class="tl-card"><h4>Global OEM Onboarding</h4><p>John Deere, Kubota, ZF Group and General Motors added as customers. Export volumes scale significantly.</p></div>
-      </div>
-      <div class="tl-item t-reveal">
-        <div class="tl-year">2015</div>
-        <div class="tl-dot"></div>
-        <div class="tl-card"><h4>IATF 16949 Certified</h4><p>Achieved the automotive industry's highest quality management standard, unlocking new global supply chain access.</p></div>
-      </div>
-      <div class="tl-item tl-right t-reveal">
-        <div class="tl-year">2018</div>
-        <div class="tl-dot"></div>
-        <div class="tl-card"><h4>JIPM TPM Excellence Award</h4><p>Recognised by Japan Institute of Plant Maintenance for Total Productive Maintenance excellence across all facilities.</p></div>
-      </div>
-      <div class="tl-item t-reveal">
-        <div class="tl-year">2022</div>
-        <div class="tl-dot"></div>
-        <div class="tl-card"><h4>G168 Plant Commissioned</h4><p>Forging and machined castings division expanded. 1600T forging press and 5-axis CNC centres added.</p></div>
-      </div>
-      <div class="tl-item tl-right t-reveal">
-        <div class="tl-year">2026</div>
-        <div class="tl-dot tl-dot--active"></div>
-        <div class="tl-card tl-card--active"><h4>Precision Leadership</h4><p>5 plants. 1,000+ component variants. 20+ global OEM partners. IATF, ISO 14001, ISO 45001, VDA 6.3 certified.</p></div>
+      <div class="cert-blocks reveal reveal--right">
+        <div class="cert-block"><div class="cert-code">IATF</div><span class="cert-num">16949</span><p class="cert-desc">Automotive quality management — highest standard</p></div>
+        <div class="cert-block"><div class="cert-code">ISO</div><span class="cert-num">14001:2015</span><p class="cert-desc">Environmental management system</p></div>
+        <div class="cert-block"><div class="cert-code">ISO</div><span class="cert-num">45001:2018</span><p class="cert-desc">Occupational health &amp; safety</p></div>
+        <div class="cert-block"><div class="cert-code">JIPM</div><span class="cert-num">TPM Award</span><p class="cert-desc">Total Productive Maintenance</p></div>
+        <div class="cert-block"><div class="cert-code">VDA</div><span class="cert-num">6.3</span><p class="cert-desc">German automotive process audit</p></div>
+        <div class="cert-block"><div class="cert-code">6σ</div><span class="cert-num">Six Sigma</span><p class="cert-desc">Data-driven quality improvement</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- P.I.T.C.H PHILOSOPHY -->
-<section class="page-section page-section--light" id="pledge">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:60px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Corporate Pledge</div>
-      <h2 class="section-title">The P.I.T.C.H. Philosophy</h2>
-      <p style="font-size:0.95rem;color:var(--text-faint);max-width:520px;margin:0 auto;line-height:1.8;">Five values embedded in every process, every component, every relationship at Sanjeev Auto.</p>
-    </div>
-    <div class="vm-grid t-reveal" style="margin-bottom:48px;">
-      <div class="vm-card" style="background:#fff;border:1px solid #e8e8e8;">
-        <h3>Our Vision</h3>
-        <p style="color:var(--text-dark);font-size:1rem;line-height:1.7;">To be a global leader in providing end-to-end solutions in Motion Control Applications.</p>
-      </div>
-      <div class="vm-card" style="background:#fff;border:1px solid #e8e8e8;">
-        <h3>Our Mission</h3>
-        <p style="color:var(--text-dark);font-size:1rem;line-height:1.7;">To be a preferred business partner for customers by leveraging a highly engaged team through technology and innovation.</p>
-      </div>
-    </div>
-    <div class="value-grid">
-      <div class="value-card t-reveal" style="--sd:.0s"><div class="value-letter">P</div><h4>Passion</h4><p>High-level commitment to customer needs. Every component is engineered with the same dedication regardless of volume or complexity.</p></div>
-      <div class="value-card t-reveal" style="--sd:.08s"><div class="value-letter" style="color:var(--blue);">I</div><h4>Innovation</h4><p>Continuous investment in cutting-edge manufacturing technology — Liebherr hobbing, Klingelnberg gear analysers, robotic assembly lines.</p></div>
-      <div class="value-card t-reveal" style="--sd:.16s"><div class="value-letter" style="color:var(--accent-dk);">T</div><h4>Transparency</h4><p>Open, honest communication with customers, suppliers, and employees. Traceability from raw material to final component.</p></div>
-      <div class="value-card t-reveal" style="--sd:.24s"><div class="value-letter">C</div><h4>Care</h4><p>Care for Self, Team, Environment, and Society — embedded in every process and every decision across our operations.</p></div>
-      <div class="value-card t-reveal" style="--sd:.32s"><div class="value-letter" style="color:var(--blue);">H</div><h4>Happiness</h4><p>Joy and Satisfaction of all Stakeholders — customers, employees, suppliers, and the communities we operate in.</p></div>
-    </div>
-    <div class="quote-block t-reveal">
-      <blockquote>"Culture does not change because we desire to change it. Culture changes when the organization is transformed — the culture reflects the realities of people working together every day."</blockquote>
-      <div class="quote-attr">
-        <div class="quote-attr-line"></div>
-        <span>Frances Hesselbein, President &amp; CEO, The Frances Hesselbein Leadership Forum</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- LEADERSHIP -->
-<section class="page-section page-section--darker">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:60px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Leadership</div>
-      <h2 class="section-title section-title--light">The Team Behind<br/>The Precision</h2>
-    </div>
-    <div class="leadership-grid">
-      <div class="leader-card t-reveal" style="--sd:0s">
-        <div class="leader-photo"><div class="lp-bg"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div></div>
-        <div class="leader-info">
-          <h3>Sanjeev Chaudhari</h3>
-          <span class="leader-title">Founder &amp; Managing Director</span>
-          <p>Founded Sanjeev Auto in 1978. Over 45 years of hands-on manufacturing expertise, pioneering gear precision standards in India's automotive sector.</p>
-        </div>
-      </div>
-      <div class="leader-card t-reveal" style="--sd:.08s">
-        <div class="leader-photo"><div class="lp-bg"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div></div>
-        <div class="leader-info">
-          <h3>Director — Operations</h3>
-          <span class="leader-title">Chief Operating Officer</span>
-          <p>Oversees all 5 manufacturing plants. Implemented IATF 16949 quality systems and JIPM TPM practices across the entire facility network.</p>
-        </div>
-      </div>
-      <div class="leader-card t-reveal" style="--sd:.16s">
-        <div class="leader-photo"><div class="lp-bg"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div></div>
-        <div class="leader-info">
-          <h3>Director — Technology</h3>
-          <span class="leader-title">Chief Technology Officer</span>
-          <p>Leads process innovation, automation, and R&amp;D. Spearheaded robotics integration, Liebherr gear technology adoption, and Six Sigma deployment.</p>
-        </div>
-      </div>
-      <div class="leader-card t-reveal" style="--sd:.24s">
-        <div class="leader-photo"><div class="lp-bg"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div></div>
-        <div class="leader-info">
-          <h3>Director — Business</h3>
-          <span class="leader-title">Chief Business Officer</span>
-          <p>Manages global OEM relationships with John Deere, Mahindra, ZF, GM, Kubota, and Eaton. Drives international market expansion and export growth.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section class="page-section page-section--light">
-  <div class="page-inner">
-    <div class="intro-grid" style="gap:60px;">
-      <div class="t-reveal t-reveal--left">
-        <div class="section-eyebrow">Quality Credentials</div>
-        <h2 class="section-title">Certified to the<br/>World's Highest Standards</h2>
-        <p class="intro-body">Every Sanjeev Auto facility operates under stringent international quality, environmental, and safety management systems — ensuring every component meets global OEM requirements.</p>
-        <a href="quality.html" class="btn-primary" style="text-decoration:none;margin-top:8px;">View Quality Systems <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
-      <div class="cert-grid t-reveal t-reveal--right">
-        <div class="cert-block"><div class="cert-block-code">IATF</div><span class="cert-block-num">16949</span><p>Automotive quality management system — highest standard in the industry</p></div>
-        <div class="cert-block"><div class="cert-block-code">ISO</div><span class="cert-block-num">14001:2015</span><p>Environmental management system across all manufacturing plants</p></div>
-        <div class="cert-block"><div class="cert-block-code">ISO</div><span class="cert-block-num">45001:2018</span><p>Occupational health &amp; safety management system</p></div>
-        <div class="cert-block"><div class="cert-block-code">JIPM</div><span class="cert-block-num">TPM Award</span><p>Japan Institute of Plant Maintenance excellence recognition</p></div>
-        <div class="cert-block"><div class="cert-block-code">VDA</div><span class="cert-block-num">6.3 Process</span><p>German automotive supply chain process audit standard</p></div>
-        <div class="cert-block"><div class="cert-block-code">6σ</div><span class="cert-block-num">Six Sigma</span><p>Data-driven quality improvement methodology across all plants</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <img src="logo.png" alt="Sanjeev Auto" class="footer-logo" />
-      <p class="footer-tagline">Precision engineering since 1978.<br/>Building the components that move the world.</p>
-      <div class="footer-certs-small"><span>ISO 9001:2015</span><span>IATF 16949</span><span>ISO 14001:2015</span></div>
-    </div>
-    <div class="footer-nav-cols">
-      <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div>
-      <div class="footer-col"><h5>Products</h5><a href="products.html">Product Range</a><a href="capabilities.html">Capabilities</a></div>
-      <div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a><a href="tel:+912406640900">+91-240-664 0900</a></div>
-      <div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a><a href="products.html">Construction</a><a href="products.html">Industrial</a></div>
-    </div>
-  </div>
-  <div class="footer-divider"></div>
-  <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2024 Sanjeev Auto Group. All rights reserved. &nbsp;·&nbsp; Aurangabad, Maharashtra, India</p>
-    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
-  </div>
-</footer>
-
-<button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">&#8593;</button>
-
-<script>
-(function() {
-  const nav = document.getElementById('navbar');
-  let lastY = 0;
-  window.addEventListener('scroll', () => { const y = window.scrollY; nav.classList.toggle('nav-scrolled', y > 60); nav.classList.toggle('nav-hidden', y > lastY && y > 200); lastY = y; }, { passive: true });
-  document.getElementById('hamburger').addEventListener('click', function() { const l = document.getElementById('navLinks'); const o = l.classList.toggle('mobile-open'); this.setAttribute('aria-expanded', o); });
-  const overlay = document.getElementById('popupOverlay');
-  document.getElementById('openPopupNav').addEventListener('click', () => overlay.classList.add('active'));
-  document.getElementById('popupClose').addEventListener('click', () => overlay.classList.remove('active'));
-  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('active'); });
-  document.querySelectorAll('.counter').forEach(el => {
-    new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      const t = +el.dataset.target, d = 2000, s = t / (d / 16); let v = 0;
-      const tick = () => { v = Math.min(v + s, t); el.textContent = Math.floor(v).toLocaleString(); if (v < t) requestAnimationFrame(tick); }; tick();
-    }, { threshold: 0.5 }).observe(el);
-  });
-  document.querySelectorAll('.t-reveal,.t-reveal--left,.t-reveal--right,.t-reveal--scale').forEach(el => {
-    new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('t-visible'); } }, { threshold: 0.1 }).observe(el);
-  });
-  const btn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 600), { passive: true });
-  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-})();
-</script>
+<!-- Footer -->
+<footer class="footer"><div class="footer-top"><div class="footer-brand"><img src="logo.png" alt="Sanjeev Auto" class="footer-logo" /><p class="footer-tagline">Precision engineering since 1978.<br/>Building the components that move the world.</p><div class="footer-cert-strip"><span class="footer-cert">ISO 9001</span><span class="footer-cert">IATF 16949</span><span class="footer-cert">ISO 14001</span></div></div><div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div><div class="footer-col"><h5>Products</h5><a href="products.html">Product Range</a><a href="products.html">Gears</a><a href="products.html">Shafts</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a><a href="tel:+912406640900">+91-240-664 0900</a></div><div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a><a href="products.html">Construction</a><a href="products.html">Industrial</a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copy">© 2024 Sanjeev Auto Group. All rights reserved. · Aurangabad, Maharashtra, India</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+<button class="scroll-top" id="scrollTop" aria-label="Top">↑</button>
+<script src="tata.js"></script>
 </body>
 </html>

@@ -1,208 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quality | Sanjeev Auto — IATF 16949, ISO 9001:2015 Certified</title>
-  <meta name="description" content="Sanjeev Auto is IATF 16949, ISO 14001, ISO 45001, and VDA 6.3 certified. JIPM TPM Excellence Award winner. Six Sigma driven quality across all 5 plants." />
-  <meta name="theme-color" content="#0a0a0a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="tesla.css" />
-  <link rel="stylesheet" href="pages-tesla.css" />
-  <link rel="icon" type="image/png" href="logo.png" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quality | Sanjeev Auto — IATF 16949, ISO Certified Quality Systems</title>
+  <meta name="description" content="IATF 16949, ISO 14001, ISO 45001, VDA 6.3, JIPM TPM, Six Sigma. End-to-end quality control across all 5 plants." />
+  <meta name="theme-color" content="#002147" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tata.css" /><link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
+<div class="popup-overlay" id="popupOverlay"><div class="popup-modal"><div class="popup-left"><img src="logo.png" alt="" class="popup-logo" /><h2 class="popup-h2">Quality<br/><span>Inquiry</span></h2><p class="popup-sub">Contact our quality team for certifications, PPAP, or supplier audit requests.</p><div class="popup-stats"><div><span class="popup-stat-n">6</span><span class="popup-stat-l">Certifications</span></div><div><span class="popup-stat-n">JIPM</span><span class="popup-stat-l">TPM Award</span></div></div></div><div class="popup-right"><button class="popup-close" id="popupClose" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="popup-title">Quality Inquiry</div><form novalidate><div class="form-row"><div class="form-group"><label class="form-label">Name <span>*</span></label><input class="form-input" required /></div><div class="form-group"><label class="form-label">Company</label><input class="form-input" /></div></div><div class="form-row"><div class="form-group"><label class="form-label">Email <span>*</span></label><input class="form-input" type="email" required /></div><div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" /></div></div><div class="form-group"><label class="form-label">Inquiry Type</label><select class="form-select"><option value="">Select</option><option>PPAP Documentation</option><option>Supplier Audit</option><option>Certificate Copy</option><option>Quality Complaint</option><option>General</option></select></div><div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" rows="3"></textarea></div><button type="submit" class="popup-submit">Send Inquiry →</button></form></div></div></div>
+<nav class="navbar at-top" id="navbar"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto" /></a><ul class="nav-links"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link active">About <span class="nav-chevron">▾</span></a><div class="nav-dropdown-menu"><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a></div></li><li class="nav-item"><a href="products.html" class="nav-link">Products</a></li><li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li><li class="nav-item"><a href="blog.html" class="nav-link">Insights</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul><div class="nav-actions"><button class="nav-btn-primary" data-popup>Get In Touch</button><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></div></nav>
+<div class="mobile-nav" id="mobileNav"><a href="index.html" class="mob-nav-link">Home</a><a href="about.html" class="mob-nav-link">About</a><a href="facilities.html" class="mob-nav-sub">Facilities</a><a href="quality.html" class="mob-nav-sub">Quality</a><a href="products.html" class="mob-nav-link">Products</a><a href="careers.html" class="mob-nav-link">Careers</a><a href="contact.html" class="mob-nav-link">Contact</a></div>
 
-<!-- POPUP -->
-<div class="popup-overlay" id="popupOverlay">
-  <div class="popup-modal" role="dialog" aria-modal="true">
-    <div class="popup-left">
-      <img src="logo.png" alt="Sanjeev Auto" class="popup-logo" />
-      <h2 class="popup-title">Let's Build<br/><span>Something</span> Great</h2>
-      <p class="popup-tagline">Contact our quality team for certifications, PPAP, or supplier audit requests.</p>
-      <div class="popup-stats">
-        <div class="pstat"><span class="pstat-n">6</span><span class="pstat-l">Certifications</span></div>
-        <div class="pstat"><span class="pstat-n">JIPM</span><span class="pstat-l">TPM Award</span></div>
-      </div>
-    </div>
-    <div class="popup-right">
-      <button class="popup-close" id="popupClose" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-      <form id="popupForm" novalidate>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Full Name <span>*</span></label><input type="text" placeholder="Your Name" required /></div>
-          <div class="form-group"><label class="form-label">Company</label><input type="text" placeholder="Company Name" /></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Email <span>*</span></label><input type="email" placeholder="you@company.com" required /></div>
-          <div class="form-group"><label class="form-label">Phone</label><input type="tel" placeholder="+91 98765 43210" /></div>
-        </div>
-        <div class="form-group"><label class="form-label">Quality Inquiry Type</label><select><option value="">Select</option><option>PPAP Documentation</option><option>Supplier Audit</option><option>Certificate Copy</option><option>Quality Complaint</option><option>General Inquiry</option></select></div>
-        <div class="form-group"><label class="form-label">Message</label><textarea rows="3" placeholder="Your inquiry…"></textarea></div>
-        <button type="submit" class="btn-submit">Send Inquiry &#8594;</button>
-      </form>
-    </div>
-  </div>
-</div>
+<div class="page-banner"><div class="pb-bg"><img src="images/CMM.jpg" alt="Quality" /></div><div class="pb-overlay"></div><div class="pb-overlay-bottom"></div><div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Quality</span></div><div class="pb-content"><div class="pb-eyebrow">Quality Systems</div><h1>Certified to the<br/><em>World's Highest Standards</em></h1><p>IATF 16949 · ISO 14001:2015 · ISO 45001:2018 · VDA 6.3 · JIPM TPM · Six Sigma</p></div></div>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Sanjeev Auto Group" /></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li class="nav-dropdown"><a href="about.html" class="nav-link nav-link-active">About <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="about.html">About Us</a><a href="facilities.html">Our Facilities</a><a href="quality.html">Quality Systems</a></div>
-      </li>
-      <li class="nav-dropdown"><a href="products.html" class="nav-link">Products <span class="nav-chevron">&#9662;</span></a>
-        <div class="nav-submenu"><a href="products.html">Product Range</a></div>
-      </li>
-      <li><a href="careers.html" class="nav-link">Careers</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-cta-group">
-      <button class="nav-cta-btn" id="openPopupNav">Get In Touch</button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<!-- Certifications -->
+<section class="inner-section section--navy">
+  <div class="inner-container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <div class="eyebrow eyebrow--gold" style="justify-content:center;">Certifications &amp; Awards</div>
+      <h2 class="section-h2 section-h2--light">Quality <em>Credentials</em></h2>
+      <p class="section-sub section-sub--light" style="margin:0 auto;">Every facility operates under stringent international quality, environmental, and safety management systems.</p>
     </div>
-  </div>
-</nav>
-
-<!-- PAGE BANNER -->
-<div class="page-banner">
-  <img class="pb-img" src="images/K96-3.jpg" alt="Sanjeev Auto Quality" loading="eager" />
-  <div class="pb-overlay"></div>
-  <div class="pb-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Quality</span></div>
-  <div class="pb-content">
-    <div class="pb-eyebrow">Quality Systems</div>
-    <h1>Certified to the<br/>World's Highest Standards</h1>
-    <p>IATF 16949 · ISO 14001:2015 · ISO 45001:2018 · VDA 6.3 · JIPM TPM Award · Six Sigma</p>
-  </div>
-</div>
-
-<!-- CERTS GRID -->
-<section class="page-section page-section--darker" id="certs">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:60px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Certifications &amp; Awards</div>
-      <h2 class="section-title section-title--light">Quality Credentials</h2>
-      <p style="font-size:0.95rem;color:rgba(255,255,255,0.4);max-width:560px;margin:0 auto;line-height:1.85;">Every Sanjeev Auto facility operates under stringent international quality, environmental, and safety management systems.</p>
-    </div>
-    <div class="cert-grid">
-      <div class="cert-block t-reveal" style="--sd:0s"><div class="cert-block-code">IATF</div><span class="cert-block-num">16949</span><p>Automotive quality management system — the highest standard in the global automotive supply chain industry</p></div>
-      <div class="cert-block t-reveal" style="--sd:.08s"><div class="cert-block-code">ISO</div><span class="cert-block-num">9001:2015</span><p>Quality management system certifying consistent product quality and customer satisfaction processes</p></div>
-      <div class="cert-block t-reveal" style="--sd:.16s"><div class="cert-block-code">ISO</div><span class="cert-block-num">14001:2015</span><p>Environmental management system demonstrating our commitment to environmental responsibility</p></div>
-      <div class="cert-block t-reveal" style="--sd:.24s"><div class="cert-block-code">ISO</div><span class="cert-block-num">45001:2018</span><p>Occupational health &amp; safety management system protecting our employees across all 5 plants</p></div>
-      <div class="cert-block t-reveal" style="--sd:.32s"><div class="cert-block-code">JIPM</div><span class="cert-block-num">TPM Award</span><p>Japan Institute of Plant Maintenance TPM Excellence Award — recognising our total productive maintenance system</p></div>
-      <div class="cert-block t-reveal" style="--sd:.40s"><div class="cert-block-code">VDA</div><span class="cert-block-num">6.3 Process</span><p>German automotive supply chain process audit standard — required by major European and global OEMs</p></div>
+    <div class="cert-blocks reveal">
+      <div class="cert-block" style="--sd:0s"><div class="cert-code">IATF</div><span class="cert-num">16949</span><p class="cert-desc">Automotive quality management system — the highest standard in the global automotive supply chain</p></div>
+      <div class="cert-block" style="--sd:.06s"><div class="cert-code">ISO</div><span class="cert-num">9001:2015</span><p class="cert-desc">Quality management system certifying consistent product quality</p></div>
+      <div class="cert-block" style="--sd:.12s"><div class="cert-code">ISO</div><span class="cert-num">14001:2015</span><p class="cert-desc">Environmental management system</p></div>
+      <div class="cert-block" style="--sd:.18s"><div class="cert-code">ISO</div><span class="cert-num">45001:2018</span><p class="cert-desc">Occupational health &amp; safety across all 5 plants</p></div>
+      <div class="cert-block" style="--sd:.24s"><div class="cert-code">JIPM</div><span class="cert-num">TPM Award</span><p class="cert-desc">Japan Institute of Plant Maintenance TPM Excellence Award</p></div>
+      <div class="cert-block" style="--sd:.30s"><div class="cert-code">VDA</div><span class="cert-num">6.3 Process</span><p class="cert-desc">German automotive supply chain process audit standard</p></div>
     </div>
   </div>
 </section>
 
-<!-- QUALITY PROCESS -->
-<section class="page-section page-section--dark">
-  <div class="page-inner">
-    <div style="text-align:center;margin-bottom:60px;" class="t-reveal">
-      <div class="section-eyebrow" style="justify-content:center;">Quality Process</div>
-      <h2 class="section-title section-title--light">End-to-End Quality<br/>Control Process</h2>
+<!-- Quality Process -->
+<section class="inner-section section--white">
+  <div class="inner-container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <div class="eyebrow" style="justify-content:center;">Quality Process</div>
+      <h2 class="section-h2">End-to-End Quality<br/><em>Control Process</em></h2>
     </div>
-    <div class="process-steps t-reveal">
-      <div class="process-step">
-        <div class="process-step-num">01</div>
-        <h4>Incoming Material QC</h4>
-        <p>100% incoming raw material inspection against material test certificates. Spectrometer analysis for chemical composition. Segregated storage with lot traceability.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step-num">02</div>
-        <h4>In-Process Inspection</h4>
-        <p>SPC at critical operations. First-off and last-off inspection protocols. Poka-yoke mistake-proofing at every stage. Real-time quality data capture on production lines.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step-num">03</div>
-        <h4>Final Inspection</h4>
-        <p>Zeiss CMM 3D inspection. Klingelnberg gear analyser for gear tooth geometry. Surface roughness, hardness, and dimensional verification. Customer-specific inspection plans.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step-num">04</div>
-        <h4>PPAP &amp; Documentation</h4>
-        <p>Full PPAP Level 3 documentation available. Control plans, MSA, SPC studies, PFMEA, and DFMEA. Digital traceability from raw material to shipped component.</p>
-      </div>
+    <div class="process-row reveal">
+      <div class="process-step"><div class="process-step-n">01</div><h4>Incoming Material QC</h4><p>100% incoming raw material inspection against material test certificates. Spectrometer analysis for chemical composition. Segregated storage with lot traceability.</p></div>
+      <div class="process-step"><div class="process-step-n">02</div><h4>In-Process Inspection</h4><p>SPC at critical operations. First-off and last-off inspection protocols. Poka-yoke mistake-proofing at every stage. Real-time quality data capture.</p></div>
+      <div class="process-step"><div class="process-step-n">03</div><h4>Final Inspection</h4><p>Zeiss CMM 3D inspection. Klingelnberg gear analyser for gear tooth geometry. Surface roughness, hardness, and dimensional verification.</p></div>
+      <div class="process-step"><div class="process-step-n">04</div><h4>PPAP &amp; Documentation</h4><p>Full PPAP Level 3 documentation. Control plans, MSA, SPC studies, PFMEA, and DFMEA. Digital traceability from raw material to shipped component.</p></div>
     </div>
   </div>
 </section>
 
-<!-- QUALITY POLICY -->
-<section class="page-section page-section--light" id="policy">
-  <div class="page-inner">
-    <div class="intro-grid" style="gap:60px;align-items:start;">
-      <div class="t-reveal t-reveal--left">
-        <div class="section-eyebrow">Quality Policy</div>
-        <h2 class="section-title">Our Commitment<br/>to Excellence</h2>
-        <p class="intro-body">Sanjeev Auto is committed to achieving and sustaining Total Customer Satisfaction by producing precision components that consistently meet or exceed specified quality requirements.</p>
-        <p class="intro-body">We achieve this through a culture of continuous improvement, employee engagement, adoption of advanced manufacturing technology, and adherence to international quality management systems across all our facilities.</p>
-        <p class="intro-body">Our quality policy is reviewed annually by top management and cascaded through all levels of the organization — from the shop floor to the boardroom.</p>
+<!-- Quality Policy -->
+<section class="inner-section section--off-white">
+  <div class="inner-container">
+    <div class="intro-cols" style="gap:60px;">
+      <div class="reveal reveal--left">
+        <div class="eyebrow">Quality Policy</div>
+        <h2 class="section-h2">Our Commitment<br/>to <em>Excellence</em></h2>
+        <p class="section-sub" style="max-width:none;margin-bottom:12px;">Sanjeev Auto is committed to achieving and sustaining Total Customer Satisfaction by producing precision components that consistently meet or exceed specified quality requirements.</p>
+        <p class="section-sub" style="max-width:none;">We achieve this through a culture of continuous improvement, employee engagement, adoption of advanced manufacturing technology, and adherence to international quality management systems.</p>
       </div>
-      <div class="t-reveal t-reveal--right">
+      <div class="reveal reveal--right">
         <div style="display:flex;flex-direction:column;gap:16px;">
-          <div style="background:#f7f7f7;border:1px solid #e8e8e8;border-radius:var(--r-lg);padding:28px 32px;">
-            <div class="section-eyebrow" style="margin-bottom:12px;color:var(--accent-dk);">Six Sigma Driven</div>
-            <h4 style="font-family:Outfit,sans-serif;font-weight:700;font-size:1rem;color:var(--text-dark);margin-bottom:8px;">Data-Driven Quality Improvement</h4>
-            <p style="font-size:0.875rem;color:var(--text-mid);line-height:1.75;">Active Six Sigma Green Belt and Black Belt programs. Continuous reduction of defect rates using DMAIC methodology.</p>
-          </div>
-          <div style="background:#f7f7f7;border:1px solid #e8e8e8;border-radius:var(--r-lg);padding:28px 32px;">
-            <div class="section-eyebrow" style="margin-bottom:12px;color:var(--accent-dk);">TPM Excellence</div>
-            <h4 style="font-family:Outfit,sans-serif;font-weight:700;font-size:1rem;color:var(--text-dark);margin-bottom:8px;">JIPM TPM Award Winner</h4>
-            <p style="font-size:0.875rem;color:var(--text-mid);line-height:1.75;">Recognised by Japan Institute of Plant Maintenance for Total Productive Maintenance excellence. OEE targets consistently above 85%.</p>
-          </div>
-          <div style="background:#f7f7f7;border:1px solid #e8e8e8;border-radius:var(--r-lg);padding:28px 32px;">
-            <div class="section-eyebrow" style="margin-bottom:12px;color:var(--accent-dk);">Zero PPM Goal</div>
-            <h4 style="font-family:Outfit,sans-serif;font-weight:700;font-size:1rem;color:var(--text-dark);margin-bottom:8px;">Customer Zero Defect Commitment</h4>
-            <p style="font-size:0.875rem;color:var(--text-mid);line-height:1.75;">Customer-specific PPM targets with real-time dashboards. 8D corrective action process for any customer concern — resolved within defined response timelines.</p>
-          </div>
+          <div class="tata-card" style="border-top-color:var(--gold);"><div class="eyebrow eyebrow--gold" style="margin-bottom:8px;">Six Sigma Driven</div><h3>Data-Driven Quality Improvement</h3><p>Active Six Sigma Green Belt and Black Belt programs. Continuous reduction of defect rates using DMAIC methodology.</p></div>
+          <div class="tata-card"><div class="eyebrow" style="margin-bottom:8px;">TPM Excellence</div><h3>JIPM TPM Award Winner</h3><p>Recognised by Japan Institute of Plant Maintenance. OEE targets consistently above 85%.</p></div>
+          <div class="tata-card" style="border-top-color:var(--gold);"><div class="eyebrow eyebrow--gold" style="margin-bottom:8px;">Zero PPM Goal</div><h3>Customer Zero Defect Commitment</h3><p>Customer-specific PPM targets with real-time dashboards. 8D corrective action process for any customer concern.</p></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <img src="logo.png" alt="Sanjeev Auto" class="footer-logo" />
-      <p class="footer-tagline">Precision engineering since 1978.<br/>Building the components that move the world.</p>
-      <div class="footer-certs-small"><span>ISO 9001:2015</span><span>IATF 16949</span><span>ISO 14001:2015</span></div>
-    </div>
-    <div class="footer-nav-cols">
-      <div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div>
-      <div class="footer-col"><h5>Products</h5><a href="products.html">Product Range</a></div>
-      <div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a><a href="tel:+912406640900">+91-240-664 0900</a></div>
-      <div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a><a href="products.html">Construction</a><a href="products.html">Industrial</a></div>
-    </div>
+<!-- CTA -->
+<section class="section section--navy" style="padding:64px 0;">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-h2 section-h2--light reveal">Request <em>Quality Documentation</em></h2>
+    <p class="section-sub section-sub--light reveal" style="margin:0 auto 24px;">Need PPAP documents, certificate copies, or want to schedule a supplier audit? Contact our quality team.</p>
+    <button class="btn-tata btn-tata--gold reveal" data-popup>Contact Quality Team →</button>
   </div>
-  <div class="footer-divider"></div>
-  <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2024 Sanjeev Auto Group. All rights reserved. &nbsp;·&nbsp; Aurangabad, Maharashtra, India</p>
-    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
-  </div>
-</footer>
-<button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">&#8593;</button>
-<script>
-(function(){
-  const nav=document.getElementById('navbar'); let lastY=0;
-  window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('nav-scrolled',y>60);nav.classList.toggle('nav-hidden',y>lastY&&y>200);lastY=y;},{passive:true});
-  document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('mobile-open');});
-  const overlay=document.getElementById('popupOverlay');
-  document.getElementById('openPopupNav').addEventListener('click',()=>overlay.classList.add('active'));
-  document.getElementById('popupClose').addEventListener('click',()=>overlay.classList.remove('active'));
-  overlay.addEventListener('click',e=>{if(e.target===overlay)overlay.classList.remove('active');});
-  document.querySelectorAll('.t-reveal,.t-reveal--left,.t-reveal--right').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting)el.classList.add('t-visible');},{threshold:0.1}).observe(el);});
-  const btn=document.getElementById('scrollTop');
-  window.addEventListener('scroll',()=>btn.classList.toggle('visible',window.scrollY>600),{passive:true});
-  btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-})();
-</script>
+</section>
+
+<footer class="footer"><div class="footer-top"><div class="footer-brand"><img src="logo.png" alt="Sanjeev Auto" class="footer-logo" /><p class="footer-tagline">Precision engineering since 1978.</p><div class="footer-cert-strip"><span class="footer-cert">ISO 9001</span><span class="footer-cert">IATF 16949</span></div></div><div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="quality.html">Quality</a><a href="careers.html">Careers</a></div><div class="footer-col"><h5>Products</h5><a href="products.html">Range</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Get In Touch</a><a href="mailto:info@sanjeevgroup.com">info@sanjeevgroup.com</a></div><div class="footer-col"><h5>Sectors</h5><a href="products.html">Automotive</a><a href="products.html">Agriculture</a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copy">© 2024 Sanjeev Auto Group.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+<button class="scroll-top" id="scrollTop" aria-label="Top">↑</button>
+<script src="tata.js"></script>
 </body>
 </html>
