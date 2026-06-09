@@ -46,6 +46,22 @@
     stb.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 
+  // Hero slideshow + video
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  if (heroSlides.length) {
+    let cur = 0;
+    setInterval(() => {
+      heroSlides[cur].classList.remove('active');
+      cur = (cur + 1) % heroSlides.length;
+      heroSlides[cur].classList.add('active');
+    }, 5000);
+  }
+  const heroVideo = document.querySelector('.hero-bg-video');
+  if (heroVideo) {
+    heroVideo.addEventListener('playing', () => heroVideo.classList.add('is-playing'));
+    heroVideo.addEventListener('pause',   () => heroVideo.classList.remove('is-playing'));
+  }
+
   // File drop
   const fda = document.getElementById('fileDropArea');
   const ri = document.getElementById('resumeFile');
