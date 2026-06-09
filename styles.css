@@ -621,7 +621,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: var(--navy-dk) url('https://www.sanjeevauto.com/wp-content/uploads/2021/10/K96-3.jpg') center/cover no-repeat;
+  background: var(--navy-dk) url('images/K96-3.jpg') center/cover no-repeat;
 }
 
 /* Video */
@@ -1922,4 +1922,84 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 11px 24px;
   font-size: 0.8rem;
   border-bottom: 1px solid rgba(27,45,107,0.05);
+}
+
+/* ═══════════════════════════════════════════════════
+   ENHANCED ANIMATIONS v3
+   ═══════════════════════════════════════════════════ */
+
+/* Floating badge effect */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+.ai-badge { animation: float 5s ease-in-out infinite; }
+
+/* Marquee pause on hover */
+.marquee-track-outer:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Counter pop at completion */
+@keyframes counterPop {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+.counter-done { animation: counterPop 0.45s cubic-bezier(0.34,1.56,0.64,1); }
+
+/* Page-load progress bar */
+@keyframes progressBar {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.page-progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--green));
+  transform-origin: left;
+  animation: progressBar 0.6s var(--ease) forwards;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Scroll-triggered section header accent */
+.sec-header .eyebrow::after,
+.about-content .eyebrow::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--green);
+  border-radius: 2px;
+  margin-top: 5px;
+  transition: width 0.7s var(--ease) 0.4s;
+}
+.reveal.visible .eyebrow::after,
+.reveal-left.visible .eyebrow::after {
+  width: 32px;
+}
+
+/* Card entrance scale micro-animation */
+.cert-card,
+.equip-card,
+.benefit-list-item,
+.wj-card,
+.job-card-new,
+.fac-full-card,
+.apg-card {
+  transition: box-shadow 0.35s var(--ease), transform 0.35s var(--ease), border-color 0.35s var(--ease);
+}
+
+/* Teal top-border reveal on hover for dark cards */
+.cap-card,
+.qm-card {
+  transition: background 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+/* Smooth underline for nav active */
+.nav-link-active {
+  color: var(--navy) !important;
+  border-bottom-color: var(--green) !important;
 }

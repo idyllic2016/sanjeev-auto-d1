@@ -105,11 +105,24 @@ function animCount(el, target, duration = 1800) {
     const ease = 1 - Math.pow(1 - p, 4);
     const val  = initial + (target - initial) * ease;
     el.textContent = isFloat ? val.toFixed(1) : Math.round(val);
-    if (p < 1) requestAnimationFrame(step);
-    else el.textContent = isFloat ? target.toFixed(1) : target;
+    if (p < 1) {
+      requestAnimationFrame(step);
+    } else {
+      el.textContent = isFloat ? target.toFixed(1) : target;
+      el.classList.add('counter-done');
+      el.addEventListener('animationend', () => el.classList.remove('counter-done'), { once: true });
+    }
   }
   requestAnimationFrame(step);
 }
+
+// ─── Page Progress Bar ────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  const bar = document.createElement('div');
+  bar.className = 'page-progress-bar';
+  document.body.prepend(bar);
+  bar.addEventListener('animationend', () => bar.remove(), { once: true });
+});
 
 // Hero counters — start on load
 window.addEventListener('load', () => {
