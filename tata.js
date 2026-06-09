@@ -50,11 +50,14 @@
   const heroSlides = document.querySelectorAll('.hero-slide');
   if (heroSlides.length) {
     let cur = 0;
-    setInterval(() => {
+    function activateSlide(idx) {
       heroSlides[cur].classList.remove('active');
-      cur = (cur + 1) % heroSlides.length;
+      cur = idx;
+      const img = heroSlides[cur].querySelector('img');
+      if (img) { img.style.animation = 'none'; void img.offsetWidth; img.style.animation = ''; }
       heroSlides[cur].classList.add('active');
-    }, 12000);
+    }
+    setInterval(() => activateSlide((cur + 1) % heroSlides.length), 5000);
   }
   const heroVideo = document.querySelector('.hero-bg-video');
   if (heroVideo) {
