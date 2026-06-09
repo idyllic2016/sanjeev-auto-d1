@@ -1350,11 +1350,15 @@
 /* ═══════════════════════════════════════════════════
    FOOTER (layout override for new HTML structure)
    ═══════════════════════════════════════════════════ */
+/* Override footer background color */
+.footer {
+  background: var(--sa-ink) !important;
+}
 .footer-top {
   max-width: 1320px;
   margin: 0 auto;
   padding: 72px 48px 60px;
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
   gap: 80px;
   border-bottom: 1px solid rgba(255,255,255,.06) !important;
@@ -1365,7 +1369,52 @@
   font-size: .85rem;
   color: rgba(255,255,255,.38);
   line-height: 1.7;
-  margin: 0;
+  margin: 0 0 20px;
+}
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+.fsoc {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,.45);
+  transition: background .2s, color .2s, border-color .2s;
+}
+.fsoc:hover {
+  background: var(--sa-green);
+  color: #050A06;
+  border-color: var(--sa-green);
+}
+.footer-col h5 {
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.25);
+  margin: 0 0 16px;
+}
+.footer-col a {
+  display: block;
+  font-size: .85rem;
+  color: rgba(255,255,255,.48);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color .2s;
+}
+.footer-col a:hover { color: var(--sa-green-lt); }
+.footer-col p.fc-addr {
+  font-size: .82rem;
+  color: rgba(255,255,255,.32);
+  line-height: 1.7;
+  margin-top: 4px;
 }
 .footer-links {
   flex: 1;
@@ -1423,4 +1472,220 @@
   .footer-brand { flex: none; }
   .footer-links { gap: 32px; }
   .footer-bottom { padding: 20px 24px; flex-direction: column; align-items: flex-start; }
+}
+
+/* ═══════════════════════════════════════════════════
+   INNER PAGES — Global upgrades applied via premium.css
+   ═══════════════════════════════════════════════════ */
+
+/* PAGE BANNER — taller, overlay navbar, green eyebrow */
+.page-banner {
+  height: 65vh !important;
+  min-height: 480px !important;
+  margin-top: 0 !important;
+}
+.page-banner img.pb-img {
+  filter: brightness(.5) saturate(.75) !important;
+}
+.pb-overlay {
+  background: linear-gradient(105deg, rgba(5,10,6,.85) 0%, rgba(5,10,6,.45) 55%, rgba(5,10,6,.2) 100%) !important;
+}
+.pb-eyebrow {
+  font-size: .68rem !important;
+  letter-spacing: .22em !important;
+  color: var(--sa-green) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px !important;
+}
+.pb-eyebrow::before {
+  content: '';
+  width: 24px; height: 2px;
+  background: var(--sa-green);
+  border-radius: 2px;
+}
+.pb-content {
+  padding: 0 48px 64px !important;
+}
+.pb-content h1 {
+  font-size: clamp(2.4rem, 5vw, 5rem) !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: -.03em !important;
+}
+/* Breadcrumb — push below transparent navbar */
+.pb-breadcrumb {
+  top: 88px !important;
+  left: 48px !important;
+  font-size: .68rem !important;
+  letter-spacing: .1em !important;
+}
+.pb-breadcrumb a { color: rgba(255,255,255,.45) !important; text-decoration: none; }
+.pb-breadcrumb a:hover { color: var(--sa-green-lt) !important; }
+.pb-breadcrumb span { color: rgba(255,255,255,.25) !important; }
+
+/* Page header stats strip (products / facilities pages) */
+.ph-stats {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding: 0 48px;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.ph-stat {
+  flex: 1;
+  padding: 20px 24px;
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.ph-stat:last-child { border-right: none; }
+.ph-stat span {
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: var(--sa-green-lt);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.ph-stat small {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.4);
+}
+
+/* ── Global eyebrow override — use green ─────────── */
+.eyebrow {
+  color: var(--sa-green-dk) !important;
+}
+.eyebrow.light { color: var(--sa-green-lt) !important; }
+
+/* ── Outline button — green ─────────────────────── */
+.outline-btn {
+  color: var(--sa-green-dk) !important;
+  border-color: var(--sa-green-dk) !important;
+  border-width: 1.5px;
+}
+.outline-btn:hover {
+  background: var(--sa-green-dk) !important;
+  color: #fff !important;
+}
+
+/* ── Section titles — optional em color ─────────── */
+.sec-title em { color: var(--sa-green-dk); font-style: normal; }
+
+/* ── About page timeline ─────────────────────────── */
+.atl-dot {
+  background: var(--sa-green) !important;
+  border-color: var(--sa-green) !important;
+  box-shadow: 0 0 0 4px rgba(34,197,94,.15) !important;
+}
+.atl-dot-active {
+  background: var(--sa-green-lt) !important;
+  border-color: var(--sa-green-lt) !important;
+  box-shadow: 0 0 0 6px rgba(74,222,128,.2) !important;
+}
+.atl-year { color: var(--sa-green-dk) !important; }
+.atl-card-active {
+  border-color: rgba(34,197,94,.3) !important;
+  background: rgba(34,197,94,.04) !important;
+}
+
+/* P.I.T.C.H. letters — all green */
+.apg-letter { color: var(--sa-green) !important; }
+.apg-card:hover { border-color: rgba(34,197,94,.3) !important; }
+
+/* Certification grid — green numbers */
+.acg-item span { color: var(--sa-green-dk) !important; }
+.acg-item:hover { border-color: var(--sa-green) !important; background: rgba(34,197,94,.05) !important; }
+
+/* Quote block — green left border */
+.abt-quote-block { border-left-color: var(--sa-green-dk) !important; }
+
+/* ── Careers page ─────────────────────────────────── */
+.car-chip {
+  background: rgba(34,197,94,.1) !important;
+  color: var(--sa-green-dk) !important;
+  border-color: rgba(34,197,94,.25) !important;
+}
+.car-stat-div { background: rgba(34,197,94,.25) !important; }
+.car-stat-num { color: var(--sa-green) !important; }
+.wj-card:hover { border-color: rgba(34,197,94,.3) !important; }
+.wj-icon { color: var(--sa-green-dk) !important; border-color: rgba(34,197,94,.2) !important; background: rgba(34,197,94,.07) !important; }
+
+/* Job cards */
+.job-card-new:hover { border-color: rgba(34,197,94,.3) !important; }
+.job-dept-badge { background: rgba(34,197,94,.1) !important; color: var(--sa-green-dk) !important; border-color: rgba(34,197,94,.2) !important; }
+.job-apply-btn { background: var(--sa-green) !important; color: #050A06 !important; }
+.job-apply-btn:hover { background: var(--sa-green-lt) !important; }
+
+/* Benefit list */
+.benefit-list-icon { color: var(--sa-green-dk) !important; border-color: rgba(34,197,94,.2) !important; background: rgba(34,197,94,.07) !important; }
+
+/* Culture values */
+.car-culture-wrap { gap: 0 !important; }
+
+/* ── Products page ─────────────────────────────────── */
+.pf-badge { background: var(--sa-green) !important; color: #050A06 !important; }
+.app-tag { border-color: rgba(34,197,94,.2) !important; color: var(--sa-green-dk) !important; background: rgba(34,197,94,.06) !important; }
+.spec-row span:last-child { color: var(--sa-green-dk) !important; }
+.download-card:hover { border-color: rgba(34,197,94,.3) !important; }
+
+/* ── Contact page ─────────────────────────────────── */
+.ci-row-icon { color: var(--sa-green-dk) !important; }
+.ci-dept-icon { background: rgba(34,197,94,.1) !important; color: var(--sa-green-dk) !important; }
+.cfc-submit-btn { background: var(--sa-green) !important; color: #050A06 !important; }
+.cfc-submit-btn:hover { background: var(--sa-green-lt) !important; }
+.cnt-strip-num { color: var(--sa-green) !important; }
+
+/* ── Quality page ─────────────────────────────────── */
+.cert-card:hover { border-color: rgba(34,197,94,.3) !important; }
+.cert-icon { color: var(--sa-green) !important; }
+.quality-metric-val { color: var(--sa-green) !important; }
+
+/* ── Facilities page ─────────────────────────────── */
+.fac-full-card:hover { border-color: rgba(34,197,94,.3) !important; }
+.equip-card:hover { border-color: rgba(34,197,94,.3) !important; }
+.fac-stat-val { color: var(--sa-green) !important; }
+
+/* ── Application form ───────────────────────────── */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.pf-group input:focus,
+.pf-group select:focus,
+.pf-group textarea:focus,
+.cfc-group input:focus,
+.cfc-group select:focus,
+.cfc-group textarea:focus {
+  border-color: var(--sa-green) !important;
+  box-shadow: 0 0 0 3px rgba(34,197,94,.15) !important;
+  outline: none;
+}
+.btn-submit {
+  background: linear-gradient(135deg, var(--sa-green), var(--sa-green-dk)) !important;
+  color: #050A06 !important;
+}
+.btn-submit:hover {
+  background: var(--sa-green-lt) !important;
+  box-shadow: 0 10px 32px rgba(34,197,94,.35) !important;
+}
+
+/* ── Blog cards ─────────────────────────────────── */
+.blog-card:hover { border-color: rgba(34,197,94,.3) !important; }
+.blog-tag { color: var(--sa-green-dk) !important; background: rgba(34,197,94,.1) !important; }
+
+/* ── Responsive overrides for inner pages ────────── */
+@media (max-width: 768px) {
+  .page-banner { height: 55vh !important; min-height: 400px !important; }
+  .pb-content { padding: 0 24px 48px !important; }
+  .pb-breadcrumb { left: 24px !important; top: 76px !important; }
+  .ph-stats { flex-wrap: wrap; padding: 0 24px; }
+  .ph-stat { flex: 1 1 50%; min-width: 120px; }
 }
