@@ -1,14 +1,11 @@
 /* Sanjeev Auto — Tata Design Shared JS */
 (function() {
-  // Navbar
+  // Navbar — always visible, no hide on scroll
   const nav = document.getElementById('navbar');
-  let lastY = 0;
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
     nav.classList.toggle('at-top', y < 60);
     nav.classList.toggle('scrolled', y >= 60);
-    nav.classList.toggle('hidden', y > lastY && y > 300);
-    lastY = y;
   }, { passive: true });
 
   // Hamburger
