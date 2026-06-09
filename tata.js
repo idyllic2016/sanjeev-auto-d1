@@ -54,7 +54,7 @@
       heroSlides[cur].classList.remove('active');
       cur = (cur + 1) % heroSlides.length;
       heroSlides[cur].classList.add('active');
-    }, 5000);
+    }, 12000);
   }
   const heroVideo = document.querySelector('.hero-bg-video');
   if (heroVideo) {
