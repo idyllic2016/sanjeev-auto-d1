@@ -61,8 +61,14 @@
   }
   const heroVideo = document.querySelector('.hero-bg-video');
   if (heroVideo) {
-    heroVideo.addEventListener('playing', () => heroVideo.classList.add('is-playing'));
-    heroVideo.addEventListener('pause',   () => heroVideo.classList.remove('is-playing'));
+    heroVideo.addEventListener('playing', () => {
+      if (heroVideo.videoWidth > 0) heroVideo.classList.add('is-playing');
+    });
+    heroVideo.addEventListener('pause', () => heroVideo.classList.remove('is-playing'));
+    heroVideo.addEventListener('error', () => { heroVideo.style.display = 'none'; });
+    setTimeout(() => {
+      if (heroVideo.videoWidth === 0) heroVideo.style.display = 'none';
+    }, 3000);
   }
 
   // File drop
