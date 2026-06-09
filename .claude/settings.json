@@ -4,7 +4,12 @@
       "WebFetch(domain:www.wecreate.com)",
       "WebFetch(domain:www.blendb2b.com)",
       "WebFetch(domain:pentaclay.com)",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "WebFetch(domain:www.sanjeevauto.com)",
+      "Bash(Get-Content about.html)",
+      "Bash(Select-String \"nav-container|nav-actions|nav-hamburger|scrolled|theme-toggle\")",
+      "Bash(Select-Object -First 10)",
+      "WebFetch(domain:images.unsplash.com)"
     ]
   }
 }
