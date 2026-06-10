@@ -1972,3 +1972,210 @@ button { font-family: inherit; cursor: pointer; }
 .nav-link {
   position: relative;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   COMPREHENSIVE RESPONSIVE — ALL BREAKPOINTS
+   320 / 375 / 425 / 768 / 1024 / 1300-1920
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Very wide screens: 1441px → 1920px ───────────────────────
+   max-width:1440px container centres automatically.
+   Hero / section backgrounds are full-bleed — no changes needed.
+   Extra padding variable keeps inner content from touching edges.
+*/
+@media (min-width: 1441px) {
+  :root { --pad-x: 100px; }
+  .hero-h1 { font-size: clamp(4rem, 5.5vw, 7rem); }
+}
+
+/* ── 1600px ───────────────────────────────────────────────────── */
+@media (max-width: 1600px) and (min-width: 1441px) {
+  :root { --pad-x: 96px; }
+}
+
+/* ── 1440px / MacBook 14" ─────────────────────────────────────── */
+@media (max-width: 1440px) and (min-width: 1301px) {
+  :root { --pad-x: 72px; }
+}
+
+/* ── 1350 / 1300px ───────────────────────────────────────────── */
+@media (max-width: 1300px) and (min-width: 1201px) {
+  :root { --pad-x: 56px; }
+  .nav-link { padding: 8px 11px; font-size: 0.83rem; }
+}
+
+/* ── 1024px — Tablet landscape / small laptop ─────────────────── */
+@media (max-width: 1024px) and (min-width: 961px) {
+  :root { --pad-x: 40px; }
+  .nav-link { padding: 8px 10px; font-size: 0.82rem; }
+  .nav-btn-primary { padding: 8px 16px; font-size: 0.78rem; }
+  .hero-h1 { font-size: clamp(2.6rem, 5.5vw, 4.5rem); }
+  .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+  .motion-grid { grid-template-columns: 1fr 1fr; }
+  .sectors-row { grid-template-columns: repeat(3, 1fr); }
+  .impact-grid { grid-template-columns: repeat(4, 1fr); }
+  .footer-top { grid-template-columns: 1.2fr repeat(3, 1fr); gap: 28px; }
+  .card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .plants-scroll-header { padding: 0 var(--pad-x); }
+  .plants-viewport { padding-left: var(--pad-x); }
+}
+
+/* ── 768px — Tablet portrait ──────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Hero refinements */
+  .hero { min-height: 100svh; }
+  .hero-content { padding: 0 var(--pad-x) 180px; }
+  .hero-rotating-text { margin-bottom: 20px; }
+  .hero-cta-group { margin-bottom: 0; gap: 12px; }
+
+  /* Stats bar taller on 2-col → increase bottom padding */
+  .hero-stats-inner { grid-template-columns: repeat(2, 1fr); }
+  .hero-stat { padding: 18px 12px; }
+  .hero-stat-n { font-size: clamp(1.4rem, 5vw, 2rem); }
+
+  /* Welcome */
+  .welcome-inner { padding: 0 var(--pad-x); }
+  .welcome-inner h2 { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+  .welcome-inner p { font-size: 0.95rem; }
+
+  /* Pillars */
+  .pillars-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pillar-card-body { padding: 20px 20px 24px; }
+
+  /* Motion cards — single column */
+  .motion-grid { grid-template-columns: 1fr; gap: 16px; }
+  .motion-card { padding: 24px; }
+
+  /* Sectors */
+  .sectors-row { grid-template-columns: repeat(2, 1fr); }
+
+  /* Impact numbers */
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .impact-item { padding: 32px 16px; }
+  .impact-num { font-size: clamp(2rem, 8vw, 3rem); }
+
+  /* Quality section */
+  .quality-text-side { padding: 40px 32px; }
+
+  /* Plants */
+  .plants-scroll-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .plant-card { width: 300px; }
+
+  /* OEM section */
+  .movement-grid { gap: 40px; }
+  .oem-list { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+
+  /* Footer */
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; padding: 48px var(--pad-x) 36px; }
+  .footer-brand { grid-column: span 2; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; padding: 16px var(--pad-x) 24px; }
+
+  /* Inner pages */
+  .page-banner { min-height: 320px; }
+  .inner-section { padding: 56px 0; }
+  .intro-cols { gap: 36px; }
+  .stat-strip-inner { grid-template-columns: repeat(2, 1fr); }
+  .cert-blocks { grid-template-columns: 1fr 1fr; }
+  .card-grid-3 { grid-template-columns: 1fr 1fr; }
+  .card-grid-4 { grid-template-columns: 1fr 1fr; }
+  .process-row { grid-template-columns: 1fr; }
+}
+
+/* ── 480px ────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .hero-h1 { font-size: clamp(2rem, 9.5vw, 2.8rem); }
+  .hero-cta-group { flex-direction: column; gap: 10px; }
+  .btn-tata { width: 100%; justify-content: center; padding: 12px 20px; }
+  .sectors-row { grid-template-columns: 1fr 1fr; }
+  .impact-grid { grid-template-columns: 1fr 1fr; }
+  .plant-card { width: calc(100vw - 64px); min-width: 260px; }
+  .pillars-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: span 1; }
+  .section-h2 { font-size: clamp(1.9rem, 7vw, 2.8rem); }
+  .welcome-inner h2 { font-size: clamp(2rem, 9vw, 3rem); }
+  .hero-content { padding: 0 var(--pad-x) 200px; }
+}
+
+/* ── 425px ────────────────────────────────────────────────────── */
+@media (max-width: 425px) {
+  :root { --pad-x: 18px; }
+  .hero-h1 { font-size: clamp(1.85rem, 9.5vw, 2.6rem); }
+  .sectors-row { grid-template-columns: 1fr; }
+  .hero-stat-n { font-size: 1.3rem; }
+  .hero-stat-l { font-size: 0.6rem; }
+  .welcome-inner h2 { font-size: 2.2rem; }
+  .motion-card { padding: 20px; }
+  .pillar-card-body h3 { font-size: 1rem; }
+  .oem-list { grid-template-columns: 1fr 1fr; }
+  .nav-btn-primary { padding: 8px 14px; font-size: 0.76rem; }
+  .mobile-nav { top: 80px; }
+}
+
+/* ── 375px ────────────────────────────────────────────────────── */
+@media (max-width: 375px) {
+  :root { --pad-x: 16px; }
+  .hero-h1 { font-size: clamp(1.7rem, 9vw, 2.2rem); }
+  .hero-content { padding: 0 var(--pad-x) 220px; }
+  .hero-stat { padding: 14px 8px; }
+  .hero-stat-n { font-size: 1.2rem; }
+  .hero-stat-l { font-size: 0.58rem; letter-spacing: 0.07em; }
+  .section-h2 { font-size: clamp(1.7rem, 8.5vw, 2.4rem); }
+  .welcome-inner h2 { font-size: 2rem; }
+  .welcome-inner p { font-size: 0.9rem; }
+  .impact-num { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .impact-item { padding: 24px 10px; }
+  .motion-card { padding: 18px; gap: 12px; }
+  .pillars-section { padding: 60px 0 72px; }
+  .pillar-card-body { padding: 16px 16px 20px; }
+  .pillar-card-body h3 { font-size: 0.95rem; }
+  .plant-card { width: calc(100vw - 48px); }
+  .footer-top { padding: 40px var(--pad-x) 28px; }
+  .footer-logo { height: 42px; }
+  .footer-tagline { font-size: 0.82rem; }
+  .footer-copy { font-size: 0.7rem; }
+  .footer-bottom-links a { font-size: 0.7rem; }
+  .popup-modal { max-height: 88vh; }
+}
+
+/* ── 320px ────────────────────────────────────────────────────── */
+@media (max-width: 320px) {
+  :root { --pad-x: 14px; }
+  .hero-h1 { font-size: 1.6rem; line-height: 1.1; }
+  .hero-content { padding: 0 var(--pad-x) 240px; }
+  .hero-cta-group { gap: 8px; }
+  .btn-tata { padding: 10px 16px; font-size: 0.8rem; }
+  .hero-stat-n { font-size: 1.1rem; }
+  .section-h2 { font-size: 1.6rem; }
+  .welcome-inner h2 { font-size: 1.8rem; }
+  .impact-num { font-size: 1.8rem; }
+  .impact-item { padding: 20px 8px; }
+  .impact-label { font-size: 0.62rem; }
+  .nav-logo img { height: 52px; }
+  .nav-inner { height: 72px; }
+  .mobile-nav { top: 72px; max-height: calc(100vh - 72px); }
+  .plant-card { width: calc(100vw - 40px); }
+  .footer-top { grid-template-columns: 1fr; gap: 20px; }
+  .footer-copy { font-size: 0.68rem; }
+  .footer-devby { font-size: 0.65rem; }
+  .motion-card { padding: 16px; gap: 10px; }
+  .pillar-card-body { padding: 14px; }
+}
+
+/* ── Developer credit in footer ──────────────────────────────── */
+.footer-devby {
+  width: 100%;
+  text-align: center;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.22);
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.footer-devby a {
+  color: rgba(255,255,255,0.38);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-devby a:hover { color: var(--green-lt); }
