@@ -2100,6 +2100,8 @@ button { font-family: inherit; cursor: pointer; }
 /* ── 425px ────────────────────────────────────────────────────── */
 @media (max-width: 425px) {
   :root { --pad-x: 18px; }
+  /* Hide "Get In Touch" — hamburger already covers nav on mobile */
+  .nav-btn-primary { display: none; }
   .hero-h1 { font-size: clamp(1.85rem, 9.5vw, 2.6rem); }
   .sectors-row { grid-template-columns: 1fr; }
   .hero-stat-n { font-size: 1.3rem; }
@@ -2108,8 +2110,13 @@ button { font-family: inherit; cursor: pointer; }
   .motion-card { padding: 20px; }
   .pillar-card-body h3 { font-size: 1rem; }
   .oem-list { grid-template-columns: 1fr 1fr; }
-  .nav-btn-primary { padding: 8px 14px; font-size: 0.76rem; }
   .mobile-nav { top: 80px; }
+  /* Popup — reduce overlay padding so modal isn't squeezed */
+  .popup-overlay { padding: 12px; }
+  .popup-right { padding: 20px 18px 24px; }
+  .popup-title { font-size: 1.05rem; margin-bottom: 14px; }
+  .form-input, .form-select, .form-textarea { padding: 10px 12px; font-size: 0.82rem; }
+  .popup-submit { font-size: 0.85rem; padding: 12px; }
 }
 
 /* ── 375px ────────────────────────────────────────────────────── */
@@ -2135,31 +2142,65 @@ button { font-family: inherit; cursor: pointer; }
   .footer-tagline { font-size: 0.82rem; }
   .footer-copy { font-size: 0.7rem; }
   .footer-bottom-links a { font-size: 0.7rem; }
-  .popup-modal { max-height: 88vh; }
+  /* Popup */
+  .popup-overlay { padding: 10px; }
+  .popup-right { padding: 18px 14px 20px; }
+  .popup-modal { border-radius: var(--r-lg); max-height: 92vh; overflow-y: auto; }
+  .popup-title { font-size: 1rem; margin-bottom: 12px; }
+  .popup-close { top: 10px; right: 10px; width: 30px; height: 30px; }
+  .form-group { margin-bottom: 10px; }
+  .form-input, .form-select, .form-textarea { padding: 9px 11px; font-size: 0.82rem; }
+  .form-textarea { min-height: 72px; }
+  .form-label { font-size: 0.68rem; }
+  .popup-submit { padding: 11px; font-size: 0.83rem; }
 }
 
 /* ── 320px ────────────────────────────────────────────────────── */
 @media (max-width: 320px) {
   :root { --pad-x: 14px; }
-  .hero-h1 { font-size: 1.6rem; line-height: 1.1; }
-  .hero-content { padding: 0 var(--pad-x) 240px; }
+  /* Navbar — compact, only logo + hamburger */
+  .nav-inner { height: 64px; gap: 0; }
+  .nav-logo img { height: 44px; }
+  .mobile-nav { top: 64px; max-height: calc(100vh - 64px); }
+
+  /* Hero */
+  .hero-h1 { font-size: 1.55rem; line-height: 1.1; }
+  .hero-content { padding: 0 var(--pad-x) 220px; }
   .hero-cta-group { gap: 8px; }
-  .btn-tata { padding: 10px 16px; font-size: 0.8rem; }
-  .hero-stat-n { font-size: 1.1rem; }
-  .section-h2 { font-size: 1.6rem; }
-  .welcome-inner h2 { font-size: 1.8rem; }
-  .impact-num { font-size: 1.8rem; }
-  .impact-item { padding: 20px 8px; }
-  .impact-label { font-size: 0.62rem; }
-  .nav-logo img { height: 52px; }
-  .nav-inner { height: 72px; }
-  .mobile-nav { top: 72px; max-height: calc(100vh - 72px); }
-  .plant-card { width: calc(100vw - 40px); }
-  .footer-top { grid-template-columns: 1fr; gap: 20px; }
-  .footer-copy { font-size: 0.68rem; }
-  .footer-devby { font-size: 0.65rem; }
-  .motion-card { padding: 16px; gap: 10px; }
+  .btn-tata { padding: 10px 14px; font-size: 0.78rem; }
+  .hero-stat { padding: 12px 6px; }
+  .hero-stat-n { font-size: 1rem; }
+  .hero-stat-l { font-size: 0.55rem; }
+
+  /* Typography */
+  .section-h2 { font-size: 1.55rem; }
+  .welcome-inner h2 { font-size: 1.75rem; }
+  .impact-num { font-size: 1.7rem; }
+  .impact-item { padding: 18px 6px; }
+  .impact-label { font-size: 0.6rem; }
+
+  /* Cards */
+  .motion-card { padding: 14px; gap: 10px; }
   .pillar-card-body { padding: 14px; }
+  .plant-card { width: calc(100vw - 36px); }
+
+  /* Footer */
+  .footer-top { grid-template-columns: 1fr; gap: 20px; }
+  .footer-copy { font-size: 0.66rem; }
+  .footer-devby { font-size: 0.63rem; }
+
+  /* Popup — full-width, minimal padding so form is usable */
+  .popup-overlay { padding: 8px; align-items: flex-start; padding-top: 16px; }
+  .popup-modal { width: 100%; border-radius: var(--r); max-height: calc(100vh - 32px); overflow-y: auto; }
+  .popup-left { display: none; } /* already hidden at 768px, keep hidden */
+  .popup-right { padding: 14px 12px 16px; }
+  .popup-close { top: 10px; right: 10px; width: 28px; height: 28px; font-size: 0.7rem; }
+  .popup-title { font-size: 0.95rem; margin-bottom: 10px; padding-right: 36px; }
+  .form-group { gap: 4px; margin-bottom: 8px; }
+  .form-label { font-size: 0.65rem; letter-spacing: 0.02em; }
+  .form-input, .form-select, .form-textarea { padding: 9px 10px; font-size: 0.8rem; border-width: 1px; }
+  .form-textarea { min-height: 64px; }
+  .popup-submit { padding: 11px; font-size: 0.82rem; letter-spacing: 0.02em; }
 }
 
 /* ── Developer credit in footer ──────────────────────────────── */
